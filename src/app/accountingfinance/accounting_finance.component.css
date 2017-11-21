@@ -1,0 +1,10 @@
+.o-case-description{
+    padding:20px 15px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:10px 0;
+}
+.o-case-description:hover{
+    cursor: pointer;
+    background-color: #f5f4fc;
+}

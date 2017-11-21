@@ -1,0 +1,54 @@
+/* Navigation Component CSS */
+.o-navbar-orion {
+  /*border: none;*/
+  background-color: rgba(255, 255, 255, 1);
+}
+.o-navbar-orion .navbar-nav{
+}
+/* Override Bootstrap CSS */
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0 0 6px;
+}
+.navbar-default .navbar-toggle {
+  /*border: none;*/
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #484848;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #2b5786;
+  /*background-color: transparent;*/
+  background-color: rgba(43, 87,134, 0.15);
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  opacity: 0.8;
+}
+
+.dropdown-menu {
+  background-color: rgba(250, 250, 250, 0.9);
+}
+
+.dropdown-menu > li > a {
+  color: #484848;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #2b5786;
+  text-decoration: none;
+  background-color: rgba(43, 87,134, 0.15);
+}
+.subnav-mobile{
+  display: none;
+}
+@media(max-width:767px){
+  .subnav-mobile{
+    display: block;
+  }
+}

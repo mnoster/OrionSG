@@ -1,0 +1,42 @@
+.o-header {
+  height: 200px;
+  color: inherit;
+  background-color: #fff;
+  background-position-y: -440px;
+}
+.o-header .container {
+  padding-top: 50px;
+  max-width: 100%;
+}
+.o-header h1 {
+  font-family: "Quicksand";
+  color: #ffffff;
+}
+p{
+    font-family: "Quicksand";
+}
+.entry-content p {
+    padding: 4px 8px
+}
+.entry-content img{
+    float: left;
+    padding: 10px;
+}
+#o-ourteam-container{
+    margin-top:50px;
+}
+#o-ourteam-container .row {
+  margin-bottom: 45px;
+}
+
+/* Styles for the Team Info Section */
+#o-ourteam-container .o-team-name {
+  font-weight: 400;
+    font-family: Quicksand;
+    font-size: 15px;
+    margin-top: 21px;
+}
+#o-ourteam-container .o-team-detail {
+  padding: 0 10px 10px 10px;
+  margin-bottom: 10px;
+}

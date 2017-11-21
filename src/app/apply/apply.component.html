@@ -1,0 +1,70 @@
+<div class="container o-apply-component">
+    <button type="button" id="showSuccessModal" style="display:none" data-toggle="modal" data-target="#successModal"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" role="dialog">
+        <div class="modal-dialog" style="margin-top: 60px">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a [routerLink]="['/jobs']"><button type="button" class="close" data-dismiss="modal">&times;</button></a>
+                    <h2 class="modal-title" style="text-align: center;">Success!</h2>
+                </div>
+                <div class="modal-body" style="font-size: 18px;padding:35px 15px">
+                    <p>Thank you for applying to <b>{{title}}</b></p>
+                    <p>We sent you an email to <span style="color: #0000b2;"><u>{{email}}</u></span></p>.
+                </div>
+                <div class="modal-footer" style="text-align: center">
+                    <a [routerLink]="['/jobs']" ><button type="button" class="btn btn-default" data-dismiss="modal" style="padding:8px 50px;border-color:#01a600;font-size: 17px">Ok</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:10px">
+        <div class="col-xs-12">
+            <a class="al" [routerLink]="['/jobs/' + job_id]"><h5 class="al">< &nbsp; Back to Job</h5></a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 15px;">
+        <div class="col-sm-11 col-xs-12 o-application-contain">
+            <div class="col-xs-12">
+                <div>
+                    <h3 class="al">{{title}}</h3> &nbsp;
+                    <span class="al" [innerHtml]="location"></span>
+                    <form id="submit-resume" action="http://localhost:7788/bhorn/parse_resume" enctype='multipart/form-data'>
+                        <span class="al" style="float:right; color:red">
+                            Upload Resume & Apply Below
+                            <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/>
+                        </span>
+                    </form>
+                </div>
+                <h4 class="mt-25 qs">Apply</h4>
+            </div>
+            <div>
+                <form novalidate  id="application" method="post" [formGroup]="app_form" (ngSubmit)="onSubmit()">
+                    <div class="col-sm-12 col-sm-6"  *ngFor="let app of application_form">
+                        <div class="o-form-contain">
+                            <h5>{{app.form}}</h5>
+                            <hr>
+                            <div *ngFor="let a of app.fields">
+                                <input formControlName={{a.name}} minlength="1" maxlength="50" class="from-control" name={{a.name}} pattern=".{2,}" type="text" placeholder={{a.placeholder}} title="Please enter name" required={{a.required}}/>
+                                <!--<p>{{app_form.get(a.name).value}}</p>-->
+                                <div class="o-error" *ngIf="app_form.get(a.name).hasError('required') && app_form.get(a.name).touched">
+                                    {{a.placeholder}} is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                        <button *ngIf="!loader && resumeUploaded" [disabled]="app_form.invalid" (click)="onSubmit()" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Submit</button>
+                        <button *ngIf="!loader && !resumeUploaded" [disabled]="true" (click)="onSubmit()" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Submit</button>
+                        <button *ngIf="loader && !complete" [disabled]="app_form.invalid" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Please Wait..</button>
+                        <button *ngIf="complete" [disabled]="app_form.invalid" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-success o-submit-btn">Thank you</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

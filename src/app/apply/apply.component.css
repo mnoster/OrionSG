@@ -1,0 +1,46 @@
+/*GLOBAL FONTS*/
+/*font-family: 'Quicksand', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Nunito', sans-serif;*/
+/*font-family: 'Alegreya Sans', sans-serif;*/
+
+
+input{
+    font-family: 'Roboto', sans-serif;;
+}
+.o-apply-component{
+    margin-top:100px;
+}
+
+.o-application-contain h3{
+    display: inline-block;
+}
+.o-apply-component input{
+    height: 32px;
+    padding-left: 9px;
+    margin: 8px 0;
+    width:100%;
+    display: block;
+    border: 1px solid lightgray;
+}
+
+.o-form-contain{
+    /*border:1px solid #1e96ff;*/
+    padding:10px;
+    border-radius: 4px;
+    min-height: 330px;
+ }
+.o-submit-btn{
+    margin: 20px 0;
+    float: right;
+    font-size: 17px;
+    border-radius: 0;
+}
+.o-error{
+    color: red;
+    padding: 2px 9px;
+    margin-top: -10px;
+    border-radius: 0;
+    border-top: 3px solid red;
+    transition: all .3s;
+}

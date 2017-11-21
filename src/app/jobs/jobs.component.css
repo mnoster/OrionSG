@@ -1,0 +1,91 @@
+/*GLOBAL FONTS*/
+/*font-family: 'Quicksand', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Nunito', sans-serif;*/
+/*font-family: 'Alegreya Sans', sans-serif;*/
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+.o-search-contain{
+    background: url("../../assets/images/green_blue.jpg") no-repeat 100% fixed ;
+    padding-bottom:25px;
+    background-position-y:-400px;
+    margin-top: 70px;
+}
+.o-search-contain h5,
+.o-search-contain h4,
+.o-search-contain h3,
+.o-search-contain h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight:100;
+}
+.o-job-title a{
+    font-family: 'Nunito', sans-serif ;
+    font-size: 18px;
+}
+.o-job-description{
+    font-size: 14px;
+}
+.o-job-location{
+    font-size:14px
+}
+.o-job-buttons .btn{
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.o-job-buttons{
+    margin-top:10px;
+}
+.o-job-contain .row{
+    max-width: 900px;
+    padding: 0 25px;
+}
+.o-job-contain p{
+    display: inline !important;
+    margin-bottom:0 !important;
+    color:black !important;
+}
+font{
+    color:black !important;
+}
+
+.o-job-contain hr{
+    margin-right:135px;
+}
+/*DROPDOWN STYLES*/
+.o-job-category{
+    border-radius: 0;
+    width: 175px;
+    text-align: left;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+    border-radius: 0;
+    background-color: #fff
+}
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-right:none;
+    background-color: #fff
+}
+.o-search-bar{
+    border-left:none;
+}
+.search-icon{
+    height: 22px;
+    position: absolute;
+    margin: 6px 0 0 7px;
+}
+
+@media(max-width:992px){
+    .o-job-contain hr{
+        margin-right:0;
+    }
+}

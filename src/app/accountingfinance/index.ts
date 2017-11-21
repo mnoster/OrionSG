@@ -1,0 +1,1 @@
+export * from "./accounting_finance.component";
