@@ -32,7 +32,7 @@
                 <div>
                     <h3 class="al">{{title}}</h3> &nbsp;
                     <span class="al" [innerHtml]="location"></span>
-                    <form id="submit-resume" action="http://localhost:7788/bhorn/parse_resume" enctype='multipart/form-data'>
+                    <form id="submit-resume" action="http://54.187.154.6/bhorn/parse_resume" enctype='multipart/form-data'>
                         <span class="al" style="float:right; color:red">
                             Upload Resume & Apply Below
                             <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/>
