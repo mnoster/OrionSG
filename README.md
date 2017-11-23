@@ -14,7 +14,8 @@
 ## Compile and run Project
 1. "clone repo"
 2. "npm install"
-3. "yarn start"
+#3. "yarn start"
+3. "ng serve" #New method to start 11 - 23 - 2017
 
 ## Start Node Server
 1. cd into orion/server
