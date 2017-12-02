@@ -11,5 +11,4 @@ COPY . /usr/src/app
 
 run rm -rf node_modules/
 RUN npm install
-ENTRYPOINT ["ng"]
-CMD ["serve"]
+CMD ["ng serve"]
