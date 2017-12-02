@@ -11,4 +11,4 @@ COPY . /usr/src/app
 
 run rm -rf node_modules/
 RUN npm install
-CMD ["ng serve"]
+CMD ng serve
