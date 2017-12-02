@@ -91,6 +91,7 @@ export class ApplyComponent implements OnInit {
                 console.log("res: ", res);
                 let res_body = JSON.parse(res._body);
                 let candidate_id = res_body.data.candidate.id;
+                console.log("FILE: ",  self.encoded_file)
                 self.bullhornService.attachResume(self.encoded_file, candidate_id).then(
                     (res: any) => {
                         this.complete = true;

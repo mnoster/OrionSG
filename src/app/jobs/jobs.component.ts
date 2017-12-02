@@ -96,6 +96,7 @@ export class JobsComponent {
     }
 
     public searchStringInJobsArray() {
+        console.log("Search");
         if(!this.query){ this.job_data = job_data;  return;}
         let new_job_data: Array<string>=[];
         let query:any = [];
