@@ -51,9 +51,12 @@ export class JobsComponent {
 
         this.bullhornService.getJobs(null).then(
             (res: any) => {
-                let jobs = JSON.parse(res._body);
-                let jd = jobs.data;
+                let jobs = JSON.parse(res._body)
+                let jd = jobs.data
+                let d
                 for (let i = 0; i < jd.length; i++) {
+                    d = jd[i].publicDescription.replace(/&nbsp;/gi,'')
+                    d = d.substring(0, 520) + "...",
                     job_data.push({
                             id: jd[i].id,
                             job: new Job(
@@ -61,7 +64,7 @@ export class JobsComponent {
                                 jd[i].title,
                                 jd[i].publicDescription,
                                 jd[i].employmentType,
-                                jd[i].publicDescription.substring(0, 375) + "...",
+                                d,
                                 jd[i].address.city + ", " + jd[i].address.state,
                                 jd[i].address,
                                 jd[i].categories.data[0] ? jd[i].categories.data[0].name : ''

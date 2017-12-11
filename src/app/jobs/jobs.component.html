@@ -51,8 +51,9 @@
                         </div>
                         <div class="o-job-description" [innerHTML]="data.job.truncated | safeHtml">
                         </div>
+
                         <div class="o-job-buttons">
-                            <a style="color:black;text-decoration: none" [routerLink]="['/jobs/' + data.job.id]"><button class="btn">View Job</button></a>
+                            <a style="color:black;text-decoration: none" [routerLink]="['/jobs/' + data.job.id]"><button class="btn btn-default">View Job</button></a>
                             <a [routerLink]="['/apply/' + data.job.id]" [queryParams]="{'t': data.job.title,'l':data.job.location}"><button class="btn btn-primary">Apply</button></a>
                         </div>
                     </div>
