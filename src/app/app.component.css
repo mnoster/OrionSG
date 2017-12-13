@@ -24,12 +24,16 @@ a:active {
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
 }
+.t-center{
+  text-align: center;
+}
 .truncate {
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 footer {
   /*background-color: #f2f2f2;*/
   background: #3b7096;
