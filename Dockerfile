@@ -12,4 +12,3 @@ COPY . /usr/src/app
 run rm -rf node_modules/
 RUN npm install
 RUN npm install -g @angular/cli
-CMD ng serve
