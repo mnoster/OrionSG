@@ -19,7 +19,7 @@ a:active {
   height: 200px;
   color: inherit;
   background-color: #fff;
-  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
   background-position-y: -440px;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
@@ -55,7 +55,7 @@ footer p{
 .o-jumbotron {
   color: inherit;
   background-color: #fff;
-  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
   background-position-y: -440px;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
@@ -65,7 +65,7 @@ footer p{
 .o-jumbotron-small {
   color: inherit;
   background-color: #fff;
-  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
   background-position-y: -464px;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
