@@ -93,7 +93,6 @@ footer p{
 }
 .o-jumbotron h3, .o-jumbotron-small h3  {
   font-size: 20px;
-
 }
 
 .o-jumbotron > hr {
@@ -225,6 +224,8 @@ a {
 .mt-20{ margin-top:20px; }
 .mt-25{ margin-top:25px; }
 .mb-25{ margin-bottom:25px; }
+.ps-40{ padding-left: 40px; padding-right: 40px;}
+.p-40{ padding: 40px;}
 
 /* Loader Styles */
 .o-loader {
@@ -297,5 +298,15 @@ a {
   }
 }
 
+/* <HR> Tags BEGIN */
+.o-hr-blue {
+  width: 200px;
+  border-top: 2px solid #6f97b5;
+}
+/* <HR> Tags END */
 
-/*ICONS*/
+/* Background Classes BEGIN */
+.o-bg-l-grey {
+  background-color: #e9e9e9;
+}
+/* Background Classes END */
