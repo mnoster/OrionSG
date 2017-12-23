@@ -9,7 +9,6 @@ a:hover,
 a:active {
   text-decoration: none;
 }
-
 .o-main-container {
   margin: 50px 0 0 0;
   background-color: #fcfcfc;
@@ -19,10 +18,13 @@ a:active {
   height: 200px;
   color: inherit;
   background-color: #fff;
-/*  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
-  background-position-y: -440px;*/
-  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
-  background-position-y: -590px;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background-position-y: -440px;
+/*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
+  background-position-y: -590px;*/
+}
+.t-center{
+  text-align: center;
 }
 .truncate {
   width: 250px;
@@ -30,9 +32,7 @@ a:active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-h1{
-  text-shadow:0 0 2px black
-}
+
 footer {
   /*background-color: #f2f2f2;*/
   background: #3b7096;
@@ -54,20 +54,20 @@ footer p{
 .o-jumbotron {
   color: inherit;
   background-color: #fff;
-/*  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
-  background-position-y: -440px;*/
-  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
-  background-position-y: -590px;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background-position-y: -440px;
+/*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
+  background-position-y: -590px;*/
   height:300px;
 }
 /* Styles for Top Jumbotron Container */
 .o-jumbotron-small {
   color: inherit;
   background-color: #fff;
-/*  background: url("~/assets/images/office.jpg") no-repeat center top fixed;
-  background-position-y: -464px;*/
-  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
-  background-position-y: -590px;
+  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background-position-y: -464px;
+/*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
+  background-position-y: -590px;*/
   height:200px;
 }
 .o-jumbotron .container {

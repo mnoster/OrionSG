@@ -22,11 +22,11 @@
 
 }
 
-#o-container-vision .container-fluid .row > div {
+#o-container-vision .container .row > div {
   text-align: center;
   padding: 10px 20px 10px 20px;
 }
-#o-container-vision .container-fluid .row .o-split-container {
+#o-container-vision .container .row .o-split-container {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
@@ -58,8 +58,10 @@
   padding: 15px;
   background: #3c7095;
   border-radius: 5px;
+  font-family: "Quicksand";
 }
 .o-split-column-wrapper h3{
+  text-align: center;
   padding: 10px 0;
   color:white;
   text-shadow: 0 1px black;

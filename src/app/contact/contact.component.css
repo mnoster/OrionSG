@@ -112,6 +112,10 @@
 .o-third-container {
   padding: 10px;
 }
+.o-third-container h2{
+  padding: 10px;
+  font-family: "Quicksand"
+}
 
 .o-third-container div {
   padding: 5px 10px;
