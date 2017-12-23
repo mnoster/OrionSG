@@ -18,8 +18,9 @@ a:active {
   height: 200px;
   color: inherit;
   background-color: #fff;
-  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed;
   background-position-y: -440px;
+  background-size:cover;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
 }
@@ -35,13 +36,18 @@ a:active {
 
 footer {
   /*background-color: #f2f2f2;*/
-  background: #3b7096;
   padding: 13px 25px;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  color:black;
 }
-
+footer .container{
+    padding:20px 0;
+    border-top: 1px solid #ddd;
+}
 footer a{
   font-family: 'Roboto', sans-serif;
-  color: #eee;
 }
 footer p{
   text-align:right;
@@ -50,28 +56,32 @@ footer p{
 .fs-16{font-size: 16px}
 .fs-18{font-size: 18px}
 .white{color:white !important}
+.m-25{margin:25px 0;}
+.m-50{margin:50px 0;}
+.p-100{padding:100px 0;}
+.pb-100{padding-bottom:100px;}
+.pt-100{padding-top:100px;}
 /* Styles for Top Jumbotron Container */
 .o-jumbotron {
-  color: inherit;
-  background-color: #fff;
-  background: url("/assets/images/office.jpg") no-repeat center top fixed;
-  background-position-y: -440px;
-/*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
-  background-position-y: -590px;*/
-  height:300px;
+    color: inherit;
+    background-color: #fff;
+    background: url(/assets/images/buildingblue.png) no-repeat center top fixed;
+    background-position-y: -468px;
+    background-size: cover;
+    height: 375px;
 }
 /* Styles for Top Jumbotron Container */
 .o-jumbotron-small {
   color: inherit;
   background-color: #fff;
-  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background: url("/assets/images/green_blue.jpg") no-repeat center top fixed;
   background-position-y: -464px;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
   height:200px;
 }
 .o-jumbotron .container {
-  padding-top:80px;
+  padding-top:110px;
 
 }
 .o-jumbotron h1, .o-jumbotron-small h1,
