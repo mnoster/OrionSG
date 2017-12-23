@@ -8,7 +8,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 .o-search-contain{
-    background: url("../../assets/images/green_blue.jpg") no-repeat 100% fixed ;
+    background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed ;
     padding-bottom:25px;
     background-position-y:-400px;
     margin-top: 70px;

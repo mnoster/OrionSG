@@ -2,7 +2,7 @@
   height: 200px;
   color: inherit;
   background-color: #fff;
-  background: url(../../assets/images/office.jpg) no-repeat center top fixed;
+  background: url(/assets/images/green_blue.5eb7048a05863d9ec4c5.jpg) no-repeat center top fixed;
   background-position-y: -440px;
 }
 .o-header .container {
@@ -19,8 +19,8 @@
 #o-history-timeline {
   box-sizing: border-box;
   background: #eaf3ff;
-  background: url(../../assets/images/history_image.png) no-repeat center fixed;
-  background-position-y: 284px;
+  background: url(/assets/images/history_image.png) no-repeat center fixed;
+  background-position-y: 355px;
   background-color: #99dfff;
   background-size: 119%;
 }
