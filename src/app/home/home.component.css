@@ -44,7 +44,7 @@
 
 #o-our-mission-section {
   background: url(../../assets/images/our_mission.jpg) no-repeat center center fixed;
-  min-height: 400px;
+  min-height: 530px;
   background-position: left center;
   background-size: cover;
   display: flex;
@@ -85,6 +85,7 @@
 }
 .o-contract-staffing,.o-professional-search,.o-consulting{
   color:black;
+  border:1px solid white;
 }
 .o-contract-staffing:hover{
   border-radius: 5px;
@@ -441,9 +442,7 @@
   padding: 0;
   overflow: hidden;
 }
-.section-info-presentation .info-pricing:first-child {
-  margin-top: 90px;
-}
+
 .info-pricing .icon {
   float: left;
   margin-top: 20px;
@@ -465,25 +464,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .text-danger {
-  color: #e78b90 !important;
+  color: #f6f6f6 !important;
 }
 .info-pricing .text {
   overflow: hidden;
 }
 .info-pricing .title-info {
   margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 16px;
+  font-size:24px;
 }
 .info-pricing .text-description, .section-faq .text-description {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.6;
-  max-width: 260px;
 }
 .section-info-presentation .image-container {
   height: 100vh;
   width: auto;
   position: relative;
 }
+.section-info-presentation .col-sm-4{
+  border-left:1px solid #f6f6f6;
+  border-right:1px solid #f6f6f6;
+  height:420px;
+  font-size:20px;
+  padding:100px 30px 100px 30px;
+  background-color:#007eb254;
+}
+.section-info-presentation .col-sm-4:nth-of-type(even){
+  background-color:#99c7e0;
+}
+
 .pe-7s-exapnd2:before {
   content: "\e658";
 }
