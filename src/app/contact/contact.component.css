@@ -112,9 +112,17 @@
 .o-third-container {
   padding: 10px;
 }
-.o-third-container h2{
+
+.o-third-container h2 {
   padding: 10px;
-  font-family: "Quicksand"
+  font-family: "Quicksand";
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 831px) {
+  .o-third-container h2 {
+    font-size: 28px;
+  }
 }
 
 .o-third-container div {

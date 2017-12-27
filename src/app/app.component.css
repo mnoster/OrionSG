@@ -23,6 +23,14 @@ a:active {
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
 }
+.o-header h1{
+  margin-top: 95px;
+  font-family: "Quicksand";
+  color: #ffffff;
+}
+.o-header .container{
+  padding-top:0 !important;
+}
 .t-center{
   text-align: center;
 }
@@ -211,18 +219,14 @@ a {
 .help-block {
   font-size: 12px;
 }
-.o-header h1{
-  margin-top: 95px;
-}
-.o-header .container{
-  padding-top:0 !important;
-}
+
 .alert{
   margin-top: 80px;
 }
 .mt-20{ margin-top:20px; }
 .mt-25{ margin-top:25px; }
 .mb-25{ margin-bottom:25px; }
+.mb-45{ margin-bottom:45px; }
 .ps-40{ padding-left: 40px; padding-right: 40px;}
 .p-40{ padding: 40px;}
 

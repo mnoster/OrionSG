@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: 'contact.component.html',
     styleUrls: ['contact.component.css',
                 '../app.component.css',
+                '../font-awesome/css/fontawesome-all.min.css'
                ]
 })
 
