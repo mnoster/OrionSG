@@ -119,9 +119,14 @@
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 831px) {
+@media only screen and (max-width: 835px) {
   .o-third-container h2 {
     font-size: 28px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .o-third-container h2 {
+    font-size: 27px;
   }
 }
 
