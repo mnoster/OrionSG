@@ -19,7 +19,8 @@ a:active {
   color: inherit;
   background-color: #fff;
   background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed;
-  background-position-y: -440px;
+  /* background-position-y: -440px; */
+  background-position-y: -200px;
   background-size:cover;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
@@ -241,6 +242,15 @@ a {
 .mb-45{ margin-bottom:45px; }
 .ps-40{ padding-left: 40px; padding-right: 40px;}
 .p-40{ padding: 40px;}
+
+.o-bg-l-grey {
+  background-color: #eaeaea;
+}
+
+hr.o-hr-blue {
+  border-top: 2px solid #185278;
+  width: 200px;
+}
 
 /* Loader Styles */
 .o-loader {
