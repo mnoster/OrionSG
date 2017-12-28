@@ -69,7 +69,15 @@ footer p{
 .m-50{margin:50px 0;}
 .p-100{padding:100px 0;}
 .pb-100{padding-bottom:100px;}
+.pb-30{padding-bottom:30px;}
 .pt-100{padding-top:100px;}
+.ps-40{ padding-left: 40px; padding-right: 40px;}
+.p-40{ padding: 40px;}
+.mt-20{ margin-top:20px; }
+.mt-25{ margin-top:25px; }
+.mb-25{ margin-bottom:25px; }
+.mb-45{ margin-bottom:45px; }
+
 /* Styles for Top Jumbotron Container */
 .o-jumbotron {
     color: inherit;
@@ -236,12 +244,6 @@ a {
 .alert{
   margin-top: 80px;
 }
-.mt-20{ margin-top:20px; }
-.mt-25{ margin-top:25px; }
-.mb-25{ margin-bottom:25px; }
-.mb-45{ margin-bottom:45px; }
-.ps-40{ padding-left: 40px; padding-right: 40px;}
-.p-40{ padding: 40px;}
 
 .o-bg-l-grey {
   background-color: #eaeaea;
