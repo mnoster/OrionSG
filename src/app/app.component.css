@@ -74,7 +74,8 @@ footer p{
     color: inherit;
     background-color: #fff;
     background: url(/assets/images/buildingblue.png) no-repeat center top fixed;
-    background-position-y: -468px;
+    /* background-position-y: -468px; */
+    background-position-y: -80px;
     background-size: cover;
     height: 375px;
 }
