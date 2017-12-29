@@ -81,23 +81,22 @@ export class ApplyComponent implements OnInit {
     }
 
     onSubmit() {
-        console.log("app form: ", this.app_form.value);
         this.loader = true;
         let self = this;
-        let data = this.formatCandidate(this.app_form.value);
+        let data = this.formatCandidate(this.app_form.value)
+        let resume = self.encoded_file
         this.email = data.email;
         this.bullhornService.createCandidate(data).then(
             (res: any) => {
                 console.log("res: ", res);
                 let res_body = JSON.parse(res._body);
                 let candidate_id = res_body.data.candidate.id;
-                console.log("FILE: ",  self.encoded_file)
                 self.bullhornService.attachResume(self.encoded_file, candidate_id).then(
                     (res: any) => {
                         this.complete = true;
                         document.getElementById("showSuccessModal").click();
                         console.log("res: " , res);
-                        self.emailService.emailApplicant(this.email, this.title, window.location.href).then(
+                        self.emailService.emailApplicant(this.email, this.title, window.location.href, data, resume).then(
                             (res: any) => {
                                 console.log("res: " , res)
                             }
