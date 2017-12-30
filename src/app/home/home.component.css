@@ -537,6 +537,7 @@
   }
   .section-info-presentation .col-sm-4 {
     padding: 100px 30px 100px 30px;
+    height: auto;
   }
 }
 
