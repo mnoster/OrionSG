@@ -41,6 +41,28 @@ export class OurteamComponent implements OnInit {
     + "performance of all our service lines and has direct management "
     + "responsibility for our consulting and staffing business.";
 
+    summaryKevinSuksi1 = "As the Vice President of Recruiting, Kevin focuses on "
+    + "identifying and recruiting professionals for clients across all our "
+    + "service lines. For more than a decade, Kevin has developed the ability to "
+    + "bring the right person to the table through relationship building, "
+    + "intelligent research, and relentless effort.";
+
+    summaryKevinSuksi2 = "Kevin earned his BBA in Accounting from the University "
+    + "of Michigan-Dearborn. Prior to his career as a recruiter, Kevin earned his "
+    + "CPA license while working at a major regional CPA firm and worked in "
+    + "corporate accounting.";
+
+    summaryNicoleHeger1 = "Nicole Heger has more than 10 years of experience in "
+    + "Human Resources management and recruiting. Nicole understands the "
+    + "recruiting process from the client’s perspective and uses this understanding "
+    + "to help us constantly improve our processes. Nicole’s broad recruiting "
+    + "background includes sales &amp; marketing, supply chain, accounting & "
+    + "finance, HR, and audit.";
+
+    summaryNicoleHeger2 = "Nicole earned her BS in Human Resources Development "
+    + "and from Oakland University and holds the Professional in Human Resources "
+    + "certification (PHR).";
+
     constructor(private userService: UserService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
