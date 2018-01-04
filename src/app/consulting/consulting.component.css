@@ -8,7 +8,46 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.card{
+.o-button-container {
+  text-align: center;
+  font-size: 20px;
+}
+
+.o-consulting-component .row .o-button-container a button {
+  background-color: #e0e9f1;
+  transition: 0.8s;
+}
+
+@media only screen and (max-width: 991px) {
+  .o-consulting-component .row .o-button-container a {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .o-consulting-component .row .o-button-container a button {
+    padding: 10px 23px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .o-consulting-component .row .o-button-container a button {
+    padding: 10px 26px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .o-consulting-component .row .o-button-container a button {
+    padding: 6px 10px;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  .o-consulting-component .row .o-button-container a button {
+    padding: 5px 3px;
+    font-size: 15px;
+  }
+}
+
+.o-card > div {
     box-shadow:0 0 3px;
     padding:15px;
     margin-top:30px;
@@ -16,4 +55,10 @@
     color:black;
     font-size: 16px;
     border-top: 5px solid #3b7096;
+}
+
+@media only screen and (max-width: 767px) {
+  .o-card .row .pull-right ul {
+    margin-bottom: 0px;
+  }
 }
