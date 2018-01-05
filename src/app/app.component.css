@@ -65,15 +65,16 @@ footer p{
 .fs-16{font-size: 16px}
 .fs-18{font-size: 18px}
 .white{color:white !important}
-.m-25{margin:25px 0;}
-.m-50{margin:50px 0;}
+.p-20{ padding: 20px;}
+.p-40{ padding: 40px;}
 .p-100{padding:100px 0;}
 .pb-100{padding-bottom:100px;}
 .pb-30{padding-bottom:30px;}
 .pt-100{padding-top:100px;}
 .ps-20{ padding-left: 20px; padding-right: 20px; }
 .ps-40{ padding-left: 40px; padding-right: 40px;}
-.p-40{ padding: 40px;}
+.m-25{margin:25px 0;}
+.m-50{margin:50px 0;}
 .mt-20{ margin-top:20px; }
 .mt-25{ margin-top:25px; }
 .mt-50{ margin-top:50px; }
@@ -247,6 +248,11 @@ a {
   margin-top: 80px;
 }
 
+.o-color-box {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
 .o-bg-l-grey {
   background-color: #eaeaea;
 }
