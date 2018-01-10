@@ -11,6 +11,7 @@ import { UserService } from '../_services/index';
 
 })
 
+
 export class OurteamComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
@@ -78,4 +79,5 @@ export class OurteamComponent implements OnInit {
     private loadAllUsers() {
         // this.userService.getAll().subscribe(users => { this.users = users; });
     }
+
 }

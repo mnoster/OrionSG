@@ -9,7 +9,14 @@
   font-size:16px;
 }
 
-/* HEREEEEE */
+.o-jumbotron .o-home-header-grey-bg {
+  background-color: rgba(189, 188, 188, 0.75);
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding: 10px;
+}
+
 #o-values-section{
   padding: 10px 15px;
   /*background: url("../../assets/images/escheresque-dark.png") center center fixed;*/

@@ -2,6 +2,16 @@
  * Styles for Our Team Component
  */
 
+.o-card {
+  box-shadow:0 0 3px;
+  padding:15px;
+  margin-top:30px;
+  background-color: white;
+  color:black;
+  font-size: 16px;
+  border-top: 5px solid #3b7096;
+}
+
 #o-ourteam-container{
   margin-top: 50px;
   font-family: 'Roboto', sans-serif;
@@ -63,6 +73,29 @@
   outline-offset: 0;
 }
 
-#our-team-carousel-info .tab-content .tab-pane {
-  height: 242px;
+@media (min-width: 1200px) {
+  #our-team-carousel-info .o-width-1050 {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#our-team-carousel .o-carousel-arrow {
+  background-color: rgba(239, 239, 239, 0.57);
+  font-size: 30px;
+  right: 0px;
+  position: absolute;
+  text-align: center;
+  height: 235px;
+  vertical-align: middle;
+  display: none;
+  margin: 10px 0 10px 0;
+  padding: 100px 0px;
+}
+
+@media (max-width: 1111px) {
+  #our-team-carousel .o-carousel-arrow {
+    /* display: inline-block; */
+  }
 }
