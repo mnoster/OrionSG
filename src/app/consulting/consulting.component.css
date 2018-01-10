@@ -24,26 +24,25 @@
     margin-bottom: 5px;
   }
   .o-consulting-component .row .o-button-container a button {
-    padding: 10px 23px;
+    width: 255px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .o-consulting-component .row .o-button-container a button {
-    padding: 10px 26px;
+    width: 250px;
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 566px) {
   .o-consulting-component .row .o-button-container a button {
-    padding: 6px 10px;
+    width: 230px;
   }
 }
 
 @media only screen and (max-width: 494px) {
   .o-consulting-component .row .o-button-container a button {
-    padding: 5px 3px;
-    font-size: 15px;
+    width: 250px;
   }
 }
 
