@@ -8,164 +8,131 @@
 <!-- Subnavigation -->
 <subnavigation></subnavigation>
 
-<!-- OurTeam Container -->
-<div id="o-ourteam-container" class="container">
 
-  <!-- Kris Flynn Row -->
-  <div class="row mb-45">
+<!-- Our Team Carousel -->
+<div class="container-fluid mt-50 ps-20">
+  <div id="our-team-carousel" class="nav nav-pills">
+    <div id="o-carousel-scrolls" class="scrolls">
+      <div class="carousel-element">
+        <a data-toggle="pill" href="#krisflynn">
+          <img alt="Kris Flynn" src="../assets/images/kris_profile.jpg" height="240"
+          class="img-rounded">
+          <span>
+            <br/>
+            Kris Flynn
+            <br/>
+            Managing Partner and Co-Founder
+          </span>
+        </a>
+      </div>
 
-    <div class="col-md-4 col-lg-4 text-center ">
-      <img class="img-responsive" alt="Kris Flynn" src="../assets/images/kris_profile.jpg">
-      <h4>
+      <div class="carousel-element">
+        <a data-toggle="pill" href="#daveflynn">
+          <img alt="Dave Flynn" src="../assets/images/dave_profile.jpg" height="240"
+          class="img-rounded">
+          <span>
+            <br/>
+            Dave Flynn
+            <br/>
+            Partner and Co-Founder
+          </span>
+        </a>
+      </div>
+
+      <div class="carousel-element">
+        <a data-toggle="pill" href="#kevinsuksi">
+          <img alt="Kevin Suksi" src="../assets/images/kevin_profile.jpg" height="240"
+          class="img-rounded">
+          <span>
+            <br/>
+            Kevin Suksi
+            <br/>
+            Partner and Co-Founder
+          </span>
+        </a>
+      </div>
+
+      <div class="carousel-element">
+        <a data-toggle="pill" href="#nicoleheger">
+          <img alt="Nicole Heger" src="../assets/images/nicole_profile.jpg" height="240"
+          class="img-rounded">
+          <span>
+            <br/>
+            Nicole Heger
+            <br/>
+            Human Resources Manager/Recruiter
+          </span>
+        </a>
+      </div>
+
+      <h1 class="o-carousel-arrow">
+        <span class="glyphicon glyphicon-menu-right"></span>
+      </h1>
+
+    </div>
+  </div>
+</div>
+
+<div id="our-team-carousel-info" class="container">
+
+  <!-- Nav Sections BEGIN -->
+  <div class="tab-content o-width-1050">
+
+    <div id="krisflynn" class="tab-pane fade in o-card">
+      <h3>
         Kris Flynn
         <br/>
         Managing Partner and Co-Founder
-      </h4>
+      </h3>
+      <p>
+        {{summaryKrisFlynn1}}
+        <br/><br/>
+        {{summaryKrisFlynn2}}
+      </p>
     </div>
 
-    <div class="col-md-8 col-lg-8">
-      <div class="o-team-detail">
-        <p>
-          Kris brings more than 15 years experience in client service,
-          project management, and IT services. In addition to working
-          directly with our clients, Kris also acts as our Chief Operating
-          Officer, handling all our internal infrastructure and go-to market
-          capabilities.
-          <br/><br/>
-          Kris earned her BA in Finance and MBA in Supply Chain Management
-          from Michigan State University. Prior to Orion, Kris led global development
-          teams for the production order management systems of a major
-          automotive OEM.
-        </p>
-        <p>
-          <a href="http://www.linkedin.com/profile/view?id=221379628&amp;trk=hb_tab_pro_top" target="_blank">
-            Connect to Kris on LinkedIn
-          </a>
-          <br/>
-          Email Kris:&nbsp; <a href="mailto:kflynn@orionsolutionsgroup.net">kflynn@orionsolutionsgroup.net</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Kris Flynn Row END -->
-
-  <!-- Dave Flynn Row BEGIN -->
-  <div class="row mb-45">
-
-    <div class="col-md-4 col-lg-4 text-center">
-      <img class="img-responsive" src="../assets/images/dave_profile.jpg"
-      alt="Dave Flynn">
-      <h4>
+    <div id="daveflynn" class="tab-pane fade o-card">
+      <h3>
         Dave Flynn
         <br/>
         Partner and Co-Founder
-      </h4>
-    </div>
-
-    <div class="col-md-8 col-lg-8">
-      <p class="o-team-detail">
-        Dave brings more than 20 years of experience delivering
-        client solutions across a variety of industries including automotive, banking, insurance, and
-        government. In addition to managing consulting and staffing practices, Dave is a hands-on leader with a broad
-        range of project experience across industries and functional areas.
-        <br/><br/>
-        Dave earned his BA in accounting and his MBA from Michigan State University. Dave has earned
-        the CPA and CISA designations, and sits on the boards of Junior Achievement of Southeastern Michigan and the
-        Detroit Chapter of the Institute of Internal Auditors.
-        <br/><br/>
-        In his role as President, Dave is responsible for the performance of all our service lines and has
-        direct management responsibility for our consulting and staffing business.
-      </p>
+      </h3>
       <p>
-        <a href="http://www.linkedin.com/pub/dave-flynn/0/73a/73b" target="_blank">
-          Connect to Dave on LinkedIn
-        </a>
-        <br/>
-        Email Dave:
-        <a href="mailto:dflynn@orionsolutionsgroup.net">
-          dflynn@orionsolutionsgroup.net
-        </a>
+        {{summaryDaveFlynn1}}
+        <br/><br/>
+        {{summaryDaveFlynn2}}
+        <br/><br/>
+        {{summaryDaveFlynn3}}
       </p>
     </div>
 
-  </div>
-  <!-- Dave Flynn Row END -->
-
-  <!-- Kevin Suksi Row BEGIN -->
-  <div class="row mb-45">
-
-    <div class="col-md-4 col-lg-4 text-center">
-      <img class="img-responsive" src="../assets/images/kevin_profile.jpg"
-      alt="kevinlinkedin" width="200" height="200">
-      <h4>
+    <div id="kevinsuksi" class="tab-pane fade o-card">
+      <h3>
         Kevin Suksi
         <br/>
         Partner and Co-Founder
-      </h4>
-    </div>
-
-    <div class="col-md-8 col-lg-8">
-      <p class="o-team-detail">
-        As the Vice President of Recruiting, Kevin focuses
-        on identifying and recruiting professionals for clients across all our service lines. &nbsp;For
-        more than a decade, Kevin has developed the ability to bring the right person to the table through
-        relationship building, intelligent research, and relentless effort.
-        <br/><br>
-        Kevin earned his BBA in Accounting from the University of Michigan-Dearborn. &nbsp;Prior to his
-        career as a recruiter, Kevin earned his CPA license while working at a major regional CPA firm and worked in
-        corporate accounting.
-      </p>
+      </h3>
       <p>
-        <a href="https://www.linkedin.com/in/kevinsuksi/" target="_blank">
-          Connect to Kevin on LinkedIn
-        </a>
-        <br>
-        Email Kevin:&nbsp;
-        <a href="mailto:ksuksi@orionsolutionsgroup.net">
-          ksuksi@orionsolutionsgroup.net
-        </a>
+        {{summaryKevinSuksi1}}
+        <br/><br/>
+        {{summaryKevinSuksi2}}
       </p>
     </div>
 
-  </div>
-  <!-- Kevin Suksi Row END -->
-
-  <!-- Nicole Heger Row BEGIN -->
-  <div class="row mb-45">
-
-    <div class="col-md-4 col-lg-4 text-center">
-      <img class="img-responsive" src="../assets/images/nicole_profile.jpg"
-      alt="Nicole Photograph" width="200" height="200">
-      <h4>
+    <div id="nicoleheger" class="tab-pane fade o-card">
+      <h3>
         Nicole Heger
         <br/>
         Human Resources Manager/Recruiter
-      </h4>
-    </div>
-
-    <div class="col-md-8 col-lg-8">
-      <p class="o-team-detail">
-        Nicole Heger has more than 10 years of experience in Human
-        Resources management and recruiting. Nicole understands the recruiting process from the
-        client’s perspective and uses this understanding to help us constantly
-        improve our processes.&nbsp; Nicole’s broad recruiting background
-        includes sales &amp; marketing, supply chain, accounting &amp; finance, HR,
-        and audit.
-        <br/><br/>
-        Nicole earned her BS in Human Resources Development and from Oakland University and holds the
-        Professional in Human Resources certification (PHR).
-      </p>
+      </h3>
       <p>
-        <a href="https://www.linkedin.com/in/nicole-heger-phr-a8b45b4/" target="_blank">
-          Connect to Nicole on LinkedIn
-        </a>
-        <br/>
-        Email Nicole:
-        <a href="mailto:nheger@orionsolutionsgroup.net">nheger@orionsolutionsgroup.net</a>
+        {{summaryNicoleHeger1}}
+        <br/><br/>
+        {{summaryNicoleHeger1}}
       </p>
     </div>
 
   </div>
-  <!-- Nicole Heger Row END -->
+  <!-- Nav Sections END -->
 
 </div>

@@ -5,7 +5,8 @@ import { Router, NavigationEnd } from '@angular/router';
     moduleId: module.id,
     templateUrl: 'consulting.component.html',
     styleUrls: ['consulting.component.css',
-                '../app.component.css',]
+                '../app.component.css',
+                '../font-awesome/css/fontawesome-all.min.css']
 
 })
 

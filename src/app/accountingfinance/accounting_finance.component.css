@@ -1,10 +1,22 @@
-.o-case-description{
-    padding:20px 15px;
-    border:1px solid black;
-    border-radius: 5px;
-    margin:10px 0;
+
+.o-card > div {
+  box-shadow:0 0 3px;
+  padding:15px;
+  margin-top:30px;
+  background-color: white;
+  color:black;
+  font-size: 16px;
+  border-top: 5px solid #3b7096;
 }
-.o-case-description:hover{
-    cursor: pointer;
-    background-color: #f5f4fc;
+
+.nav-pills > li > a {
+  margin: 5px;
+  background-color: #f3f3f3;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #337ab7;
 }

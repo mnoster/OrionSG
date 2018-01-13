@@ -9,7 +9,14 @@
   font-size:16px;
 }
 
-/* HEREEEEE */
+.o-jumbotron .o-home-header-grey-bg {
+  background-color: rgba(189, 188, 188, 0.75);
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding: 10px;
+}
+
 #o-values-section{
   padding: 10px 15px;
   /*background: url("../../assets/images/escheresque-dark.png") center center fixed;*/
@@ -537,6 +544,7 @@
   }
   .section-info-presentation .col-sm-4 {
     padding: 100px 30px 100px 30px;
+    height: auto;
   }
 }
 
@@ -562,7 +570,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 body{margin:0;}
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
-h1{font-size:2em;margin:0.67em 0;}
+/* h1{font-size:2em;margin:0.67em 0;} */
 abbr[title]{border-bottom:1px dotted;}
 b,strong{font-weight:bold;}
 dfn{font-style:italic;}

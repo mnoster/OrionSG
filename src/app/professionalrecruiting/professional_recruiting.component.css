@@ -1,0 +1,9 @@
+.o-card > div {
+  box-shadow:0 0 3px;
+  padding:15px;
+  margin-top:30px;
+  background-color: white;
+  color:black;
+  font-size: 16px;
+  border-top: 5px solid #3b7096;
+}

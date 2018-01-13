@@ -1,1 +1,2 @@
-export const DEV_URL =  "http://54.214.218.202";
+export const DEV_URL =  "https://54.187.154.6";
+//export const DEV_URL =  "https://localhost:7788";
