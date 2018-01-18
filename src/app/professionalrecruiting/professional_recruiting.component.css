@@ -7,3 +7,9 @@
   font-size: 16px;
   border-top: 5px solid #3b7096;
 }
+
+@media (min-width: 992px) {
+  .o-height-450 {
+    height: 450px;
+  }
+}
