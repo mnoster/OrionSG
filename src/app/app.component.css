@@ -64,12 +64,14 @@ footer p{
 }
 .fs-16{font-size: 16px}
 .fs-18{font-size: 18px}
+.fs-30{font-size: 30px}
+.fs-20{font-size: 20px}
 .white{color:white !important}
-.p-20{ padding: 20px;}
+.p-20{ padding: 20px !important;}
 .p-40{ padding: 40px;}
 .p-100{padding:100px 0;}
-.pt-50{padding-top:50px;}
-.pb-50{padding-bottom:50px;}
+.pt-50{padding-top:50px !important;}
+.pb-50{padding-bottom:50px !important;}
 .pb-100{padding-bottom:100px;}
 .pb-30{padding-bottom:30px;}
 .pt-100{padding-top:100px;}
@@ -82,7 +84,8 @@ footer p{
 .mt-50{ margin-top:50px; }
 .mb-25{ margin-bottom:25px; }
 .mb-45{ margin-bottom:45px; }
-
+.min-h-155{min-height:155px;}
+.text-cetner{text-align: center;}
 .o-border-radius-10 {
   border-radius: 10px;
   -webkit-border-radius: 10px;
