@@ -20,9 +20,16 @@
 #o-container-vision {
    font-family: 'Roboto', sans-serif;
 }
-
+.o-values-section-title{
+    color: white;
+    text-shadow: 0 0 1px black;
+    background: rgba(0,0,0,.35);
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+}
 #o-container-vision .o-split-container-blue {
-  background-color: rgba(255,255,255,0.72);
+  background-color: rgba(255,255,255,0.9);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #7eaaa9;
@@ -56,4 +63,5 @@
 
 #o-container-vision .o-vision-values {
   background: url("/assets/images/office.jpg") no-repeat center top fixed;
+  background-position-y: 98px;
 }
