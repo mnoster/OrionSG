@@ -22,6 +22,12 @@
   background-color: rgba(43, 87,134, 0.15);
 }
 
+#o-navbar-brand {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+}
+
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   opacity: 0.8;
@@ -55,5 +61,10 @@
   .navbar-brand {
     height: 63px;
     margin-top: 0px;
+  }
+  #o-navbar-brand {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px 15px;
   }
 }

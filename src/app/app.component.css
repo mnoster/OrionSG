@@ -119,10 +119,57 @@ footer p{
   background-position-y: -590px;*/
   height:200px;
 }
-.o-jumbotron .container {
-  padding-top:110px;
-
+.o-jumbotron .o-home-header-grey-bg {
+  background-color: rgba(59, 111, 149, .5);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
 }
+.o-jumbotron .container {
+  padding-top: 130px;
+}
+
+@media (max-width: 767px) {
+  .o-jumbotron .container {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 615px) {
+  .o-jumbotron .container {
+    padding-top: 85px;
+  }
+}
+
+@media (max-width: 560px) {
+  .o-jumbotron .container {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .o-jumbotron .container h1,
+  .o-jumbotron .container h1 span {
+    font-size: 28px;
+  }
+  .o-jumbotron .container h3,
+  .o-jumbotron .container h3 span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 332px) {
+  .o-jumbotron .container h1,
+  .o-jumbotron .container h1 span {
+    font-size: 23px;
+  }
+  .o-jumbotron .container h3,
+  .o-jumbotron .container h3 span {
+    font-size: 13px;
+  }
+}
+
 .o-jumbotron h1, .o-jumbotron-small h1,
 .o-jumbotron h3, .o-jumbotron-small h3  {
   font-family:'Nunito', sans-serif;
@@ -228,7 +275,7 @@ font-size: 20px;
   font-weight: bold;
 }
 
-.card{
+.o-card {
   box-shadow:0 0 3px;
   padding:15px;
   margin-top:30px;
@@ -252,9 +299,6 @@ font-size: 20px;
   padding: 30px 15px;
 }
 
-.navbar-brand{
-  margin-top: 11px;
-}
 a {
   cursor: pointer;
 }

@@ -2,16 +2,6 @@
  * Styles for Our Team Component
  */
 
-.o-card {
-  box-shadow:0 0 3px;
-  padding:15px;
-  margin-top:30px;
-  background-color: white;
-  color:black;
-  font-size: 16px;
-  border-top: 5px solid #3b7096;
-}
-
 #o-ourteam-container{
   margin-top: 50px;
   font-family: 'Roboto', sans-serif;
@@ -23,6 +13,7 @@
   position: relative;
   margin-bottom: 20px;
   width: 100%;
+  min-height: 320px;
 }
 #our-team-carousel .scrolls {
   overflow-x: scroll;

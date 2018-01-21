@@ -1,23 +1,36 @@
 <!-- Navbar -->
 <nav class="navbar navbar-fixed-top o-navbar-orion navbar-default bg-inverse">
     <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" routerLink="/"><img height="33" src="../../assets/images/orion_logo.png" alt="Orion"></a>
+
+          <a id="o-navbar-brand" class="navbar-brand" routerLink="/">
+            <img height="40" src="../../assets/images/orion_logo.png" alt="Orion">
+          </a>
         </div>
+
         <div class="collapse navbar-collapse nav-collapse" id="myNavbar">
           <!-- Main Navigation -->
           <ul class="nav navbar-nav navbar-right" routerLinkActive="active">
               <li data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse" data-target=".nav-collapse.in">
-                <a routerLink="home" class="nav-link">{{home}}</a>
+                <a routerLink="home" class="nav-link">
+                  {{home}}
+                </a>
+              </li>
+              <li data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse" data-target=".nav-collapse.in">
+                <a routerLink="jobs" class="nav-link">
+                  Open Positions
+                </a>
               </li>
                <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">
-                  {{about}} <span class="caret"></span>
+                  {{about}}
+                  <span class="caret"></span>
                 </a>
 
                 <ul class="dropdown-menu">
@@ -46,9 +59,6 @@
                       </li>
                       <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
                         <a routerLink="professionalrecruiting" class="nav-link">Orion as your Recruiter</a>
-                      </li>
-                      <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                        <a routerLink="jobs" class="nav-link">Open Positions</a>
                       </li>
                   </ul>
               </li>

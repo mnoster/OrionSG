@@ -16,6 +16,13 @@ export class HomeComponent implements OnInit {
     loading: boolean = false;
     users: User[] = [];
     page_type:string;
+    orion_mission: String = "Orion Solutions Group exists to provide clients "
+                          + "with an outstanding experience for all their human "
+                          + "capital needs – project delivery, contract staffing "
+                          + "and professional recruiting. Clients and Candidates "
+                          + "work with us because of our unrelenting commitment "
+                          + "to their success.";
+                          
     // constructor(private userService: UserService, private route: ActivatedRoute, private router: Router) {
     constructor(private userService: UserService, private  contentService:ContentService) {
         //this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
