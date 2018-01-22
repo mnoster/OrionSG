@@ -3,8 +3,8 @@
 }
 /* Vision Header */
 .o-header {
-  background: url(../../assets/images/office.jpg) no-repeat center top fixed;
-  background-color: #fff;
+/*  background: url(../../assets/images/office.jpg) no-repeat center top fixed;
+*/  background-color: #fff;
   background-position-y: -440px;
   color: inherit;
   height: 200px;
@@ -21,9 +21,6 @@
    font-family: 'Roboto', sans-serif;
 }
 .o-values-section-title{
-    color: white;
-    text-shadow: 0 0 1px black;
-    background: rgba(0,0,0,.35);
     padding: 10px 40px;
     display: inline-block;
     border-radius: 5px;
@@ -62,6 +59,6 @@
 }
 
 #o-container-vision .o-vision-values {
-  background: url("/assets/images/office.jpg") no-repeat center top fixed;
-  background-position-y: 98px;
+/*  background: url("/assets/images/office.jpg") no-repeat center top fixed;
+*/  background-position-y: 98px;
 }
