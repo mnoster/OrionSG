@@ -19,10 +19,9 @@
 #o-history-timeline {
   box-sizing: border-box;
   background: #eaf3ff;
-  background: url(/assets/images/sky.jpg) no-repeat center fixed;
-  background-position-y: 355px;
+/*  background: url(/assets/images/green_blue.jpg) no-repeat center fixed;
+*/  background-size: 146%;
   background-color: #99dfff30;
-  background-size: 119%;
 }
 
 /* The actual timeline (the vertical ruler) */
