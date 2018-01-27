@@ -20,4 +20,5 @@
 1. cd into orion/server
 2. type "node server.js"
 
-## Codeship Deployment setup with s3 & ELB
+## Codeship Deployment 
+1. setup with s3 & ELB
