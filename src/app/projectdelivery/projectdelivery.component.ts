@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 
 export class ProjectDeliveryComponent {
-  title = "Project Delivery Landing Page";
+  title = "Project Delivery";
 
   constructor(private router: Router) { }
 

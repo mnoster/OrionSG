@@ -4,24 +4,15 @@
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Alegreya Sans', sans-serif;*/
 
-*{
+div{
   font-family: 'Quicksand', sans-serif;
   font-size:16px;
-}
-
-.o-jumbotron .o-home-header-grey-bg {
-  background-color: rgba(59, 111, 149, .5);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  font-size: inherit;
 }
 
 #o-values-section{
   padding: 10px 15px;
   /*background: url("../../assets/images/escheresque-dark.png") center center fixed;*/
   background-color: #fffcfa;
-
 }
 
 .o-home-container {

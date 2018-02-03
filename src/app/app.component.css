@@ -64,29 +64,34 @@ footer p{
 }
 .fs-16{font-size: 16px}
 .fs-18{font-size: 18px}
+.fs-30{font-size: 30px}
+.fs-20{font-size: 20px}
 .white{color:white !important}
-.p-20{ padding: 20px;}
+.p-20{ padding: 20px !important;}
 .p-40{ padding: 40px;}
 .p-100{padding:100px 0;}
-.pt-50{padding-top:50px;}
-.pb-50{padding-bottom:50px;}
+.pt-50{padding-top:50px !important;}
+.pb-50{padding-bottom:50px !important;}
 .pb-100{padding-bottom:100px;}
 .pb-30{padding-bottom:30px;}
 .pt-100{padding-top:100px;}
 .ps-20{ padding-left: 20px; padding-right: 20px; }
 .ps-40{ padding-left: 40px; padding-right: 40px;}
+.mt-10{margin-top:10px; display:inline-block;}
+.mt-20{margin-top:20px; display:inline-block;}
 .m-25{margin:25px 0;}
 .m-50{margin:50px 0;}
 .mt-20{ margin-top:20px; }
 .mt-25{ margin-top:25px; }
 .mt-50{ margin-top:50px; }
 .mb-25{ margin-bottom:25px; }
+.mb-20{ margin-bottom:20px; }
 .mb-45{ margin-bottom:45px; }
-
 .o-vertical-align-top {
   vertical-align: top;
 }
-
+.min-h-155{min-height:155px;}
+.text-cetner{text-align: center;}
 .o-border-radius-10 {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -122,6 +127,13 @@ footer p{
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
   height:200px;
+}
+.o-jumbotron .o-home-header-grey-bg {
+  background-color: rgba(59, 111, 149, .5);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
 }
 .o-jumbotron .container {
   padding-top: 130px;
@@ -272,7 +284,7 @@ font-size: 20px;
   font-weight: bold;
 }
 
-.card{
+.o-card {
   box-shadow:0 0 3px;
   padding:15px;
   margin-top:30px;
