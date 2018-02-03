@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class ProfessionalRecruitingComponent {
-    title = "Professional Recruiting";
+    title = "Orion as Your Recruiter";
 }
