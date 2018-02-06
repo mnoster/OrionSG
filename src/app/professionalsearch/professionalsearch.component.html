@@ -1,4 +1,7 @@
 <link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+<style>
+  li{list-style-type: none}
+</style>
 <div class="o-jumbotron-small">
     <div class="container text-center">
         <h1>{{title}}</h1>
@@ -6,16 +9,16 @@
     </div>
 </div>
 <subnavigation></subnavigation>
-<div class="t-center mt-25" style="font-size: 20px;"> 
-  <a routerLink="/professionalsearch" >Professional Search </a>&nbsp; | &nbsp;          
-  <a routerLink="/contingentsearch" >Contingent Search </a>&nbsp; | &nbsp; 
-  <a routerLink="/retainedsearch" >Retained Search </a> 
+<div class="t-center mt-25 mb-25" style="font-size: 20px;"> 
+  <a routerLink="/professionalsearch" ><button class="btn-light btn btn-default btn-lg">Professional Search</button> </a>&nbsp;  &nbsp;          
+  <a routerLink="/contingentsearch" ><button class="btn-light btn btn-default btn-lg">Contingent Search </button></a>&nbsp;  &nbsp; 
+  <a routerLink="/retainedsearch" ><button class="btn-light btn btn-default btn-lg">Retained Search</button> </a> 
 </div>
-<div class="container o-main-container mt-20">
+<div class="container">
 
     <div class="row">
 
-        <div class="col-md-10 col-md-offset-2 col-xs-12">
+        <div class="col-xs-12">
 
           <p style="font-family: 'Nunito';font-size: 20px;text-align: center;">
             Orion brings a fresh approach to Professional Recruiting – with
@@ -29,7 +32,7 @@
           </p></div>
           <br/><br/>
           <hr/>
-          <div class="col-md-8 col-md-offset-2 col-xs-12 qs">
+          <div class="col-xs-10 qs">
 
           <h3>Client Pledge</h3>
           <div>
@@ -77,88 +80,111 @@
               </li>
             </ol>
           </div>
-          <div>
-            <h3>Examples of Orion Professional Recruiting engagements have included:</h3>
-            <ul>
-              <li>Accounting &amp; Finance</li>
-              <ul>
-                <li>VP of Finance</li>
-                <li>Corporate Controller</li>
-                <li>Tax Director</li>
-                <li>Director of Financial Reporting</li>
-                <li>Financial Analyst</li>
-                <li>VP Technical Accounting</li>
-                <li>Finance Manager</li>
-                <li>Accounting Manager</li>
-                <li>Global Treasury Senior Analyst</li>
-                <li>Tax Manager</li>
-                <li>Senior Manager - Payroll Operations</li>
-                <li>Senior International Tax Analyst</li>
-                <li>Regional Accountant</li>
-                <li>Treasury Operations Manager</li>
-                <li>State Tax Manager</li>
-                <li>Cost Analyst</li>
-              </ul>
+          <div >
+            <h3 class="mt-50">Examples of Orion Professional Recruiting engagements have included:</h3>
+            <ul >
+              <div class="row o-card">
+                <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Accounting &amp; Finance</li>
+                <hr/>
 
-              <li>Audit, Risk &amp; Compliance</li>
               <ul>
-                <li>Internal Audit Director</li>
-                <li>Internal Control (SOX) Manager</li>
-                <li>Regulatory Services Manager</li>
-                <li>Fraud &amp; Financial Audit Manager</li>
-                <li>Senior Compliance Auditor</li>
-                <li>Senior Internal Auditor</li>
-                <li>AML &amp; Anti-Corruption Compliance Analyst</li>
-                <li>Document Compliance Specialist</li>
+                <li>- VP of Finance</li>
+                <li>- Corporate Controller</li>
+                <li>- Tax Director</li>
+                <li>- Director of Financial Reporting</li>
+                <li>- Financial Analyst</li>
+                <li>- VP Technical Accounting</li>
+                <li>- Finance Manager</li>
+                <li>- Accounting Manager</li>
+                <li>- Global Treasury Senior Analyst</li>
+                <li>- Tax Manager</li>
+                <li>- Senior Manager - Payroll Operations</li>
+                <li>- Senior International Tax Analyst</li>
+                <li>- Regional Accountant</li>
+                <li>- Treasury Operations Manager</li>
+                <li>- State Tax Manager</li>
+                <li>- Cost Analyst</li>
               </ul>
-
-              <li>IT Audit &amp; Security</li>
+            </div>
+              <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Audit, Risk &amp; Compliance</li>
+              <hr/>
+              <ul >
+                <li>- Internal Audit Director</li>
+                <li>- Internal Control (SOX) Manager</li>
+                <li>- Regulatory Services Manager</li>
+                <li>- Fraud &amp; Financial Audit Manager</li>
+                <li>- Senior Compliance Auditor</li>
+                <li>- Senior Internal Auditor</li>
+                <li>- AML &amp; Anti-Corruption Compliance Analyst</li>
+                <li>- Document Compliance Specialist</li>
+              </ul>
+            </div>
+            </div>
+             <div class="row o-card">
+                <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">IT Audit &amp; Security</li>
+              <hr/>
               <ul>
-                <li>IT Audit Manager</li>
-                <li>Data Privacy &amp; Protection Manager</li>
-                <li>Senior Security Specialist</li>
-                <li>IT Auditor</li>
-                <li>SAP IT Audit Manager</li>
-                <li>Advanced IT Auditor</li>
+                <li>- IT Audit Manager</li>
+                <li>- Data Privacy &amp; Protection Manager</li>
+                <li>- Senior Security Specialist</li>
+                <li>- IT Auditor</li>
+                <li>- SAP IT Audit Manager</li>
+                <li>- Advanced IT Auditor</li>
               </ul>
-
-              <li>Human Resources</li>
+              </div>
+               <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Human Resources</li>
+            <hr/>
               <ul>
-                <li>Global Function HR Business Partner</li>
-                <li>Compensation Analyst</li>
-                <li>Training Design Manager</li>
-                <li>Process Excellence Service Design Manager</li>
-                <li>Instructional Design Specialist</li>
-                <li>Senior Learning &amp; Development Specialist</li>
-                <li>Process Excellence Senior Manager</li>
+                <li>- Global Function HR Business Partner</li>
+                <li>- Compensation Analyst</li>
+                <li>- Training Design Manager</li>
+                <li>- Process Excellence Service Design Manager</li>
+                <li>- Instructional Design Specialist</li>
+                <li>- Senior Learning &amp; Development Specialist</li>
+                <li>- Process Excellence Senior Manager</li>
               </ul>
-
-              <li>Sales &amp; Marketing</li>
+              </div>
+            </div>
+              <div class="row o-card">
+                <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Sales &amp; Marketing</li>
+            <hr/>
               <ul>
-                <li>VP of Strategy</li>
-                <li>Managing Director</li>
-                <li>Inside Sales</li>
-                <li>Business Development Associate</li>
+                <li>- VP of Strategy</li>
+                <li>- Managing Director</li>
+                <li>- Inside Sales</li>
+                <li>- Business Development Associate</li>
               </ul>
-
-              <li>Supply Chain</li>
+            </div>
+              <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Supply Chain</li>
+              <hr/>
               <ul>
-                <li>Senior Supply Chain Analyst</li>
-                <li>Manager of Supply Chain Systems</li>
-                <li>Buyer</li>
+                <li>- Senior Supply Chain Analyst</li>
+                <li>- Manager of Supply Chain Systems</li>
+                <li>- Buyer</li>
               </ul>
-
-              <li>Data Analytics</li>
+              </div>
+            </div>
+              <div class="row o-card">
+                <div class="col-xs-12 col-sm-6">
+              <li class="fs-18 t-center">Data Analytics</li>
+              <hr/>
               <ul>
-                <li>Risk Analyst – Advanced Analytics</li>
-                <li>Senior Commercial Risk Analyst</li>
-                <li>Senior Analyst – Loss Forecasting and Reserves</li>
-                <li>Risk Administration and PMO Specialist</li>
-                <li>Customer Experience Research Analyst</li>
-                <li>Analytics Solution Analyst</li>
-                <li>Actuarial Analyst</li>
+                <li>- Risk Analyst – Advanced Analytics</li>
+                <li>- Senior Commercial Risk Analyst</li>
+                <li>- Senior Analyst – Loss Forecasting and Reserves</li>
+                <li>- Risk Administration and PMO Specialist</li>
+                <li>- Customer Experience Research Analyst</li>
+                <li>- Analytics Solution Analyst</li>
+                <li>- Actuarial Analyst</li>
               </ul>
-
+            </div>
+          </div>
             </ul>
           </div>
           <p>
