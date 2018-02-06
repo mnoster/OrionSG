@@ -107,7 +107,9 @@ footer p{
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
+.btn-light {
+    background-color: #e0e9f1;
+}
 /* Styles for Top Jumbotron Container */
 .o-jumbotron {
     color: inherit;
