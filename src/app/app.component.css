@@ -317,6 +317,12 @@ font-size: 20px;
   padding: 30px 15px;
 }
 
+.o-tab-title {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 a {
   cursor: pointer;
 }
