@@ -5,7 +5,9 @@
   background-color: white;
   color:black;
   font-size: 16px;
+  border: 1px solid #c3c3c3;
   border-top: 5px solid #3b7096;
+  border-radius: 5px;
 }
 
 .nav-pills > li > a {

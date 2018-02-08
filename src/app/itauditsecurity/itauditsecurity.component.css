@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+  #it-third-color-section .af-three-section {
+    font-size: 18px;
+  }
+}
+
+.btn-tabs {
+  color: #ffffff;
+  background-color: #337ab7;
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: default;
+}
