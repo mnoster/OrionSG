@@ -14,6 +14,11 @@ a:active {
   background-color: #fcfcfc;
   min-height: 100vh;
 }
+.o-main-container-small {
+  margin: 50px 0 0 0;
+  background-color: #fcfcfc;
+  min-height: 70vh;
+}
 .o-header {
   height: 200px;
   color: inherit;
@@ -440,8 +445,8 @@ hr.o-hr-blue {
 }
 
 .af-three-section {
-  height: 120px;
-  padding: 15px;
+    min-height: 151px;
+    padding: 33px 15px 26px 16px;
 }
 
 .af-three-section.af-three-section-left {

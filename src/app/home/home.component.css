@@ -41,7 +41,8 @@ div{
 }
 
 #o-our-mission-section {
-  background: url(../../assets/images/our_mission.jpg) no-repeat center center fixed;
+/*  background: url(../../assets/images/our_mission.jpg) no-repeat center center fixed;
+*/  background-color:#c9dcf0;
   min-height: 530px;
   background-position: left center;
   background-size: cover;
@@ -286,8 +287,8 @@ div{
 @media (max-width: 767px) {
   #o-our-mission-section {
     padding: 24px 0;
-    background-image: url(../../assets/images/our_mission.jpg);
-  }
+/*    background-image: url(../../assets/images/our_mission.jpg);
+*/  }
 
   #o-our-mission-section .container {
     width: 100%;
@@ -305,8 +306,8 @@ div{
 
 @media (max-width: 1300px) {
   #o-our-mission-section {
-    background-image: url(../../assets/images/our_mission.jpg);
-  }
+/*    background-image: url(../../assets/images/our_mission.jpg);
+*/  }
 }
 
 @media (max-width: 1249px) {
@@ -440,8 +441,8 @@ div{
 .section-info-presentation {
   padding: 0;
   overflow: hidden;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 77px;
+  margin-bottom: 77px;
 }
 
 .info-pricing .icon {
