@@ -445,8 +445,8 @@ hr.o-hr-blue {
 }
 
 .af-three-section {
-    min-height: 151px;
-    padding: 33px 15px 26px 16px;
+  min-height: 151px;
+  padding: 33px 15px 26px 16px;
 }
 
 .af-three-section.af-three-section-left {
@@ -473,6 +473,7 @@ hr.o-hr-blue {
 
   .af-three-section {
     height: auto;
+    min-height: 0;
     padding: 0px 15px;
   }
 
