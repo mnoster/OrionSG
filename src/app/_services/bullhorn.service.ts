@@ -18,14 +18,14 @@ export class BullhornService {
                     (res) => {
                         resolve(res);
                     }
-                );
-        });
-        return promise;
+                )
+        })
+        return promise
     }
 
-    attachResume(resume:any, candidate_id:any) {
+    attachResume(resume:any, candidate_id:any, file_type:string) {
         let promise = new Promise((resolve, reject) => {
-            this.http.post(_URL + "/bhorn/attach_resume", { resume , candidate_id }, this.config )
+            this.http.post(_URL + "/bhorn/attach_resume", { resume , candidate_id, file_type }, this.config )
                 .toPromise()
                 .then(
                     (res) => {
@@ -33,12 +33,12 @@ export class BullhornService {
                     }
                 );
         });
-        return promise;
+        return promise
     }
 
     getJobs(id:string) {
-        if(id) return this.getJobById(id);
-        else return this.getAllJobs();
+        if(id) return this.getJobById(id)
+        else return this.getAllJobs()
     }
 
     //not being used currently
