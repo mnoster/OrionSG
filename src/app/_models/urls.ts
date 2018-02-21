@@ -1,2 +1,2 @@
-export const DEV_URL =  "http://orionsolutionsgroup-back.us-west-2.elasticbeanstalk.com";
-//export const DEV_URL =  "https://localhost:7788";
+// export const _URL =  "http://orionsolutionsgroup-back.us-west-2.elasticbeanstalk.com";
+export const _URL =  "http://localhost:7788";

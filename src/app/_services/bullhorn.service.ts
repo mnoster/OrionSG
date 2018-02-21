@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers, RequestOptions, Response} from '@angular/http';
-import {DEV_URL} from "../_models/urls";
+import {_URL} from "../_models/urls";
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
@@ -12,7 +12,7 @@ export class BullhornService {
 
     parseResume(resume:any) {
         let promise = new Promise((resolve, reject) => {
-            this.http.post(DEV_URL + "/bhorn/parse_resume", {resume}, this.config )
+            this.http.post(_URL + "/bhorn/parse_resume", {resume}, this.config )
                 .toPromise()
                 .then(
                     (res) => {
@@ -25,7 +25,7 @@ export class BullhornService {
 
     attachResume(resume:any, candidate_id:any) {
         let promise = new Promise((resolve, reject) => {
-            this.http.post(DEV_URL + "/bhorn/attach_resume", { resume , candidate_id }, this.config )
+            this.http.post(_URL + "/bhorn/attach_resume", { resume , candidate_id }, this.config )
                 .toPromise()
                 .then(
                     (res) => {
@@ -44,7 +44,7 @@ export class BullhornService {
     //not being used currently
     getJobById(id:string){
         let promise = new Promise((resolve, reject) => {
-            this.http.post(DEV_URL + "/bhorn/jobs/id", JSON.stringify({job_id:id}) ,this.config)
+            this.http.post(_URL + "/bhorn/jobs/id", JSON.stringify({job_id:id}) ,this.config)
                 .toPromise()
                 .then(
                     (res) => {
@@ -57,7 +57,7 @@ export class BullhornService {
 
     getAllJobs(){
         let promise = new Promise((resolve, reject) => {
-            this.http.get(DEV_URL + "/bhorn/jobs", this.config)
+            this.http.get(_URL + "/bhorn/jobs", this.config)
                 .toPromise()
                 .then(
                     (res) => {
@@ -69,12 +69,12 @@ export class BullhornService {
     }
 
     submitResume(){
-        return this.http.post(DEV_URL + "/bhorn", this.config);
+        return this.http.post(_URL + "/bhorn", this.config);
     }
 
     createCandidate(data:any){
         let promise = new Promise((resolve, reject) => {
-            this.http.put(DEV_URL + "/bhorn/create_candidate", JSON.stringify(data), this.config)
+            this.http.put(_URL + "/bhorn/create_candidate", JSON.stringify(data), this.config)
                 .toPromise()
                 .then(
                     (res) => {

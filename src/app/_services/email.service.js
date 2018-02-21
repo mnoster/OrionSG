@@ -21,7 +21,7 @@ var EmailService = (function () {
     EmailService.prototype.emailApplicant = function (email, job_title, url) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.post(urls_1.DEV_URL + "/email", { email: email, job_title: job_title, url: url }, _this.config)
+            _this.http.post(urls_1._URL + "/email", { email: email, job_title: job_title, url: url }, _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);

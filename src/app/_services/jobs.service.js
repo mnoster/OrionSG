@@ -18,17 +18,17 @@ var JobsService = (function () {
         this.config = { headers: { 'Content-Type': 'application/json' } };
     }
     JobsService.prototype.getAll = function () {
-        return this.http.get(urls_1.DEV_URL + '/jobs/get', this.config);
+        return this.http.get(urls_1._URL + '/jobs/get', this.config);
     };
     JobsService.prototype.create = function (job) {
         console.log("job call:", job);
-        return this.http.post(urls_1.DEV_URL + '/jobs/create', JSON.stringify(job), this.config);
+        return this.http.post(urls_1._URL + '/jobs/create', JSON.stringify(job), this.config);
     };
     JobsService.prototype.update = function (job) {
-        return this.http.put(urls_1.DEV_URL + '/jobs/update', job, this.jwt()).map(function (response) { return response.json(); });
+        return this.http.put(urls_1._URL + '/jobs/update', job, this.jwt()).map(function (response) { return response.json(); });
     };
     JobsService.prototype.delete = function (id) {
-        return this.http.delete(urls_1.DEV_URL + '/jobs/delete' + id, this.jwt()).map(function (response) { return response.json(); });
+        return this.http.delete(urls_1._URL + '/jobs/delete' + id, this.jwt()).map(function (response) { return response.json(); });
     };
     // private helper methods
     JobsService.prototype.jwt = function () {
