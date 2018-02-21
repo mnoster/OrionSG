@@ -9,3 +9,13 @@
 #o-examples .o-card.o-card-2{
     min-height: 155px;
 }
+
+.contract-staffing-icon {
+  margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  .contract-staffing-icon {
+    margin-top: 30px;
+  }
+}
