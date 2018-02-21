@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers, RequestOptions, Response} from '@angular/http';
-import {DEV_URL} from "../_models/urls";
+import {_URL} from "../_models/urls";
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
@@ -11,7 +11,7 @@ export class EmailService {
 
     emailApplicant(email: string, job_title: string, url: string, applicant_data:any, resume:any) {
         let promise = new Promise((resolve, reject) => {
-            this.http.post(DEV_URL + "/email", {email, job_title, url, applicant_data, resume}, this.config)
+            this.http.post(_URL + "/email", {email, job_title, url, applicant_data, resume}, this.config)
                 .toPromise()
                 .then(
                     (res) => {

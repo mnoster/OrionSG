@@ -22,7 +22,7 @@ var BullhornService = (function () {
     BullhornService.prototype.parseResume = function (resume) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.post(urls_1.DEV_URL + "/bhorn/parse_resume", { resume: resume }, _this.config)
+            _this.http.post(urls_1._URL + "/bhorn/parse_resume", { resume: resume }, _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);
@@ -33,7 +33,7 @@ var BullhornService = (function () {
     BullhornService.prototype.attachResume = function (resume, candidate_id) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.post(urls_1.DEV_URL + "/bhorn/attach_resume", { resume: resume, candidate_id: candidate_id }, _this.config)
+            _this.http.post(urls_1._URL + "/bhorn/attach_resume", { resume: resume, candidate_id: candidate_id }, _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);
@@ -51,7 +51,7 @@ var BullhornService = (function () {
     BullhornService.prototype.getJobById = function (id) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.post(urls_1.DEV_URL + "/bhorn/jobs/id", JSON.stringify({ job_id: id }), _this.config)
+            _this.http.post(urls_1._URL + "/bhorn/jobs/id", JSON.stringify({ job_id: id }), _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);
@@ -62,7 +62,7 @@ var BullhornService = (function () {
     BullhornService.prototype.getAllJobs = function () {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.get(urls_1.DEV_URL + "/bhorn/jobs", _this.config)
+            _this.http.get(urls_1._URL + "/bhorn/jobs", _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);
@@ -71,12 +71,12 @@ var BullhornService = (function () {
         return promise;
     };
     BullhornService.prototype.submitResume = function () {
-        return this.http.post(urls_1.DEV_URL + "/bhorn", this.config);
+        return this.http.post(urls_1._URL + "/bhorn", this.config);
     };
     BullhornService.prototype.createCandidate = function (data) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            _this.http.put(urls_1.DEV_URL + "/bhorn/create_candidate", JSON.stringify(data), _this.config)
+            _this.http.put(urls_1._URL + "/bhorn/create_candidate", JSON.stringify(data), _this.config)
                 .toPromise()
                 .then(function (res) {
                 resolve(res);
