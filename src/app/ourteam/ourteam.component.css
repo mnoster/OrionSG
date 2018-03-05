@@ -2,6 +2,20 @@
  * Styles for Our Team Component
  */
 
+.contact-card {
+  padding: 40px 20px;
+}
+.contact-card .o-card {
+  float: left
+}
+@media (min-width: 768px) {
+  /* .contact-card .col-sm-1, .contact-card .col-sm-10, .contact-card .col-sm-11,
+  .contact-card .col-sm-12, .contact-card .col-sm-2, .contact-card .col-sm-3,
+  .contact-card .col-sm-4, .contact-card .col-sm-5, .contact-card .col-sm-6,
+  .contact-card .col-sm-7, .contact-card .col-sm-8, .contact-card .col-sm-9 {
+    float: none;
+  } */
+}
 .contact-card .col-md-3 img {
   height: 240px;
 }
