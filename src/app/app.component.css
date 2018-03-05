@@ -49,25 +49,40 @@ a:active {
 }
 
 footer {
-  /*background-color: #f2f2f2;*/
   padding: 13px 25px;
   padding: 20px;
   font-size: 14px;
-  text-align: center;
-  color:black;
+  color: #ffffff;
+  background-color: #6d90ab;
 }
-footer .container{
-    padding:20px 0;
-    border-top: 1px solid #ddd;
+footer .footer-container .row .col-sm-12 {
+  padding-top: 10px;
+  padding-bottom: 10px
 }
-footer a{
+footer .footer-container .row .col-sm-4 {
+  margin-bottom: 20px
+}
+footer .container.footer-container {
+  padding:20px 0;
+}
+footer .footer-container h4 {
+
+}
+footer .footer-container a{
   font-family: 'Roboto', sans-serif;
+  color: #dddddd;
+  padding: 4px;
 }
-footer p{
+footer .footer-container a:hover {
+  color: #ffffff;
+}
+footer .footer-container p {
   text-align:right;
   margin-bottom:1px;
 }
-
+footer .footer-container a i.fab {
+  font-size: 30px
+}
 .o-card {
   box-shadow:0 0 3px;
   padding:15px;
@@ -78,6 +93,44 @@ footer p{
   border: 1px solid #c3c3c3;
   border-top: 5px solid #3b7096;
   border-radius: 5px;
+}
+
+.o-card-plain {
+  box-shadow:0 0 3px;
+  padding:15px;
+  margin-top:30px;
+  background-color: white;
+  color:black;
+  font-size: 16px;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+  .o-card.o-extra-padding,
+  .o-card-plain.o-extra-padding {
+    padding: 30px
+  }
+
+}
+
+hr.blue-hr {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0px 0 5px 2px #3b6f96;
+  width: 50%;
+  border: 3px solid #3b6f96;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  hr.blue-hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+hr.blue-hr:after {  /* Not really supposed to work, but does */
+  content: "\00a0";  /* Prevent margin collapse */
 }
 
 .fs-16{font-size: 16px}
@@ -154,7 +207,7 @@ footer p{
   height:200px;
 }
 .o-jumbotron .o-home-header-grey-bg {
-  background-color: rgba(59, 111, 149, .5);
+  background-color: rgba(59, 111, 149, .8);
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -223,7 +276,7 @@ footer p{
 .o-jumbotron h3, .o-jumbotron-small h3  {
 font-size: 20px;
     display: inline-block;
-    background: rgba(59, 111, 149, .5);
+    background: rgba(59, 111, 149, .7);
     padding: 7px 23px;
     border-radius: 6px;
 }
@@ -515,4 +568,9 @@ hr.o-hr-blue {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
   }
+}
+
+.o-animated-icon {
+  margin-left: 15px;
+  height: 60px;
 }

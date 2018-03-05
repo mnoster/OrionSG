@@ -6,7 +6,8 @@ import { Router, NavigationEnd } from '@angular/router';
     moduleId: module.id,
     selector: 'app',
     templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css']
+    styleUrls: ['app.component.css',
+                './font-awesome/css/fontawesome-all.min.css']
 })
 
 
