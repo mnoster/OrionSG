@@ -35,6 +35,10 @@ a:active {
   font-family: "Quicksand";
   color: #ffffff;
 }
+.o-header .o-header-subtitle {
+  font-size: 18px;
+  color: #fff;
+}
 .o-header .container{
   padding-top:0 !important;
 }
@@ -49,6 +53,7 @@ a:active {
 }
 
 footer {
+  margin-top:20px;
   padding: 13px 25px;
   padding: 20px;
   font-size: 14px;
@@ -361,7 +366,7 @@ font-size: 20px;
 .o-emphasize {
   font-weight: bold;
 }
-.qs{
+body, .qs{
   font-family: 'Quicksand', sans-serif;
 }
 
