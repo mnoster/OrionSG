@@ -47,7 +47,7 @@ export class JobDescriptionComponent implements OnInit {
     formatBullhornData(){
         this.bullhornService.getJobs(null).then(
             (res: any) => {
-                console.log("res: ", JSON.parse(res._body));
+                // console.log("res: ", JSON.parse(res._body));
                 let jobs = JSON.parse(res._body);
                 let jd = jobs.data;
                 for (let i = 0; i < jd.length; i++) {

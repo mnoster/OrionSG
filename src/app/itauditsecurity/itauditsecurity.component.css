@@ -3,23 +3,3 @@
     font-size: 18px;
   }
 }
-
-.btn-tabs {
-  color: #ffffff;
-  background-color: #337ab7;
-  margin: 5px;
-  padding: 10px 15px;
-  cursor: default;
-}
-
-.nav-pills > li > a {
-  margin: 5px;
-  background-color: #f6f6f6;
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #337ab7;
-}

@@ -21,7 +21,7 @@ var HomeComponent = (function () {
         //this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
     HomeComponent.prototype.onAnchorClick = function () {
-        console.log("On anchor click");
+        // console.log("On anchor click");
     };
     HomeComponent.prototype.ngOnInit = function () {
         this.getContent();
@@ -32,9 +32,9 @@ var HomeComponent = (function () {
         this.page_type = "Home";
         this.contentService.getContent(this.page_type)
             .subscribe(function (data) {
-            console.log("Content: ", data);
+            // console.log("Content: ", data);
         }, function (error) {
-            console.log("Content  Error: ", error);
+            // console.log("Content  Error: ", error);
             _this.loading = false;
         });
     };

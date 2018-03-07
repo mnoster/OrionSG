@@ -1,65 +1,67 @@
 <div>
-    <div class="o-search-contain">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div style="text-align: center; margin:45px 0 28px 0;">
-                        <h2 style="font-size: 25px;">Job Search</h2>
-                        <h4>Finding Innovative Ways to Inspire Your Career</h4>
-                    </div>
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="form-group jobs-keywords">
-                            <label class="sr-only" for="q2">Keyword, Title or Company</label>
-                            <div class="input-group">
-                                <img (click)="searchStringInJobsArray()" class="search-icon" src="../../assets/images/search_icon.svg"/>
-                                <span class="input-group-addon"></span>
-                                <span class="twitter-typeahead">
-                                    <input [(ngModel)]="query" (keyup.enter)="searchStringInJobsArray()" type="text" class="form-control o-search-bar" aria-describedby="basic-addon1" maxlength="250" placeholder="Keyword, Title or Company" autocomplete="off" spellcheck="false" dir="auto">
-                                </span>
-                            </div>
-                        </div>
-
-<!--                         <select [ngModel]="selected_category" (ngModelChange)="onChange($event)" class="form control">
-                            <option [disabled] selected disabled [ngValue]="none">Category</option>
-                            <option *ngFor="let category of categories">{{category}}</option>
-                        </select>
-                        <select [ngModel]="selected_location" (ngModelChange)="onChange($event)" class="form control">
-                            <option [disabled] selected disabled [ngValue]="none">Location</option>
-                            <option *ngFor="let location of locations">{{location}}</option>
-                        </select> -->
-                        <!--<span style="color: white;display: inline-block; padding-left:25px;"><span style="color: white"> Relevance <span style="color:deepskyblue"> &nbsp; | &nbsp;</span> Date </span></span>-->
-                    </div>
-                </div>
+  <div class="o-search-contain">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div style="text-align: center; margin:45px 0 28px 0;">
+            <h2 style="font-size: 25px;">Job Search</h2>
+            <h4>Finding Innovative Ways to Inspire Your Career</h4>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="form-group jobs-keywords">
+              <label class="sr-only" for="q2">Keyword, Title or Company</label>
+              <div class="input-group">
+                <img (click)="searchStringInJobsArray()" class="search-icon" src="../../assets/images/search_icon.svg"/>
+                <span class="input-group-addon"></span>
+                <span class="twitter-typeahead">
+                  <input [(ngModel)]="query" (keyup.enter)="searchStringInJobsArray()" type="text" class="form-control o-search-bar" aria-describedby="basic-addon1" maxlength="250" placeholder="Keyword, Title or Company" autocomplete="off" spellcheck="false" dir="auto">
+                </span>
+              </div>
             </div>
+
+              <!-- <select [ngModel]="selected_category" (ngModelChange)="onChange($event)" class="form control">
+                    <option [disabled] selected disabled [ngValue]="none">Category</option>
+                    <option *ngFor="let category of categories">{{category}}</option>
+                </select>
+                <select [ngModel]="selected_location" (ngModelChange)="onChange($event)" class="form control">
+                    <option [disabled] selected disabled [ngValue]="none">Location</option>
+                    <option *ngFor="let location of locations">{{location}}</option>
+                </select> -->
+                <!--<span style="color: white;display: inline-block; padding-left:25px;"><span style="color: white"> Relevance <span style="color:deepskyblue"> &nbsp; | &nbsp;</span> Date </span></span>-->
+          </div>
         </div>
+      </div>
     </div>
-    <div class="" *ngIf="!loader" style="height:500px;padding-top:50px;text-align: center">
-        Loading...
-    </div>
+  </div>
 
-    <div class="o-job-contain" *ngIf="loader">
-        <div class="container">
-            <div class="row">
-                <h3 style="margin-bottom:0">All Results</h3> {{ query ? "for " + query : ''}}
-            </div>
-            <hr/>
-            <div *ngFor="let data of job_data">
-                <div class="row">
-                    <div class="o-job">
-                        <div class="o-job-title">
-                            <a [routerLink]="['/jobs/' + data.job.id]">{{data.job.title}}</a> <span class="o-job-location">&nbsp; {{data.job.location}}</span>
-                        </div>
-                        <div class="o-job-description" [innerHTML]="data.job.truncated | safeHtml">
-                        </div>
+  <div class="" *ngIf="!loader" style="height:500px;padding-top:50px;text-align: center">
+    Loading...
+  </div>
 
-                        <div class="o-job-buttons">
-                            <a style="color:black;text-decoration: none" [routerLink]="['/jobs/' + data.job.id]"><button class="btn btn-default">View Job</button></a>
-                            <a [routerLink]="['/apply/' + data.job.id]" [queryParams]="{'t': data.job.title,'l':data.job.location}"><button class="btn btn-primary">Apply</button></a>
-                        </div>
-                    </div>
-                </div>
-                <hr/>
+  <div class="o-job-contain" *ngIf="loader">
+    <div class="container">
+      <div class="row">
+        <h3 style="margin-bottom:0">All Results</h3> {{ query ? "for " + query : ''}}
+      </div>
+      <hr/>
+      <div *ngFor="let data of job_data">
+        <div class="row">
+          <div class="o-job">
+            <div class="o-job-title">
+              <a [routerLink]="['/jobs/' + data.job.id]">{{data.job.title}}</a> <span class="o-job-location">&nbsp; {{data.job.location}}</span>
             </div>
+            <div class="o-job-description" [innerHTML]="data.job.truncated | safeHtml">
+            </div>
+
+            <div class="o-job-buttons">
+              <a style="color:black;text-decoration: none" [routerLink]="['/jobs/' + data.job.id]"><button class="btn btn-default">View Job</button></a>
+              <a [routerLink]="['/apply/' + data.job.id]" [queryParams]="{'t': data.job.title,'l':data.job.location}"><button class="btn btn-primary">Apply</button></a>
+            </div>
+          </div>
         </div>
+        <hr/>
+      </div>
     </div>
+  </div>
+
 </div>

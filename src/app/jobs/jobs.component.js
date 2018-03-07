@@ -36,7 +36,7 @@ var JobsComponent = (function () {
         }
     };
     JobsComponent.prototype.onChange = function (category) {
-        console.log("selected category: ", category);
+        // console.log("selected category: ", category);
     };
     JobsComponent.prototype.formatBullhornData = function () {
         var _this = this;
@@ -50,7 +50,7 @@ var JobsComponent = (function () {
                 });
             }
             _this.createCategoriesAndLocations(exports.job_data);
-            console.log("JOBS: ", exports.job_data);
+            // console.log("JOBS: ", exports.job_data);
             _this.loader = true;
         });
         exports.data_retrieved = true;
@@ -90,7 +90,7 @@ var JobsComponent = (function () {
                 }
         }
         if (!new_job_data.length)
-            console.log("No match for: ", this.query);
+            // console.log("No match for: ", this.query);
         this.job_data = new_job_data;
         return -1;
     };

@@ -1,30 +1,28 @@
 <div class="container" id="o-job-description">
-    <div class="row" style="margin-top:10px">
+    <div class="row">
         <div class="col-xs-12">
             <a [routerLink]="['/jobs']"><h5>< &nbsp; Back to Jobs</h5></a>
         </div>
     </div>
     <div class="row" style="margin-top: 15px;">
-        <div class="col-sm-9 col-xs-12">
+        <div class="col-sm-9 col-xs-12 center-block">
             <h3 class="title">
                 {{title}}
             </h3>
-            <h5>
+            <h4>
                 {{location}}
-            </h5>
+            </h4>
+            <p>{{employmentType}}</p>
+            <p>Job ID: {{job_id}}</p>
             <a [routerLink]="['/apply/' + job_id]" [queryParams]="{'t': title,'l':location}"><button class="btn btn-primary">Apply</button></a>
-            <div class="" *ngIf="!loader" style="height:500px;padding-top:50px;text-align: center">
+            <div class="o-job-loader" *ngIf="!loader">
                 Loading...
             </div>
-            <div class="mt-25">
+            <div class="mt-25 job-innerhtml">
                 <div [innerHTML]="description| safeHtml">
 
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-            <p>{{employmentType}}</p>
-            <p>Job ID: {{job_id}}</p>
         </div>
     </div>
     <a [routerLink]="['/apply/'+job_id]" [queryParams]="{'t': title, 'l':location}"><button style="margin:20px 0" class="btn btn-primary">Apply</button></a>

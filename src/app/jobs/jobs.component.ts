@@ -43,7 +43,7 @@ export class JobsComponent {
     }
 
     onChange(category: string) {
-        console.log("selected category: ", category)
+        // console.log("selected category: ", category)
     }
 
 
@@ -74,7 +74,7 @@ export class JobsComponent {
 
                 }
                 this.createCategoriesAndLocations(job_data);
-                console.log("JOBS: ", job_data);
+                // console.log("JOBS: ", job_data);
                 this.loader = true;
             }
         );
@@ -99,7 +99,7 @@ export class JobsComponent {
     }
 
     public searchStringInJobsArray() {
-        console.log("Search");
+        // console.log("Search");
         if(!this.query){ this.job_data = job_data;  return;}
         let new_job_data: Array<string>=[];
         let query:any = [];
@@ -114,7 +114,9 @@ export class JobsComponent {
                         break;
                     }
         }
-        if(!new_job_data.length) console.log("No match for: " , this.query);
+        if(!new_job_data.length) {
+          // console.log("No match for: " , this.query);
+        }
         this.job_data = new_job_data;
         return -1;
     }

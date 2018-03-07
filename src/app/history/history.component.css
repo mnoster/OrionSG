@@ -11,7 +11,6 @@
 }
 .o-header h1,
 .o-header h3 {
-  font-family: "Quicksand";
   color: #ffffff;
 }
 
@@ -31,7 +30,6 @@
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: Quicksand;
 }
 
 /* The actual o-timeline (the vertical ruler) */
