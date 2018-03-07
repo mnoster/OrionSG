@@ -12,15 +12,3 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-
-.nav-pills > li > a {
-  margin: 5px;
-  background-color: #f3f3f3;
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #337ab7;
-}

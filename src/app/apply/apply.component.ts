@@ -98,20 +98,20 @@ export class ApplyComponent implements OnInit {
                         (res: any) => {
                             this.complete = true
                             document.getElementById("showSuccessModal").click()
-                            console.log("res: " , res)
+                            // console.log("res: " , res)
                             self.emailService.emailApplicant(this.email, this.title, window.location.href, data, resume).then(
                                 (res: any) => {
-                                    console.log("res: " , res)
+                                    // console.log("res: " , res)
                                 }
                             )
                         }
                     )
                 }
-            )   
+            )
         }catch(error){
             alert("There was an error submitting")
         }
-        
+
     }
 
 

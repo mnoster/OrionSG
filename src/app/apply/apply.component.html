@@ -1,4 +1,4 @@
-<div class="container o-apply-component">
+<div class="container o-apply-component qs">
     <button type="button" id="showSuccessModal" style="display:none" data-toggle="modal" data-target="#successModal"></button>
     <!-- Modal -->
     <div class="modal fade" id="successModal" role="dialog">
@@ -40,7 +40,7 @@
 
                   </form>
                 </div>
-                <h4 class="mt-25 qs">Apply</h4>
+                <h4 class="mt-25">Apply</h4>
             </div>
             <div>
                 <form novalidate  id="application" method="post" [formGroup]="app_form" (ngSubmit)="onSubmit()">

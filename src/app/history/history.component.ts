@@ -74,7 +74,7 @@ export class HistoryComponent {
 
     january_2017 = "The streak continues as Orion completes our "
                   + "fourth year in business profitably and with no debt.";
-                  
+
     october_2017 = "Orion joins the Finance and Accounting Consultants Alliance "
                   + "(FINACA).  FINACA is a nationwide network of independent consulting firms focused on "
                   + "exceptional client service (http://thefinaca.com/).  Orion is honored to join this elite group of"
