@@ -24,7 +24,7 @@ var UserService = (function () {
         return this.http.post(urls_1._URL + '/user/authenticate' + id, this.jwt()).map(function (response) { return response.json(); });
     };
     UserService.prototype.create = function (user) {
-        console.log("user call:", user);
+        // console.log("user call:", user);
         return this.http.post(urls_1._URL + '/user/create', JSON.stringify(user), this.config);
     };
     UserService.prototype.update = function (user) {

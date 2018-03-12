@@ -19,7 +19,7 @@ export class UserService {
     }
 
     create(user:User) {
-        console.log("user call:", user);
+        // console.log("user call:", user);
         return this.http.post(_URL + '/user/create', JSON.stringify(user), this.config);
     }
 

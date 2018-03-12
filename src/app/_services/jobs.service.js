@@ -21,7 +21,7 @@ var JobsService = (function () {
         return this.http.get(urls_1._URL + '/jobs/get', this.config);
     };
     JobsService.prototype.create = function (job) {
-        console.log("job call:", job);
+        // console.log("job call:", job);
         return this.http.post(urls_1._URL + '/jobs/create', JSON.stringify(job), this.config);
     };
     JobsService.prototype.update = function (job) {

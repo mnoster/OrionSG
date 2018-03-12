@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 
 export class ProfessionalRecTestimonials {
-  title = "Client Testimonials";
+  title = "Professional Recruiting Testimonials";
   testimonials = [
     {
       quote: "The team at Orion Solutions helped me fill 3 positions last year. I am happy to say that all 3 have turned out to be great hires! I felt the Orion team really took the time to understand the intangibles that I was looking for in potential candidates. They didn’t waste my time with candidates that did not meet my requirements. The Orion team was diligent, creative and honest throughout the process and I would recommend them to anyone.",
