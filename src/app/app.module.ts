@@ -34,7 +34,9 @@ import { NavigationComponent } from './navigation/index';
 import { OurteamComponent } from './ourteam/index';
 import { SubnavigationComponent } from './subnavigation/index';
 import { VisionComponent } from './vision/index';
-
+import { ClientTestimonials } from './clienttestimonials/index';
+import { CandidateTestimonials } from './candidatetestimonials/index';
+import { ProfessionalRecTestimonials } from './professionalrectestimonials/index'
 
 @NgModule({
     imports: [
@@ -70,7 +72,10 @@ import { VisionComponent } from './vision/index';
         ContingentSearchComponent,
         LoginComponent,
         RegisterComponent,
-        SafeHtmlPipe
+        SafeHtmlPipe,
+        ClientTestimonials,
+        CandidateTestimonials,
+        ProfessionalRecTestimonials
     ],
     providers: [
         AuthGuard,
