@@ -22,8 +22,8 @@ export class JobsComponent {
     }
 
     public job_data: any
-    selected_category: string;
-    selected_location: string;
+    selected_category: string
+    selected_location: string
     categories: Array<string> = []
     locations: Array<string> = []
     loading: boolean = false
