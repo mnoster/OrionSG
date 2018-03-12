@@ -13,107 +13,26 @@
 <div class="container">
 
   <!-- Kris Flynn Row Begin -->
-  <div class="row qs contact-card">
+  <div class="row qs contact-card" *ngFor="let item of team">
     <div class="o-card">
       <div class="col-md-3 col-sm-12">
-        <img alt="Kris Flynn" src="../assets/images/kris_profile.jpg"
-        class="img-rounded">
-        <p>
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/kris-flynn-26418162/" target="_blank">Connect to Kris on LinkedIn</a>
+        <img alt="Kris Flynn" [height]="item.height" [src]="'../assets/images/'+item.image" class="img-rounded"/>
+        <p *ngIf='item.email'>
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/kris-flynn-26418162/" target="_blank">Connect to {{item.name}} on LinkedIn</a>
           <br>
-          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kflynn@orionsolutionsgroup.net">kflynn@orionsolutionsgroup.net</a>
+          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kflynn@orionsolutionsgroup.net">{{item.email}}</a>
         </p>
       </div>
-      <div class="col-md-9 col-sm-12">
+      <div class="col-md-9 col-sm-12" >
         <h3>
-          Kris Flynn
+          {{item.name}}
           <br/>
-          Managing Partner and Co-Founder
+          {{item.role}}
         </h3>
         <p>
-          {{summaryKrisFlynn3}}
+          {{item.summary}}
         </p>
       </div>
      </div>
   </div>
-  <!-- Kris Flynn Row End -->
-
-  <!-- Dave Flynn Row Begin -->
-  <div class="row qs contact-card">
-    <div class="o-card">
-      <div class="col-md-3 col-sm-12">
-        <img alt="Dave Flynn" src="../assets/images/dave_profile.jpg"
-        class="img-rounded">
-        <p>
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="http://www.linkedin.com/pub/dave-flynn/0/73a/73b" target="_blank">Connect to Dave on LinkedIn</a>
-          <br>
-          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:dflynn@orionsolutionsgroup.net">dflynn@orionsolutionsgroup.net</a>
-        </p>
-      </div>
-      <div class="col-md-9 col-sm-12">
-        <h3>
-          Dave Flynn
-          <br/>
-          Partner and Co-Founder
-        </h3>
-        <p>
-          {{summaryDaveFlynn4}}
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Dave Flynn Row End -->
-
-  <!-- Kevin Suksi Row Begin -->
-  <div class="row qs contact-card">
-    <div class="o-card">
-      <div class="col-md-3 col-sm-12">
-        <img alt="Kevin Suksi" src="../assets/images/kevin_profile.jpg"
-        class="img-rounded">
-        <p>
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/kevinsuksi/" target="_blank">Connect to Kevin on LinkedIn</a>
-          <br>
-          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:ksuksi@orionsolutionsgroup.net">ksuksi@orionsolutionsgroup.net</a>
-        </p>
-      </div>
-      <div class="col-md-9 col-sm-12">
-        <h3>
-          Kevin Suksi
-          <br/>
-          Partner and Co-Founder
-        </h3>
-        <p>
-          {{summaryKevinSuksi3}}
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Kevin Suksi Row End -->
-
-  <!-- Nicole Heger Row Begin -->
-  <div class="row qs contact-card">
-    <div class="o-card">
-      <div class="col-md-3 col-sm-12">
-        <img alt="Nicole Heger" src="../assets/images/nicole_profile.jpg"
-        class="img-rounded">
-        <p>
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/nicole-heger-phr-a8b45b4/" target="_blank">Connect to Nicole on LinkedIn</a>
-          <br>
-          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:nheger@orionsolutionsgroup.net">nheger@orionsolutionsgroup.net</a>
-        </p>
-      </div>
-      <div class="col-md-9 col-sm-12">
-        <h3>
-          Nicole Heger
-          <br/>
-          HR Manager and Recruiter
-        </h3>
-        <p>
-          {{summaryNicoleHeger3}}
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Nicole Heger Row End -->
-
 </div>

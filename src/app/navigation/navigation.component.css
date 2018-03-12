@@ -21,6 +21,9 @@
   /*background-color: transparent;*/
   background-color: rgba(43, 87,134, 0.15);
 }
+a#o-navbar-brand:hover {
+  background:white;
+}
 
 #o-navbar-brand {
   margin-top: 15px;
@@ -28,6 +31,10 @@
   padding: 5px 15px;
 }
 
+.o-navbar-brand2{
+  margin-top: 3px !important;
+  margin-bottom:0 !important;
+}
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   opacity: 0.8;
