@@ -30,15 +30,15 @@ export class ProfessionalSearchComponent {
       id : "auditriskcompliance", title: "Audit, Risk & Compliance",
       list: [
         "Internal Audit Director", "Internal Control (SOX) Manager",
-        "Regulatory Services Manager", "Fraud &amp; Financial Audit Manager",
+        "Regulatory Services Manager", "Fraud & Financial Audit Manager",
         "Senior Compliance Auditor", "Senior Internal Auditor",
-        "AML &amp; Anti-Corruption Compliance Analyst", "Document Compliance Specialist"
+        "AML & Anti-Corruption Compliance Analyst", "Document Compliance Specialist"
       ]
     },
     {
       id : "itauditsecurity", title: "IT Audit & Security",
       list: [
-        "IT Audit Manager", "Data Privacy &amp; Protection Manager",
+        "IT Audit Manager", "Data Privacy & Protection Manager",
         "Senior Security Specialist", "IT Auditor",
         "SAP IT Audit Manager", "Advanced IT Auditor"
       ]
