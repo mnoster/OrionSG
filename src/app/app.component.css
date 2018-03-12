@@ -7,7 +7,7 @@ body,
 .qs {
   font-family: 'Quicksand', sans-serif;
 }
-
+.tab-content li{list-style-type: none}
 a:hover,
 a:active {
   text-decoration: none;

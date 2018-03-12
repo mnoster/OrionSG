@@ -8,5 +8,37 @@ import {Router} from '@angular/router';
 })
 
 export class ContractStaffingComponent {
-    title = "Contract Staffing";
+  title = "Contract Staffing";
+
+  examples = [
+    {
+      id : "accountingFinance", title: "Accounting & Finance",
+      list: [
+        "Corporate Controller, publicly traded corporation", "Financial Reporting Manager",
+        "Financial Analyst", "Tax Compliance Expert", "Accounting Manager",
+        "Senior Accountant", "Accounts Payable/Accounts Receivable Specialist"
+      ]
+    },
+    {
+      id : "auditRiskCompliance", title: "Audit, Risk & Compliance",
+      list: [
+        "Internal Audit Manager", "Sarbanes-Oxley (SOX) Auditor",
+        "Construction Audit Manager", "Forensic Accounting Specialist",
+        "Mortgage Compliance Auditor"
+      ]
+    },
+    {
+      id : "itAuditSecurity", title: "IT Audit & Security",
+      list: [
+        "IT Audit Manager", "IT Security Manager", "SOX IT Auditor", "IT Audit Supervisor"
+      ]
+    },
+    {
+      id : "humanResources", title: "Human Resources",
+      list: [
+        "Talent Acquisition Specialist", "Compensation Analyst",
+        "HR Compliance Auditor", "Operations Coordinator"
+      ]
+    }
+  ]
 }

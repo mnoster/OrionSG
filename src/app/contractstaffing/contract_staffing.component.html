@@ -53,71 +53,19 @@
 
       <h3>Project Examples Include:</h3>
       <ul class="nav nav-pills">
-        <li class="active">
-          <a data-toggle="tab" href="#accountingFinance">
-            Accounting &amp; Finance
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#auditRiskCompliance">
-            Audit, Risk &amp; Compliance
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#ITAuditSecurity">
-            IT Audit &amp; Security
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#humanResources">
-            Human Resources
+        <li *ngFor="let x of examples; let first = first" [ngClass]="{ active: first }">
+          <a data-toggle="pill" [attr.href]="'#' + x.id">
+            {{x.title}}
           </a>
         </li>
       </ul>
 
       <div class="tab-content">
 
-        <div id="accountingFinance" class="tab-pane fade in active o-card">
-          <div class="o-tab-title">Accounting &amp; Finance</div>
+        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"  [ngClass]="{ active: first, in: first }">
+          <h3>{{x.title}}</h3>
           <ul>
-            <li>Corporate Controller, publicly traded corporation</li>
-            <li>Financial Reporting Manager</li>
-            <li>Financial Analyst</li>
-            <li>Tax Compliance Expert</li>
-            <li>Accounting Manager</li>
-            <li>Senior Accountant</li>
-            <li>Accounts Payable/Accounts Receivable Specialist</li>
-          </ul>
-        </div>
-
-        <div id="auditRiskCompliance" class="tab-pane fade in o-card">
-          <div class="o-tab-title">Audit, Risk &amp; Compliance</div>
-          <ul>
-            <li>Internal Audit Manager</li>
-            <li>Sarbanes-Oxley (SOX) Auditor</li>
-            <li>Construction Audit Manager</li>
-            <li>Forensic Accounting Specialist</li>
-            <li>Mortgage Compliance Auditor</li>
-          </ul>
-        </div>
-
-        <div id="ITAuditSecurity" class="tab-pane fade in o-card">
-          <div class="o-tab-title">IT Audit &amp; Security</div>
-          <ul>
-            <li>IT Audit Manager</li>
-            <li>IT Security Manager</li>
-            <li>SOX IT Auditor</li>
-            <li>IT Audit Supervisor</li>
-          </ul>
-        </div>
-
-        <div id="humanResources" class="tab-pane fade in o-card">
-          <div class="o-tab-title">Human Resources</div>
-          <ul>
-            <li>Talent Acquisition Specialist</li>
-            <li>Compensation Analyst</li>
-            <li>HR Compliance Auditor</li>
-            <li>Operations Coordinator</li>
+            <li *ngFor="let li of x.list">- {{li}}</li>
           </ul>
         </div>
 
@@ -127,16 +75,14 @@
 
 </div>
 
-<div class="container mb-25 qs">
-  <div class="row">
-    <div class="col-md-12">
-      <i>
-        <b>
+
+<div class="container qs">
+
+    <div class="row mb-25 p-20">
+        <h4 class="qs text-center">
           If you are interested in joining Orion for contract roles, please click <a routerLink="/consulting">here</a> to learn more
           about us.
-        </b>
-      </i>
+        </h4>
     </div>
-  </div>
-  <!-- Row End -->
+
 </div>
