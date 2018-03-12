@@ -92,148 +92,20 @@
 
       <h3>Orion Professional Recruiting engagements include:</h3>
       <ul class="nav nav-pills">
-        <li class="active">
-          <a data-toggle="tab" href="#accountingFinance">
-            Accounting & Finance
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#taxmanager">
-            Tax Manager
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#dataAnalytics">
-            Data Analytics
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#supplyChain">
-            Supply Chain
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#auditRiskCompliance">
-            Audit, Risk & Compliance
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#ITAuditSecurity">
-            IT Audit & Security
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#humanResources">
-            Human Resources
-          </a>
-        </li>
-        <li>
-          <a data-toggle="tab" href="#salesMarketing">
-            Sales & Marketing
+        <li *ngFor="let x of examples; let first = first" [ngClass]="{ active: first }">
+          <a data-toggle="pill" [attr.href]="'#' + x.id">
+            {{x.title}}
           </a>
         </li>
       </ul>
 
       <div class="tab-content">
-
-        <div id="accountingFinance" class="tab-pane fade in active o-card">
-          <div class="o-tab-title">Accounting & Finance</div>
+        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"  [ngClass]="{ active: first, in: first }">
+          <h3>{{x.title}}</h3>
           <ul>
-            <li>VP of Finance</li>
-            <li>Corporate Controller</li>
-            <li>Tax Director</li>
-            <li>Director of Financial Reporting</li>
-            <li>Financial Analyst</li>
-            <li>VP Technical Accounting</li>
-            <li>Finance Manager</li>
-            <li>Accounting Manager</li>
-            <li>Global Treasury Senior Analyst</li>
+            <li *ngFor="let li of x.list">- {{li}}</li>
           </ul>
         </div>
-
-        <div id="taxmanager" class="tab-pane fade o-card">
-          <div class="o-tab-title">Tax Manager</div>
-          <ul>
-            <li>Senior Manager - Payroll Operations</li>
-            <li>Senior International Tax Analyst</li>
-            <li>Regional Accountant</li>
-            <li>Treasury Operations Manager</li>
-            <li>State Tax Manager</li>
-            <li>Cost Analyst</li>
-          </ul>
-        </div>
-
-        <div id="dataAnalytics" class="tab-pane fade o-card">
-          <div class="o-tab-title">Data Analytics</div>
-          <ul>
-            <li>Risk Analyst – Advanced Analytics</li>
-            <li>Senior Commercial Risk Analyst</li>
-            <li>Senior Analyst – Loss Forecasting and Reserves</li>
-            <li>Risk Administration and PMO Specialist</li>
-            <li>Customer Experience Research Analyst</li>
-            <li>Analytics Solution Analyst</li>
-            <li>Actuarial Analyst</li>
-          </ul>
-        </div>
-
-        <div id="supplyChain" class="tab-pane fade o-card">
-          <div class="o-tab-title">Supply Chain</div>
-          <ul>
-            <li>Senior Supply Chain Analyst</li>
-            <li>Manager of Supply Chain Systems</li>
-            <li>Buyer</li>
-          </ul>
-        </div>
-
-        <div id="auditRiskCompliance" class="tab-pane fade o-card">
-          <div class="o-tab-title">Audit, Risk & Compliance</div>
-          <ul>
-            <li>Internal Audit Director</li>
-            <li>Internal Control (SOX) Manager</li>
-            <li>Regulatory Services Manager</li>
-            <li>Fraud & Financial Audit Manager</li>
-            <li>Senior Compliance Auditor</li>
-            <li>Senior Internal Auditor</li>
-            <li>AML & Anti-Corruption Compliance Analyst</li>
-            <li>Document Compliance Specialist</li>
-          </ul>
-        </div>
-
-        <div id="ITAuditSecurity" class="tab-pane fade o-card">
-          <div class="o-tab-title">IT Audit & Security</div>
-          <ul>
-            <li>IT Audit Manager</li>
-            <li>Data Privacy & Protection Manager</li>
-            <li>Senior Security Specialist</li>
-            <li>IT Auditor</li>
-            <li>SAP IT Audit Manager</li>
-            <li>Advanced IT Auditor</li>
-          </ul>
-        </div>
-
-        <div id="humanResources" class="tab-pane fade o-card">
-          <div class="o-tab-title">Human Resources</div>
-          <ul>
-              <li>Global Function HR Business Partner</li>
-              <li>Compensation Analyst</li>
-              <li>Training Design Manager</li>
-              <li>Process Excellence Service Design Manager</li>
-              <li>Instructional Design Specialist</li>
-              <li>Senior Learning & Development Specialist</li>
-              <li>Process Excellence Senior Manager</li>
-          </ul>
-        </div>
-
-        <div id="salesMarketing" class="tab-pane fade o-card">
-          <div class="o-tab-title">Sales & Marketing</div>
-          <ul>
-            <li>VP of Strategy</li>
-            <li>Managing Director</li>
-            <li>Inside Sales</li>
-            <li>Business Development Associate</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </div>
