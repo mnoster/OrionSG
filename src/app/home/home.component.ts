@@ -22,14 +22,14 @@ export class HomeComponent implements OnInit {
                           + "and professional recruiting. Clients and Candidates "
                           + "work with us because of our unrelenting commitment "
                           + "to their success.";
-                          
+
     // constructor(private userService: UserService, private route: ActivatedRoute, private router: Router) {
     constructor(private userService: UserService, private  contentService:ContentService) {
         //this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
 
     onAnchorClick ( ) {
-      console.log("On anchor click");
+      // console.log("On anchor click");
     }
 
     ngOnInit() {
@@ -42,10 +42,10 @@ export class HomeComponent implements OnInit {
         this.contentService.getContent(this.page_type)
             .subscribe(
                 data => {
-                    console.log("Content: ", data)
+                    // console.log("Content: ", data)
                 },
                 error => {
-                    console.log("Content  Error: " , error);
+                    // console.log("Content  Error: " , error);
                     this.loading = false;
                 });
     }

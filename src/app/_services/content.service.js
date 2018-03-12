@@ -18,7 +18,7 @@ var ContentService = (function () {
         this.config = { headers: { 'Content-Type': 'application/json' } };
     }
     ContentService.prototype.getContent = function (page_type) {
-        console.log("PAGE TyPE: ", page_type);
+        // console.log("PAGE TyPE: ", page_type);
         return this.http.post(urls_1._URL + '/content/get', JSON.stringify({ page: page_type }), this.config).map(function (response) { return response.json(); });
     };
     ContentService.prototype.updateContent = function (content) {

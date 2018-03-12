@@ -11,7 +11,7 @@ export class ContentService {
     config:any = {headers:{ 'Content-Type': 'application/json'}};
 
     getContent(page_type:string) {
-        console.log("PAGE TyPE: ", page_type);
+        // console.log("PAGE TyPE: ", page_type);
         return this.http.post(_URL + '/content/get', JSON.stringify({page:page_type}),this.config).map((response:Response) => response.json());
     }
 
