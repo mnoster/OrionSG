@@ -21,24 +21,24 @@ export class JobsComponent {
                 private router: Router) {
     }
 
-    public job_data: any;
+    public job_data: any
     selected_category: string;
     selected_location: string;
-    categories: Array<string> = [];
-    locations: Array<string> = [];
-    loading: boolean = false;
-    loader: boolean = false;
-    query:string;
+    categories: Array<string> = []
+    locations: Array<string> = []
+    loading: boolean = false
+    loader: boolean = false
+    query:string
 
 
     ngOnInit() {
 
         if (!data_retrieved) {
-            this.formatBullhornData();
+            this.formatBullhornData()
         } else {
-            this.loader = true;
-            this.job_data = job_data;
-            this.createCategoriesAndLocations(job_data);
+            this.loader = true
+            this.job_data = job_data
+            this.createCategoriesAndLocations(job_data)
         }
     }
 
