@@ -26,7 +26,7 @@ a:active {
   height: 200px;
   color: inherit;
 /*  background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed;
-*/  
+*/
   background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); /* safari4+,chrome */
   background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
@@ -175,10 +175,14 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .mt-25{ margin-top:25px; }
 .mt-50{ margin-top:50px; }
 .mb-0{ margin-bottom:0px;}
+.mb-10{margin-bottom: 10px;}
 .mb-25{ margin-bottom:25px; }
 .mb-20{ margin-bottom:20px; }
 .mb-45{ margin-bottom:45px; }
 .mr-15{ margin-right: 15px; }
+
+.display-inline-block { display: inline-block; }
+
 .o-vertical-align-top {
   vertical-align: top;
 }
@@ -222,7 +226,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
   background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); /* ie6-9 *//* background-position-y: -440px; */
-  
+
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
   height:200px;

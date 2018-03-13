@@ -16,7 +16,7 @@ export class OurteamComponent implements OnInit {
     constructor(private userService: UserService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
-    
+
     currentUser: User;
     users: User[] = [];
     team = [
@@ -50,7 +50,7 @@ export class OurteamComponent implements OnInit {
             email: "kheger@orionsolutionsgroup.net",
             image: 'nicole_profile.jpg',
             linkedIn: 'https://www.linkedin.com/in/nicole-heger-phr-a8b45b4/',
-            summary:"Nicole Heger has more than 10 years of experience in Human Resources management and recruiting. Nicole understands the recruiting process from the client’s perspective and uses this understanding to help us constantly improve our processes. Nicole’s broad recruiting background includes sales &amp; marketing, supply chain, accounting &amp; finance, HR, and audit. Nicole also acts as our internal HR Manager and works with our consultants and our office team as our HR interface. Nicole earned her BS in Human Resources Development and from Oakland University and holds the Professional in Human Resources certification (PHR)."
+            summary:"Nicole Heger has more than 10 years of experience in Human Resources management and recruiting. Nicole understands the recruiting process from the client’s perspective and uses this understanding to help us constantly improve our processes. Nicole’s broad recruiting background includes sales & marketing, supply chain, accounting & finance, HR, and audit. Nicole also acts as our internal HR Manager and works with our consultants and our office team as our HR interface. Nicole earned her BS in Human Resources Development and from Oakland University and holds the Professional in Human Resources certification (PHR)."
         },
         {
             name: 'Kristyn Van Uden,',
