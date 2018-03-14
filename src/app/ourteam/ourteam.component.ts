@@ -69,7 +69,7 @@ export class OurteamComponent implements OnInit {
             image: 'bob_profile.jpeg',
             height: '340px',
             linkedIn: '',
-            summary:"Bob joined the Orion team in 2017, coming to us from a local rescue shelter.  Bob has excellent people skills and spends most of his day visiting with the rest of team (particularly if they are eating something)."
+            summary:"Bob The Dog joined the Orion team in 2017, coming to us from a local rescue shelter.  Bob The Dog has excellent people skills and spends most of his day visiting with the rest of team (particularly if they are eating something)."
         }
 
     ]
