@@ -26,7 +26,7 @@ export class OurteamComponent implements OnInit {
             email: "kflynn@orionsolutionsgroup.net",
             image: 'kris_profile.jpg',
             linkedIn: 'https://www.linkedin.com/in/kris-flynn-26418162/',
-            summary: "Kris brings more than 15 years experience in client service, project management, and IT services. Kris serves as Orion’s Managing Partner and in this role ensures we are bringing the right internal resources to each client need. In addition to directly managing two of Orion’s largest clients, Kris leads our internal functions like HR and accounting. Kris earned her BA in Finance and MBA in Supply Chain Management from Michigan State University. Prior to Orion, Kris led global development teams for the production order management systems of a major automotive OEM. She also started several small internet based companies.",
+            summary: "Kris brings more than 15 years experience in client service, project management, and IT services. Kris serves as Orion’s Managing Partner and in this role ensures we are bringing the right internal resources to each client need. In addition to directly managing two of Orion’s largest clients, Kris leads our internal functions like HR and accounting. Kris earned her BA in Finance and MBA in Supply Chain Management from Michigan State University. Prior to Orion, Kris led global development teams for the production order management systems of a major automotive OEM.",
         },
         {
             name: 'Dave Flynn',
