@@ -34,7 +34,12 @@
     font-size: 18px;
 }
 .o-job-description{
-    font-size: 14px;
+    font-size: 15px !important;
+    font-family: 'Nunito', sans-serif ;
+}
+.o-job-description div,.o-job-description span, .o-job-description p, .o-job-description div p,.o-job-description div span{
+    font-size: 15px !important;
+    font-family: 'Nunito', sans-serif !important;
 }
 .o-job-location{
     font-size:14px

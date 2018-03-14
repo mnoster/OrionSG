@@ -161,6 +161,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .pb-50{padding-bottom:50px !important;}
 .pb-100{padding-bottom:100px;}
 .pb-30{padding-bottom:30px;}
+.pt-25{padding-top:25px;}
 .pt-100{padding-top:100px;}
 .ps-20{ padding-left: 20px; padding-right: 20px; }
 .ps-30{ padding-left: 30px; padding-right: 30px; }
