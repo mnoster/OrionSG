@@ -13,13 +13,13 @@ export class HumanResourcesComponent {
 
   examples = [
     {
-      id: "recruitingProcessOutsourcing", title: "Recruiting Process Outsourcing – Engineering Company",
+      id: "engineeringCompany", title: "Recruiting Process Outsourcing – Engineering Company",
       clientIssue: "Our client, a fast growing pre-IPO engineering firm, was adding people at break neck pace but did not have the internal capacity to keep up.",
       orionSolution: "Orion provided a hybrid solution that included outsourced recruiting services for open positions, while supporting the client’s efforts to build an internal HR team.",
       clientOutcomes: "Orion successfully recruited the entire accounting and finance function for the client. We attracted some of the top talent from the Big 4 public accounting firms and worked closely with the new HR function to manage the recruiting and onboarding process."
     },
     {
-      id: "recruitingProcessOutsourcing", title: "Recruiting Process Outsourcing – Global Finance Company",
+      id: "GlobalFinance", title: "Recruiting Process Outsourcing – Global Finance Company",
       clientIssue: "Our client, a global financial services company, experienced tremendous growth and needed highly qualified candidates across a broad spectrum of areas including: data analytics, accounting, internal audit, talent acquisition, risk management, and finance.",
       orionSolution: "Orion established a single point of contact to manage candidate flow and client status reporting, while assigning a specific recruiter to lead the efforts for each key area (e.g., data analytics, risk management, etc.).",
       clientOutcomes: "Orion has helped the client hire nearly 50 people to date. We have been engaged on both contingent and retained searches, and after less than one year were named a Primary Vendor at the client."
