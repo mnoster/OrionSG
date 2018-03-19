@@ -10,9 +10,6 @@
   margin-bottom: 0;
   box-shadow: 0 0 6px;
 }
-.navbar-default .navbar-toggle {
-  /*border: none;*/
-}
 
 .navbar-default .navbar-nav > li > a {
   color: #484848;
@@ -24,7 +21,20 @@
   /*background-color: transparent;*/
   background-color: rgba(43, 87,134, 0.15);
 }
+a#o-navbar-brand:hover {
+  background:white;
+}
 
+#o-navbar-brand {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+}
+
+.o-navbar-brand2{
+  margin-top: 3px !important;
+  margin-bottom:0 !important;
+}
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   opacity: 0.8;
@@ -50,5 +60,18 @@
 @media(max-width:767px){
   .subnav-mobile{
     display: block;
+  }
+  .navbar-default .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .navbar-brand {
+    height: 63px;
+    margin-top: 0px;
+  }
+  #o-navbar-brand {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px 15px;
   }
 }

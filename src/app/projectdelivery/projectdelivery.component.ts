@@ -5,12 +5,13 @@ import { Router, NavigationEnd } from '@angular/router';
     moduleId: module.id,
     templateUrl: 'projectdelivery.component.html',
     styleUrls: ['projectdelivery.component.css',
-                '../app.component.css',]
+                '../app.component.css',
+                '../font-awesome/css/fontawesome-all.min.css']
 
 })
 
 export class ProjectDeliveryComponent {
-  title = "Project Delivery Landing Page";
+  title = "Project Delivery";
 
   constructor(private router: Router) { }
 

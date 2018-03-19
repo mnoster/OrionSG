@@ -3,73 +3,86 @@
         <h1>{{title}}</h1>
     </div>
 </div>
+
 <subnavigation></subnavigation>
-<div class="container o-contract-staffing mt-25">
-    <div class="row mt-25">
-        <div class="col-xs-12">
-            <h4>Contract staffing is a great solution to many issues that arise. Orion provides contract staffing
-                when clients experience any number of scenarios:
-            </h4>
-            <hr>
-            <ul>
-                <li>Key personnel are on leave and the day-to- day work still needs to be done</li>
-                <li>Subject matter expertise is required on an as-needed basis</li>
-                <li>Major implementation or integration project requires more resources</li>
-                <li>Seasonal spikes create short term demand for additional people</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row mt-20 mb-25">
-        <div class="col-xs-12 mt-20">
-            <h4>
-                Orion approaches contract staffing in the same way as a project assignment – we work with the
-                client to truly understand what needs to accomplished and the kind of personalities that work
-                best with the client team.
-            </h4>
-            <hr>
-            <h5>
-                Examples of Orion Contract Staffing engagements have included:
-            </h5>
-            <div class="col-xs-12 col-sm-6">
-                <ul>
-                    <li>Accounting &amp; Finance</li>
-                    <li>Corporate Controller, publicly traded corporation</li>
-                    <li>Financial Reporting Manager</li>
-                    <li>Financial Analyst</li>
-                    <li>Tax Compliance Expert</li>
-                    <li>Accounting Manager</li>
-                    <li>Senior Accountant</li>
-                    <li>Accounts Payable/Accounts Receivable Specialist</li>
-                    <li>Audit, Risk &amp; Compliance</li>
-                    <li>Internal Audit Manager</li>
-                    <li>Sarbanes-Oxley (SOX) Auditor</li>
-                    <li>Construction Audit Manager</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-6 mb-25">
 
-                <ul>
-                    <li>Forensic Accounting Specialist</li>
-                    <li>Mortgage Compliance Auditor</li>
-                    <li>IT Audit &amp; Security</li>
-                    <li>IT Audit Manager</li>
-                    <li>IT Security Manager</li>
-                    <li>SOX IT Auditor</li>
-                    <li>IT Audit Supervisor</li>
-                    <li>Human Resources</li>
-                    <li>Talent Acquisition Specialist</li>
-                    <li>Compensation Analyst</li>
-                    <li>HR Compliance Auditor</li>
-                    <li>Operations Coordinator</li>
-                </ul>
-            </div>
-            <i>
-                <b>
-                    If you are interested in joining Orion for contract roles, please click <a routerLink="/consulting">here</a> to learn more
-                    about us.
-                </b>
-            </i>
+<div class="container o-contract-staffing mt-25 mb-25 qs">
 
-        </div>
+  <!-- Row Begin -->
+  <div class="row mt-25">
+    <div class="col-xs-12 text-center">
+      <h4>Contract staffing is a great solution to many issues that arise. Orion provides contract staffing
+        when clients experience any number of scenarios:
+      </h4>
+      <hr>
     </div>
+
+    <div class="col-xs-12 col-sm-7">
+      <div class="o-card">
+        <ul>
+          <li>Key personnel are on leave and the day-to- day work still needs to be done</li>
+          <li>Subject matter expertise is required on an as-needed basis</li>
+          <li>Major implementation or integration project requires more resources</li>
+          <li>Seasonal spikes create short term demand for additional people</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-1 hidden-xs"></div>
+    <div class="hidden-xs col-sm-2 text-center contract-staffing-icon">
+      <img class="animated-icon" height="140" src="https://excelconsulting.com.au/wp-content/uploads/2016/06/organization.png"/>
+    </div>
+  </div>
+  <!-- Row End -->
+
+  <!-- Row Begin -->
+  <div class="row mt-20" id="o-examples">
+    <div class="col-md-12 mt-20">
+      <h4>
+        Orion approaches contract staffing in the same way as a project assignment – we work with the
+        client to truly understand what needs to accomplished and the kind of personalities that work
+        best with the client team.
+      </h4>
+    </div>
+  </div>
+</div>
+
+<div class="container qs">
+
+  <div class="row mt-25 mb-25">
+    <div class="col-xs-12 mb-25">
+
+      <h3>Project Examples Include:</h3>
+      <ul class="nav nav-pills">
+        <li *ngFor="let x of examples; let first = first" [ngClass]="{ active: first }">
+          <a data-toggle="pill" [attr.href]="'#' + x.id">
+            {{x.title}}
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+
+        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"  [ngClass]="{ active: first, in: first }">
+          <h3>{{x.title}}</h3>
+          <ul>
+            <li *ngFor="let li of x.list">- {{li}}</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container qs">
+
+    <div class="row mb-25 p-20">
+        <h4 class="qs text-center">
+          If you are interested in joining Orion for contract roles, please click <a routerLink="/consulting">here</a> to learn more
+          about us.
+        </h4>
+    </div>
+
 </div>

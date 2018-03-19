@@ -71,21 +71,21 @@ var ApplyComponent = (function () {
     };
     ApplyComponent.prototype.onSubmit = function () {
         var _this = this;
-        console.log("app form: ", this.app_form.value);
+        // console.log("app form: ", this.app_form.value);
         this.loader = true;
         var self = this;
         var data = this.formatCandidate(this.app_form.value);
         this.email = data.email;
         this.bullhornService.createCandidate(data).then(function (res) {
-            console.log("res: ", res);
+            // console.log("res: ", res);
             var res_body = JSON.parse(res._body);
             var candidate_id = res_body.data.candidate.id;
             self.bullhornService.attachResume(self.encoded_file, candidate_id).then(function (res) {
                 _this.complete = true;
                 document.getElementById("showSuccessModal").click();
-                console.log("res: ", res);
+                // console.log("res: ", res);
                 self.emailService.emailApplicant(_this.email, _this.title, window.location.href).then(function (res) {
-                    console.log("res: ", res);
+                    // console.log("res: ", res);
                 });
             });
         });

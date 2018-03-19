@@ -29,7 +29,7 @@ var RegisterComponent = (function () {
             _this.alertService.success('Registration successful', true);
             _this.router.navigate(['/login']);
         }, function (error) {
-            console.log("err: ", error);
+            // console.log("err: ", error);
             var body = JSON.parse(error["_body"]);
             _this.alertService.error(body.message);
             _this.loading = false;

@@ -20,6 +20,9 @@ import { JobsComponent } from './jobs/index';
 import { JobDescriptionComponent } from './job_description/index';
 import { OurteamComponent } from './ourteam/index';
 import { VisionComponent } from './vision/index';
+import { ClientTestimonials } from './clienttestimonials/index';
+import { CandidateTestimonials } from './candidatetestimonials/index';
+import { ProfessionalRecTestimonials } from './professionalrectestimonials/index'
 
 import { AuthGuard } from './_guards/index';
 
@@ -46,6 +49,9 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'jobs', component: JobsComponent },
     { path: 'jobs/:id', component: JobDescriptionComponent },
+    { path: 'clienttestimonials', component: ClientTestimonials },
+    { path: 'candidatetestimonials', component: CandidateTestimonials },
+    { path: 'professionalrectestimonials', component: ProfessionalRecTestimonials },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

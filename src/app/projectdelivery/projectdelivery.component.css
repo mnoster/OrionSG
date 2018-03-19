@@ -1,0 +1,15 @@
+.center-section{
+	box-shadow: 0 0 1px;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+.btn-light{
+	background-color: #e0e9f1;
+}
+
+@media (min-width: 768px) {
+	.pd-min-h-155 {
+		min-height: 155px
+	}
+}

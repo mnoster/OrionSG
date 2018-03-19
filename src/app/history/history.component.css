@@ -2,7 +2,7 @@
   height: 200px;
   color: inherit;
   background-color: #fff;
-  background: url(../../assets/images/office.jpg) no-repeat center top fixed;
+  background: url(/assets/images/green_blue.5eb7048a05863d9ec4c5.jpg) no-repeat center top fixed;
   background-position-y: -440px;
 }
 .o-header .container {
@@ -11,7 +11,6 @@
 }
 .o-header h1,
 .o-header h3 {
-  font-family: "Quicksand";
   color: #ffffff;
 }
 
@@ -19,10 +18,9 @@
 #o-history-timeline {
   box-sizing: border-box;
   background: #eaf3ff;
-  background: url(../../assets/images/history_image.png) no-repeat center fixed;
-  background-position-y: 284px;
-  background-color: #99dfff;
-  background-size: 119%;
+/*  background: url(/assets/images/green_blue.jpg) no-repeat center fixed;
+*/  background-size: 146%;
+  background-color: #99dfff30;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -32,7 +30,6 @@
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: Quicksand;
 }
 
 /* The actual o-timeline (the vertical ruler) */

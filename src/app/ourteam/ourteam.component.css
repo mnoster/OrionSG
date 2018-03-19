@@ -1,42 +1,52 @@
-.o-header {
-  height: 200px;
-  color: inherit;
-  background-color: #fff;
-  background-position-y: -440px;
+/* Orion
+ * Styles for Our Team Component
+ */
+
+.contact-card {
+  padding: 40px 20px;
 }
-.o-header .container {
-  padding-top: 50px;
-  max-width: 100%;
+.contact-card .o-card {
+  float: left
 }
-.o-header h1 {
-  font-family: "Quicksand";
-  color: #ffffff;
+@media (min-width: 768px) {
+  /* .contact-card .col-sm-1, .contact-card .col-sm-10, .contact-card .col-sm-11,
+  .contact-card .col-sm-12, .contact-card .col-sm-2, .contact-card .col-sm-3,
+  .contact-card .col-sm-4, .contact-card .col-sm-5, .contact-card .col-sm-6,
+  .contact-card .col-sm-7, .contact-card .col-sm-8, .contact-card .col-sm-9 {
+    float: none;
+  } */
 }
-p{
-    font-family: "Quicksand";
+.contact-card .col-md-3 img {
+  height: 240px;
 }
-.entry-content p {
-    padding: 4px 8px
-}
-.entry-content img{
-    float: left;
-    padding: 10px;
-}
-#o-ourteam-container{
-    margin-top:50px;
-}
-#o-ourteam-container .row {
-  margin-bottom: 45px;
+.contact-card .col-md-3 p {
+  font-size: 14px;
 }
 
-/* Styles for the Team Info Section */
-#o-ourteam-container .o-team-name {
-  font-weight: 400;
-    font-family: Quicksand;
-    font-size: 15px;
-    margin-top: 21px;
+@media (max-width: 1200px ) {
+  .contact-card .col-md-3 img {
+    height: auto;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .contact-card .col-md-3 p {
+    font-size: 12px;
+  }
 }
-#o-ourteam-container .o-team-detail {
-  padding: 0 10px 10px 10px;
-  margin-bottom: 10px;
+
+@media (max-width: 991px ) {
+  .contact-card .col-md-3 {
+    text-align: center
+  }
+  .contact-card .col-md-3 img {
+    width: auto;
+    height: 240px;
+    margin-top: 0;
+  }
+  .contact-card .col-md-9 h3 {
+    text-align: center;
+  }
+  .contact-card .col-md-3 p {
+    font-size: 16px;
+  }
 }

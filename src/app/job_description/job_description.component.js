@@ -37,7 +37,7 @@ var JobDescriptionComponent = (function () {
     JobDescriptionComponent.prototype.formatBullhornData = function () {
         var _this = this;
         this.bullhornService.getJobs(null).then(function (res) {
-            console.log("res: ", JSON.parse(res._body));
+            // console.log("res: ", JSON.parse(res._body));
             var jobs = JSON.parse(res._body);
             var jd = jobs.data;
             for (var i = 0; i < jd.length; i++) {

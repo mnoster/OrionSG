@@ -1,4 +1,4 @@
-<div class="container o-apply-component">
+<div class="container o-apply-component qs">
     <button type="button" id="showSuccessModal" style="display:none" data-toggle="modal" data-target="#successModal"></button>
     <!-- Modal -->
     <div class="modal fade" id="successModal" role="dialog">
@@ -32,14 +32,15 @@
                 <div>
                     <h3 class="al">{{title}}</h3> &nbsp;
                     <span class="al" [innerHtml]="location"></span>
-                    <form id="submit-resume" action="http://54.187.154.6/bhorn/parse_resume" enctype='multipart/form-data'>
+                    <form id="submit-resume"  enctype='multipart/form-data'>
                         <span class="al" style="float:right; color:red">
                             Upload Resume & Apply Below
-                            <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/>
+                            <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/> .pdf, .doc & .docx
                         </span>
-                    </form>
+
+                  </form>
                 </div>
-                <h4 class="mt-25 qs">Apply</h4>
+                <h4 class="mt-25">Apply</h4>
             </div>
             <div>
                 <form novalidate  id="application" method="post" [formGroup]="app_form" (ngSubmit)="onSubmit()">

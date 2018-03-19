@@ -27,7 +27,7 @@ export class RegisterComponent {
                     this.router.navigate(['/login']);
                 },
                 error => {
-                    console.log("err: ", error);
+                    // console.log("err: ", error);
                     let body = JSON.parse(error["_body"]);
                     this.alertService.error(body.message);
                     this.loading = false;

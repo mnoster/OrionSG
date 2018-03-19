@@ -25,6 +25,7 @@ export class ApplyComponent implements OnInit {
     app_form: FormGroup;
     encoded_file:string;
     resumeUploaded:boolean = false;
+    file_type:string;
 
 
     constructor(private bullhornService: BullhornService,
@@ -71,41 +72,46 @@ export class ApplyComponent implements OnInit {
 
     attachResume(resume: any) {
         let self = this;
-        this.resumeUploaded = true;
-        let fileToLoad = resume;
-        let fileReader:any = new FileReader(), target:EventTarget;
+        this.resumeUploaded = true
+        let fileToLoad = resume
+        self.file_type = resume.name.split('.')
+        self.file_type = self.file_type[self.file_type.length - 1]
+        let fileReader:any = new FileReader(), target:EventTarget
         fileReader.onload = function (fileLoadedEvent:any) {
-            self.encoded_file = fileLoadedEvent.target.result;
+            self.encoded_file = fileLoadedEvent.target.result
         };
-        fileReader.readAsDataURL(fileToLoad);
+        fileReader.readAsDataURL(fileToLoad)
     }
 
     onSubmit() {
-        console.log("app form: ", this.app_form.value);
-        this.loader = true;
-        let self = this;
-        let data = this.formatCandidate(this.app_form.value);
-        this.email = data.email;
-        this.bullhornService.createCandidate(data).then(
-            (res: any) => {
-                console.log("res: ", res);
-                let res_body = JSON.parse(res._body);
-                let candidate_id = res_body.data.candidate.id;
-                console.log("FILE: ",  self.encoded_file)
-                self.bullhornService.attachResume(self.encoded_file, candidate_id).then(
-                    (res: any) => {
-                        this.complete = true;
-                        document.getElementById("showSuccessModal").click();
-                        console.log("res: " , res);
-                        self.emailService.emailApplicant(this.email, this.title, window.location.href).then(
-                            (res: any) => {
-                                console.log("res: " , res)
-                            }
-                        )
-                    }
-                )
-            }
-        );
+        try{
+            this.loader = true;
+            let self = this;
+            let data = this.formatCandidate(this.app_form.value)
+            let resume = self.encoded_file
+            this.email = data.email;
+            this.bullhornService.createCandidate(data).then(
+                (res: any) => {
+                    let res_body = JSON.parse(res._body);
+                    let candidate_id = res_body.data.candidate.id;
+                    self.bullhornService.attachResume(self.encoded_file, candidate_id, self.file_type).then(
+                        (res: any) => {
+                            this.complete = true
+                            document.getElementById("showSuccessModal").click()
+                            // console.log("res: " , res)
+                            self.emailService.emailApplicant(this.email, this.title, window.location.href, data, resume).then(
+                                (res: any) => {
+                                    // console.log("res: " , res)
+                                }
+                            )
+                        }
+                    )
+                }
+            )
+        }catch(error){
+            alert("There was an error submitting")
+        }
+
     }
 
 

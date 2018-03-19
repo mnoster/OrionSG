@@ -19,11 +19,11 @@ export class VisionComponent {
                           + "advocates.";
 
     orion_mission: String = "Orion Solutions Group exists to provide clients "
-                           + "and candidates with an outstanding experience for "
-                           + "all their human capital needs – project delivery, "
-                           + "contract staffing, and professional recruiting. "
-                           + "We achieve this through our dedication to high "
-                           + "quality, flexible, and honest solutions.";
+                          + "with an outstanding experience for all their human "
+                          + "capital needs – project delivery, contract staffing "
+                          + "and professional recruiting. Clients and Candidates "
+                          + "work with us because of our unrelenting commitment "
+                          + "to their success.";
 
     orion_values_1_title: String = "Put Relationships First";
     orion_values_1: String = "Relationships are at the center of everything we "

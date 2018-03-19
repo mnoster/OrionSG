@@ -1,21 +1,37 @@
-<link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-<div class="o-jumbotron">
+<div class="o-jumbotron-small">
     <div class="container text-center">
         <h1>{{title}}</h1>
         <!-- <h3>{{subtitle}}</h3> -->
     </div>
 </div>
+
 <subnavigation></subnavigation>
-<div class="container o-main-container">
+
+<div class="t-center mt-25 mb-25 qs" style="font-size: 20px;">
+  <a class="mb-10 display-inline-block" routerLink="/professionalsearch">
+    <button class="btn-light btn btn-default btn-lg">Professional Search</button>
+  </a>
+  <a class="mb-10 display-inline-block" routerLink="/contingentsearch">
+    <button class="btn-light btn btn-default btn-lg">Contingent Search</button>
+  </a>
+  <a class="mb-10 display-inline-block" routerLink="/retainedsearch">
+    <button class="btn-light btn btn-default btn-lg">Retained Search</button>
+  </a>
+</div>
+
+<div class="container qs mb-25">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <p>
-            Orion has a three-tiered structure for contingent fee arrangements.
-            The more we work in partnership with the client, the more dedicated
-            attention the role receives and the lower the cost to the client.
-          </p>
-          <h3>Engagement Fee Search</h3>
-          <p>
+      <div class="col-md-12">
+        <p class="fs-20 text-center">
+          Orion has a three-tiered structure for contingent fee arrangements.
+          The more we work in partnership with the client, the more dedicated
+          attention the role receives and the lower the cost to the client.
+        </p>
+      </div>
+     <div class="col-md-12">
+
+          <h3 class="text-center">Engagement Fee Search</h3>
+          <p class="o-card">
             Orion will work with the client to establish a target salary and
             overall fee for the engagement. A portion of the fee is due upon
             engagement and allows us to fund our efforts in research, social
@@ -25,8 +41,8 @@
             a candidate. Orion offers this arrangement at an 18% discount from
             the standard contingent fee.
           </p>
-          <h3>Exclusive Search</h3>
-          <p>
+          <h3 class="text-center">Exclusive Search</h3>
+          <p class="o-card">
             This model is used when clients prefer their fee to be completely
             contingent, but they work exclusively with Orion. This version
             allows us to provide the benefits of the engagement fee search but
@@ -34,8 +50,8 @@
             offers this arrangement at a 10% discount from the standard
             contingent fee.
           </p>
-          <h3>Standard Search</h3>
-          <p>
+          <h3 class="text-center">Standard Search</h3>
+          <p class="o-card">
             This is the typical, multi-firm contingent arrangement. The fee is
             highest in this scenario. Orion will engage in these arrangements
             when there is a strong relationship with the client and an ability

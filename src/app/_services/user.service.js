@@ -18,20 +18,20 @@ var UserService = (function () {
         this.config = { headers: { 'Content-Type': 'application/json' } };
     }
     UserService.prototype.getAll = function () {
-        return this.http.get(urls_1.DEV_URL + '/user/get', this.jwt()).map(function (response) { return response.json(); });
+        return this.http.get(urls_1._URL + '/user/get', this.jwt()).map(function (response) { return response.json(); });
     };
     UserService.prototype.authenticate = function (id) {
-        return this.http.post(urls_1.DEV_URL + '/user/authenticate' + id, this.jwt()).map(function (response) { return response.json(); });
+        return this.http.post(urls_1._URL + '/user/authenticate' + id, this.jwt()).map(function (response) { return response.json(); });
     };
     UserService.prototype.create = function (user) {
-        console.log("user call:", user);
-        return this.http.post(urls_1.DEV_URL + '/user/create', JSON.stringify(user), this.config);
+        // console.log("user call:", user);
+        return this.http.post(urls_1._URL + '/user/create', JSON.stringify(user), this.config);
     };
     UserService.prototype.update = function (user) {
-        return this.http.put(urls_1.DEV_URL + '/user/update', user, this.jwt()).map(function (response) { return response.json(); });
+        return this.http.put(urls_1._URL + '/user/update', user, this.jwt()).map(function (response) { return response.json(); });
     };
     UserService.prototype.delete = function (id) {
-        return this.http.delete(urls_1.DEV_URL + '/user/delete' + id, this.jwt()).map(function (response) { return response.json(); });
+        return this.http.delete(urls_1._URL + '/user/delete' + id, this.jwt()).map(function (response) { return response.json(); });
     };
     // private helper methods
     UserService.prototype.jwt = function () {

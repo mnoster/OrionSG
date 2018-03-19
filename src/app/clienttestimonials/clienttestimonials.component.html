@@ -1,0 +1,28 @@
+<!-- Client Testimonials Header -->
+<div class="o-jumbotron-small">
+    <div class="container text-center">
+        <h1>{{title}}</h1>
+    </div>
+</div>
+
+<!-- Subnavigation -->
+<subnavigation></subnavigation>
+
+<!-- Client Testimonials Section -->
+<div class="container o-client-testimonials qs mt-50 mb-25">
+
+  <div *ngFor="let x of testimonials; let i = index; let last = last" class="row testimonials-row">
+
+    <div class="col-sm-12">
+      <div class="quote-box">
+        <p class="quote-box-quote"><span class="blue-quote">&ldquo;</span> {{x.quote}} <span class="blue-quote">&rdquo;</span></p>
+      </div>
+      <p class="quote-box-author">- {{x.source}}</p>
+    </div>
+
+    <div *ngIf="!last" class="col-sm-12 p-20">
+      <hr class="blue-hr" />
+    </div>
+  </div>
+
+</div>

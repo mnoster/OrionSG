@@ -16,4 +16,6 @@ export class NavigationComponent {
   history = 'History';
   login = 'Login';
   register = 'Register';
+  clienttestimonials = 'Client Testimonials';
+  candidatetestimonials = 'Candidate Testimonials ';
 }
