@@ -5,7 +5,8 @@
     "start": "node ./node_modules/concurrently/src/main.js \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "./node_modules/lite-server/bin/lite-server",
     "tsc": "./node_modules/typescript/bin/tsc",
-    "tsc:w": "./node_modules/typescript/bin/tsc -w"
+    "tsc:w": "./node_modules/typescript/bin/tsc -w",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E80NOD3IMMSZP --paths /index.html /* /assets/* /build/* /src/* /vendor.bundle.js /styles.bundle.js /inline.bundle.js --profile=me"
   },
   "license": "MIT",
   "dependencies": {
