@@ -81,6 +81,12 @@ export class ProfessionalRecruitingComponent {
         "Manager of Supply Chain Systems", "PMO System Administrator",
         "Senior Network Engineer"
       ]
+    },
+    {
+      id: "engineering", title: "Engineering",
+      list: [
+        "Engineering Manager"
+      ]
     }
   ]
 }

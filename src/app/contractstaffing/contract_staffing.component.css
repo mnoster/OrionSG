@@ -13,6 +13,12 @@
 .contract-staffing-icon {
   margin-top: 50px;
 }
+.o-bg-l-blue{
+    background-color: #3b6f95;
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
 
 @media (min-width: 1200px) {
   .contract-staffing-icon {

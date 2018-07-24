@@ -181,7 +181,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .mb-20{ margin-bottom:20px; }
 .mb-45{ margin-bottom:45px; }
 .mr-15{ margin-right: 15px; }
-
+.lh-40{ line-height: 40px;}
 .display-inline-block { display: inline-block; }
 
 .o-vertical-align-top {

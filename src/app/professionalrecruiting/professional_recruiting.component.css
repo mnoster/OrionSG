@@ -1,3 +1,20 @@
+.o-bg-l-blue{
+  background-color: #6e95b1;
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
+}
+.o-bg-light-blue{
+  background-color: #d2ecff80;
+  color: black;
+  font-size: 16px;
+  line-height: 42px;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+.o-bg-light-blue h4{
+  line-height: 42px;
+}
 
 @media (min-width: 992px) {
   .o-height-450 {

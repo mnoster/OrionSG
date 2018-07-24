@@ -21,7 +21,7 @@ export let CandidateForm:
                 {name: "mobile", placeholder:"Mobile Phone", required: true},
                 {name: "phone", placeholder:"Home Phone", required: false},
                 {name: "workPhone", placeholder:"Work Phone", required: false},
-                {name: "occupation", placeholder:"Current Title", required: true}
+                {name: "occupation", placeholder:"Current Title", required: false}
             ]
         }
     ];

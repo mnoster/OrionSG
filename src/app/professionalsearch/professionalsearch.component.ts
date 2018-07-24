@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: 'professionalsearch.component.html',
-    styleUrls: ['professionalsearch.component.css',
-                '../app.component.css',]
+  moduleId: module.id,
+  templateUrl: 'professionalsearch.component.html',
+  styleUrls: ['professionalsearch.component.css',
+    '../app.component.css',]
 
 })
 
@@ -14,7 +14,7 @@ export class ProfessionalSearchComponent {
 
   examples = [
     {
-      id : "accountingandfinance", title: "Accounting & Finance",
+      id: "accountingandfinance", title: "Accounting & Finance",
       list: [
         "VP of Finance", "Corporate Controller",
         "Tax Director", "Director of Financial Reporting",
@@ -23,11 +23,11 @@ export class ProfessionalSearchComponent {
         "Global Treasury Senior Analyst", "Tax Manager",
         "Senior Manager - Payroll Operations", "Senior International Tax Analyst",
         "Regional Accountant", "Treasury Operations Manager",
-        "State Tax Manager", "Cost Analyst"
+        "State Tax Manager", "Cost Analyst", "Business Valuation Analyst"
       ]
     },
     {
-      id : "auditriskcompliance", title: "Audit, Risk & Compliance",
+      id: "auditriskcompliance", title: "Audit, Risk & Compliance",
       list: [
         "Internal Audit Director", "Internal Control (SOX) Manager",
         "Regulatory Services Manager", "Fraud & Financial Audit Manager",
@@ -36,7 +36,7 @@ export class ProfessionalSearchComponent {
       ]
     },
     {
-      id : "itauditsecurity", title: "IT Audit & Security",
+      id: "itauditsecurity", title: "IT Audit & Security",
       list: [
         "IT Audit Manager", "Data Privacy & Protection Manager",
         "Senior Security Specialist", "IT Auditor",
@@ -44,7 +44,7 @@ export class ProfessionalSearchComponent {
       ]
     },
     {
-      id : "humanresources", title: "Human Resources",
+      id: "humanresources", title: "Human Resources",
       list: [
         "Global Function HR Business Partner", "Compensation Analyst",
         "Training Design Manager", "Process Excellence Service Design Manager",
@@ -53,21 +53,21 @@ export class ProfessionalSearchComponent {
       ]
     },
     {
-      id : "salesandmarketing", title: "Sales & Marketing",
+      id: "salesandmarketing", title: "Sales & Marketing",
       list: [
         "VP of Strategy", "Managing Director",
         "Inside Sales", "Business Development Associate"
       ]
     },
     {
-      id : "supplychain", title: "Supply Chain",
+      id: "supplychain", title: "Supply Chain",
       list: [
-        "Senior Supply Chain Analyst", "Manager of Supply Chain Systems",
+        "Commodity Manager", "Senior Supply Chain Analyst", "Manager of Supply Chain Systems",
         "Buyer"
       ]
     },
     {
-      id : "dataanalytics", title: "Data Analytics",
+      id: "dataanalytics", title: "Data Analytics",
       list: [
         "Risk Analyst – Advanced Analytics", "Senior Commercial Risk Analyst",
         "Senior Analyst – Loss Forecasting and Reserves", "Risk Administration and PMO Specialist",
@@ -76,12 +76,18 @@ export class ProfessionalSearchComponent {
       ]
     },
     {
-      id : "informationtechnology", title: "Information Technology",
+      id: "informationtechnology", title: "Information Technology",
       list: [
         "Data Privacy & Protection Manager", "PMO Transition Senior Manager",
         "Data Warehouse Analyst", "Senior Security Analyst",
         "Manager of Supply Chain Systems", "PMO System Administrator",
         "Senior Network Engineer"
+      ]
+    }, 
+    {
+      id: "engineering", title: "Engineering",
+      list: [
+        "Engineering Manager"
       ]
     }
   ]
@@ -89,11 +95,11 @@ export class ProfessionalSearchComponent {
   constructor(private router: Router) { }
 
   ngOnInit() {
-      this.router.events.subscribe((evt) => {
-          if (!(evt instanceof NavigationEnd)) {
-              return;
-          }
-          window.scrollTo(0, 0)
-      });
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 }

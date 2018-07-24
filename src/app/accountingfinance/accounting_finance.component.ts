@@ -28,6 +28,11 @@ export class AccountingFinanceComponent {
       clientIssue: "Our client is a not-for-profit entity that provides membership based services for a downtown business district. The client was looking to add significant services to the portfolio and needed to develop a pricing model that was fair to the members and provided sufficient revenue to support the new services.",
       orionSolution: "Orion brought in a consultant with strong data analysis skills and a track record of providing insight on challenging business issues. The consultant developed a spectrum of assessment scenarios to support the annual budget.",
       clientOutcomes: "Orion’s consultant created a technical business plan and summary that was presented to the City Council and corporate stakeholders."
+    },
+    {
+      id: "externalAuditPreparation", title: "External Audit Preparation",
+      clientIssue: "Our client is a not-for-profit entity that provides membership based services for a downtown business district. The client was looking to add significant services to the portfolio and needed to develop a pricing model that was fair to the members and provided sufficient revenue to support the new servicesOur client is a private equity owned specialty food producer that had just completed a merger with a competitor. The client had to complete their annual audit within a few weeks, but issues with systems integration and staffing levels had put them behind.",
+      orionSolution: "Orion brought in a former middle market CFO with extensive public accounting experience. We used the external firm’s PBC list and developed a strategy to go after all the open items. The key consideration was getting the audit finished on time without disrupting the important operational initiatives that were happening at the same timeOrion worked closely with the client and the external auditors and helped deliver asuccessful audit that finished on time."
     }
   ]
 

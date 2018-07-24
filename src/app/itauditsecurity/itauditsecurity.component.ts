@@ -36,5 +36,17 @@ export class ItAuditSecurityComponent {
       orionSolution: "Orion provided an IT security consultant with extensive experience in the banking industry, and particular experience in IT vendor management. The consultant developed a multi- pronged approach for the project. The first phase included a review of SOC reports and determination of the impact of identified weaknesses.  For the second phase, our consultant went to a variety of hacker sites where information on hacked companies is shared.  The consultant learned that the majority of our client’s vendors had been hacked, and many of the hacked services had the potential to impact our client.  In many cases these vendors had not communicated the exposure.",
       clientOutcomes: "Orion completed the evaluation of each IT vendor and got the client current with all their key relationships. In addition, we built a report that ranked the vendors by the degree of exposure risk and the extent of identified hacking activity to allow management to make informed decisions about which vendors should remain and which required remediation to stay with the client."
     },
+    {
+      id: "documentReview", title: "Document Review",
+      clientIssue: "Our client is a leader in the field of e-Discovery and digital forensics.  They are frequently called upon to remediate data breaches for major organizations.  Our client took on a project that required a document review that covered approximately 500,000 pages of material and needed to be completed in a matter of weeks.",
+      orionSolution: "Orion ramped up a team of 15 people within a week, including interviews and background checks.  We worked closely with our client to manage team expectations and monitor performance.",
+      clientOutcomes: "With Orion’s help the client completed the project on time and on budget.  We have since been asked back for additional data breach reviews, and were able to return many of the same consultants each time."
+    },
+    {
+      id: "businessContinuityPlanning", title: "Business Continuity Planning (BCP)",
+      clientIssue: "Our client is a major insurance and banking company who needed to prepare for an independent review of their Business Continuity Plan.  The client needed someone to review the status of each business unit’s BCP, and coordinate efforts to get the plans up to date.",
+      orionSolution: "Orion brought in a consultant with more than 25 years’ experience in IT and IT audit.  Our consultant quickly established relationships with each business unit representative and worked with them to update their BCPs.  The consultant also worked with the independent evaluation firm to coordinate the BCP test day.",
+      clientOutcomes: "With Orion’s help the client completed the project on time and on budget.  We have since been asked back for additional data breach reviews, and were able to return many of the same consultants each time."
+    }
   ]
 }

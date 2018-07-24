@@ -59,12 +59,32 @@ export class OurteamComponent implements OnInit {
             image: 'kristyn_profile.jpeg',
             height: '340px',
             linkedIn: 'https://www.linkedin.com/in/kristyn-van-uden-4b2376126/',
-            summary:"Kristyn joined Orion as an intern and made such an impact we brought her onto the team in 2017 as a Professional Recruiter. Her knowledge of HR and skill with social media helps her find qualified individuals who can be successful in our clients’ environments. She prides herself with making connections with candidates and helping them progress in their careers. Kristyn earned her BA in Human Resources Development from Oakland University. Kristyn is an active volunteer at the Warren Community Center where she works with special needs children."
+            summary:"Kristyn joined Orion in 2016 as an Intern and has since grown into a Professional Recruiter. Her knowledge of HR and skill with social media helps her find qualified individuals who can be successful in our clients’ environments. She plays a vital role in our fast ramp up process, having set up large teams in just a weeks’ time. She prides herself with making connections with candidates and helping them progress in their careers. Kristyn earned her BS in Human Resources Development from Oakland University with a Minor in Employment Systems and Standards. Kristyn is an active volunteer at the Warren Community Center where she works with special needs adults."
+
+        },
+        {
+            name: 'Bill Pichan',
+            role: 'Director',
+            email: "bpichan@orionsolutionsgroup.net",
+            image: 'bill_profile.jpeg',
+            height: '340px',
+            linkedIn: 'https://www.linkedin.com/in/bill-pichan-202b151/',
+            summary:"Bill brings more than 25 years of experience delivering professional services to various industries.  Bill provides business development and project leadership services for Orion.  Bill earned his BBA from the University of Michigan-Dearborn and his CPA certification at one of the Big 4 firms.  Prior to Orion, Bill worked in the professional services industry and was the global account manager for one of the automotive OEMs.  Earlier in his career, Bill also worked with several automotive suppliers in management roles."
+
+        },
+        {
+            name: 'Zulaikha Khan',
+            role: 'Professional Recruiter',
+            email: "zkhan@orionsolutionsgroup.net",
+            image: 'zulaikha_profile.jpeg',
+            height: '340px',
+            linkedIn: 'https://www.linkedin.com/in/zulaikhakhan/',
+            summary:"Zulaikha (“Zuli”) joined Orion as an intern and she did such a great job that we added her to the team in 2018 as a Professional Recruiter.  Her knowledge of HR and skills with social media help her find qualified individuals who can be successful in our clients’ environments. Zuli also prides herself on managing Orion’s social media. She tries to connect with candidates and motivate them to progress in their careers. Zuli earned her BS in Human Resources Development from Oakland University."
 
         },
         {
             name: 'Bob',
-            role: 'The Dog',
+            role: '',
             email: '',
             image: 'bob_profile.jpeg',
             height: '340px',
