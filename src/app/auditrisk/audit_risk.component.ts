@@ -42,11 +42,10 @@ export class AuditRiskComponent {
       clientOutcomes: "Orion delivered a comprehensive report on the Internal Audit group’s compliance with IIA standards as well as the overall effectiveness of the group. We also provided best practices feedback and suggested several opportunities for improvement. The report was well received by both the Internal Audit group and the Audit Committee of the Board of Directors."
     },
     {
-      id: "documentReview ", title: "Document Review",
+      id: "documentReview", title: "Document Review",
       clientIssue: "Our client is a leader in the field of e-Discovery and digital forensics.  They are frequently called upon to remediate data breaches for major organizations.  Our client took on a project that required a document review that covered approximately 500,000 pages of material and needed to be completed in a matter of weeks.",
       orionSolution: "Orion ramped up a team of 15 people within a week, including interviews and background checks.  We worked closely with our client to manage team expectations and monitor performance.",
       clientOutcomes: "With Orion’s help the client completed the project on time and on budget.  We have since been asked back for additional data breach reviews, and were able to return many of the same consultants each time."
     }
   ]
-
 }
