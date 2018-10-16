@@ -34,7 +34,7 @@ import { ProfessionalSearchComponent } from './professionalsearch/index';
 import { RetainedSearchComponent } from './retainedsearch/index';
 import { ContingentSearchComponent } from './contingentsearch/index';
 // import { LoginComponent } from './login/index';
-import { RegisterComponent } from './register/index';
+// import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { JobsComponent } from './jobs/index';
 import { JobDescriptionComponent } from './job_description/index';
