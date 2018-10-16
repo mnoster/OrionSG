@@ -24,7 +24,10 @@ export class HomeComponent implements OnInit {
                           + "to their success.";
 
     // constructor(private userService: UserService, private route: ActivatedRoute, private router: Router) {
-    constructor(private userService: UserService, private  contentService:ContentService) {
+    constructor(
+        // private userService: UserService, 
+        // private  contentService:ContentService
+        ) {
         //this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
 
@@ -33,22 +36,22 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.getContent();
+        // this.getContent();
     }
 
-    getContent(){
-        this.loading = true;
-        this.page_type = "Home";
-        this.contentService.getContent(this.page_type)
-            .subscribe(
-                data => {
-                    // console.log("Content: ", data)
-                },
-                error => {
-                    // console.log("Content  Error: " , error);
-                    this.loading = false;
-                });
-    }
+    // getContent(){
+    //     this.loading = true;
+    //     this.page_type = "Home";
+    //     this.contentService.getContent(this.page_type)
+    //         .subscribe(
+    //             data => {
+    //                 // console.log("Content: ", data)
+    //             },
+    //             error => {
+    //                 // console.log("Content  Error: " , error);
+    //                 this.loading = false;
+    //             });
+    // }
 
     deleteUser(id: number) {
         //this.userService.delete(id).subscribe(() => { this.loadAllUsers() });

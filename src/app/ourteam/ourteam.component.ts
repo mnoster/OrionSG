@@ -13,8 +13,8 @@ import { UserService } from '../_services/index';
 
 
 export class OurteamComponent implements OnInit {
-    constructor(private userService: UserService) {
-        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    constructor() {
+        // this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
 
     currentUser: User;

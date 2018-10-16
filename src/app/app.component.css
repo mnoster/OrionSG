@@ -211,8 +211,9 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .o-jumbotron {
     color: inherit;
     background-color: #fff;
-    background: url(/assets/images/buildingblue.png) no-repeat center top fixed;
+    background: linear-gradient(rgba(59, 111, 149, .6), rgba(59, 111, 149, .6)), url(/assets/images/buildingblue.png) no-repeat center top fixed;
     /* background-position-y: -468px; */
+    
     background-position-y: -80px;
     background-size: cover;
     height: 375px;
@@ -233,7 +234,6 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   height:200px;
 }
 .o-jumbotron .o-home-header-grey-bg {
-  background-color: rgba(59, 111, 149, .8);
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -300,9 +300,9 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   margin-top: 90px;
 }
 .o-jumbotron h3, .o-jumbotron-small h3  {
-font-size: 20px;
+    font-size: 20px;
     display: inline-block;
-    background: rgba(59, 111, 149, .7);
+    /* background: rgba(59, 111, 149, .7); */
     padding: 7px 23px;
     border-radius: 6px;
 }

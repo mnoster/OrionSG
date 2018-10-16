@@ -1,14 +1,22 @@
 ﻿import { BaseRequestOptions } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { SafeHtmlPipe } from "./_pipes/index";
 
 //COMPONENTS AND SERVICES
-import { AppComponent }  from './app.component';
-import { AlertService, AuthenticationService, EmailService, UserService, BullhornService, ContentService } from './_services/index';
+import { AppComponent } from './app.component';
+import { 
+    AlertService, 
+    // AuthenticationService, 
+    EmailService, 
+    // UserService, 
+    BullhornService, 
+    // ContentService 
+} from './_services/index';
+
 import { AccountingFinanceComponent } from "./accountingfinance/index";
 import { AlertComponent } from './_directives/index';
 import { ApplyComponent } from './apply/index';
@@ -25,7 +33,7 @@ import { HumanResourcesComponent } from './humanresources/index';
 import { ProfessionalSearchComponent } from './professionalsearch/index';
 import { RetainedSearchComponent } from './retainedsearch/index';
 import { ContingentSearchComponent } from './contingentsearch/index';
-import { LoginComponent } from './login/index';
+// import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { JobsComponent } from './jobs/index';
@@ -70,21 +78,21 @@ import { ProfessionalRecTestimonials } from './professionalrectestimonials/index
         ProfessionalSearchComponent,
         RetainedSearchComponent,
         ContingentSearchComponent,
-        LoginComponent,
-        RegisterComponent,
+        // LoginComponent,
+        // RegisterComponent,
         SafeHtmlPipe,
         ClientTestimonials,
         CandidateTestimonials,
         ProfessionalRecTestimonials
     ],
     providers: [
-        AuthGuard,
+        // AuthGuard,
         AlertService,
-        AuthenticationService,
+        // AuthenticationService,
         BullhornService,
         EmailService,
-        UserService,
-        ContentService,
+        // UserService,
+        // ContentService,
         BaseRequestOptions
     ],
     bootstrap: [AppComponent]

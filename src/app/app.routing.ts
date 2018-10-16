@@ -14,8 +14,8 @@ import { HumanResourcesComponent } from './humanresources/index';
 import { ProfessionalSearchComponent } from './professionalsearch/index';
 import { RetainedSearchComponent } from './retainedsearch/index';
 import { ContingentSearchComponent } from './contingentsearch/index';
-import { LoginComponent } from './login/index';
-import { RegisterComponent } from './register/index';
+// import { LoginComponent } from './login/index';
+// import { RegisterComponent } from './register/index';
 import { JobsComponent } from './jobs/index';
 import { JobDescriptionComponent } from './job_description/index';
 import { OurteamComponent } from './ourteam/index';
@@ -45,8 +45,8 @@ const appRoutes: Routes = [
     { path: 'professionalsearch', component: ProfessionalSearchComponent },
     { path: 'retainedsearch', component: RetainedSearchComponent },
     { path: 'contingentsearch', component: ContingentSearchComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+    // { path: 'login', component: LoginComponent },
+    // { path: 'register', component: RegisterComponent },
     { path: 'jobs', component: JobsComponent },
     { path: 'jobs/:id', component: JobDescriptionComponent },
     { path: 'clienttestimonials', component: ClientTestimonials },
