@@ -13,7 +13,7 @@ a:active {
   text-decoration: none;
 }
 .o-main-container {
-  margin: 50px 0 0 0;
+  margin: 31px 0 0 0;
   background-color: #fcfcfc;
   min-height: 100vh;
 }
@@ -25,24 +25,33 @@ a:active {
 .o-header {
   height: 200px;
   color: inherit;
+  clear: both;
+
+
+
 /*  background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed;
 */
-  background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
-  background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); /* ie6-9 *//* background-position-y: -440px; */
+  /* background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); 
+  background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%);
+  background: -o-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); 
   background-position-y: -200px;
-  background-size:cover;
+  background-size:cover; */
+  margin-top: 81px;
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
 }
 .o-header h1{
   margin-top: 95px;
-  font-family: "Quicksand";
-  color: #ffffff;
+  color: #4f4f4f;
+  padding: 0 34px 20px 34px;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'avenir';
+  font-size: 45px;
 }
 .o-header .o-header-subtitle {
   font-size: 18px;
@@ -79,9 +88,7 @@ footer .footer-container .row .col-sm-4 {
 footer .container.footer-container {
   padding:20px 0;
 }
-footer .footer-container h4 {
 
-}
 footer .footer-container a{
   font-family: 'Roboto', sans-serif;
   color: #dddddd;
@@ -98,7 +105,7 @@ footer .footer-container a i.fab {
   font-size: 30px
 }
 .o-card {
-  box-shadow:0 0 3px;
+  box-shadow:0 1px 1px grey;
   padding:15px;
   margin-top:30px;
   background-color: white;
@@ -107,6 +114,7 @@ footer .footer-container a i.fab {
   border: 1px solid #c3c3c3;
   border-top: 5px solid #3b7096;
   border-radius: 5px;
+  line-height: 2.2;
 }
 
 .o-card-plain {
@@ -118,6 +126,7 @@ footer .footer-container a i.fab {
   font-size: 16px;
   border: 1px solid #c3c3c3;
   border-radius: 5px;
+  line-height: 2.5;
 }
 
 @media (min-width: 500px) {
@@ -196,7 +205,14 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
+.o-bg-light-blue{
+  background-color: #d2ecff80;
+  color: black;
+  font-size: 16px;
+  line-height: 42px;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
 .o-border-radius-5 {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -217,17 +233,19 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
     background-position-y: -80px;
     background-size: cover;
     height: 375px;
+    margin-top: 81px;
 }
 /* Styles for Top Jumbotron Container */
 .o-jumbotron-small {
   color: inherit;
-  background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
-  background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); /* ie6-9 *//* background-position-y: -440px; */
+  clear: both;
+  /* background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); 
+  background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: -o-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%);
+  background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 );  */
 
 /*  background: url("~/assets/images/architecture.jpg") no-repeat center top fixed;
   background-position-y: -590px;*/
@@ -238,6 +256,9 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   margin-right: auto;
   padding: 10px;
   border-radius: 5px;
+  font-family: 'avenir';
+  font-weight: 400;
+  
 }
 .o-jumbotron .container {
   padding-top: 130px;
@@ -283,14 +304,44 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   }
 }
 
-.o-jumbotron h1, .o-jumbotron-small h1,
-.o-jumbotron h3, .o-jumbotron-small h3  {
+.o-jumbotron h1,
+.o-jumbotron h3  {
   font-family:'Nunito', sans-serif;
+  font-family: 'avenir';
   /*text-shadow: black 0 0 2px;*/
   color: #ffffff;
   font-weight: 300;
   text-shadow: 1px 1px black;
 }
+.o-jumbotron-small h1,
+.o-jumbotron-small h3  {
+  color: #4f4f4f;
+  padding: 0 34px 20px 34px;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'avenir';
+  
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.o-underline{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  background: rgb(60, 111, 150);
+  border-radius: 30px;
+  margin-top: 20px;
+  height:4px;
+  width:100%;
+}
+
 
 .o-jumbotron h1, .o-jumbotron-small h1 {
   font-size:45px;
@@ -352,9 +403,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 /* Styles for Top Jumbotron Container END */
 
 /* Third Container Styles */
-.o-third-container {
-  background-color: #fff;
-}
+
 
 .o-third-container div {
   padding: 10px 10px;
@@ -394,7 +443,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Alegreya Sans', sans-serif;*/
 
-.navbar-default .navbar-nav>li>a{
+:root:root:root .navbar-default .navbar-nav>li>a{
   font-family: 'Nunito', sans-serif;
   padding: 30px 15px;
 }
@@ -426,7 +475,9 @@ a {
 }
 .o-bg-l-grey {
   background-color: #eaeaea;
+  line-height: 2;
 }
+
 
 hr.o-hr-blue {
   border-top: 2px solid #185278;
@@ -632,10 +683,11 @@ hr.o-hr-blue {
 .quote-box {
   background: #fff;
   padding: 16px 20px 19px;
-  border-right: 1px solid #b6b6b6;
-  border-bottom: 1px solid #b6b6b6;
   position: relative;
-  box-shadow: 4px 0px 34px #b6b6b6;
+  box-shadow: 2px 2px 10px 0px #b6b6b6;
+  line-height: 2;
+  margin-top: 14px;
+  border-radius: 5px;
 }
 .quote-box .quote-box-quote {
   font-size: 16px

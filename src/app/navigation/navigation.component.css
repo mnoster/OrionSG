@@ -1,14 +1,14 @@
 /* Navigation Component CSS */
 .o-navbar-orion {
   /*border: none;*/
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(252, 252, 252,.92)
 }
 .o-navbar-orion .navbar-nav{
 }
 /* Override Bootstrap CSS */
 .navbar {
   margin-bottom: 0;
-  box-shadow: 0 0 6px;
+  /* box-shadow: 0 0 6px; */
 }
 
 .navbar-default .navbar-nav > li > a {

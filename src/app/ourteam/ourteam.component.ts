@@ -16,7 +16,7 @@ export class OurteamComponent implements OnInit {
     constructor() {
         // this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
-
+    title="Our Team"
     currentUser: User;
     users: User[] = [];
     team = [

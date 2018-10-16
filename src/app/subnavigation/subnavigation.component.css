@@ -8,6 +8,20 @@
     box-shadow: 0 2px 4px #80808066;
     font-size: 16px;
 }
+.subnavigation{
+    position: sticky;
+    top: 81px;
+    z-index: 100;
+    background: #3b7096;
+    border-radius: 0;
+    height: 0;
+    box-shadow: 0 2px 4px #80808066;
+    font-size: 16px;
+    display: inline-block;
+    float: right;
+    border-bottom-left-radius: 5px;
+}
+
 .subnavigation nav{
     text-align: center;
 }

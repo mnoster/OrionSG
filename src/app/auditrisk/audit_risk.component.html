@@ -1,12 +1,17 @@
+<!-- Subnavigation -->
+<subnavigation></subnavigation>
+
 <!-- Audit Risk Header -->
 <div class="o-jumbotron-small">
   <div class="container text-center">
-    <h1>{{title}}</h1>
+    <h1>{{title}}
+      <div class="o-underline"></div>
+    </h1>
+
   </div>
 </div>
 
-<!-- Subnavigation -->
-<subnavigation></subnavigation>
+
 
 <!-- Audit Risk Section -->
 <div class="container o-consulting-component qs">
@@ -92,7 +97,7 @@
       </ul>
 
       <div class="tab-content">
-        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"  [ngClass]="{ active: first, in: first }">
+        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id" [ngClass]="{ active: first, in: first }">
           <div class="o-tab-title">{{x.title}}</div>
           <h4>CLIENT ISSUE</h4>
           <p>{{x.clientIssue}}</p>

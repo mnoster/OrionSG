@@ -16,9 +16,11 @@
   font-family: "Quicksand";
 }
 
+
 /* Vision Section  */
-#o-container-vision {
-   font-family: 'Roboto', sans-serif;
+#o-container-vision h4{
+   line-height: 2.5;
+
 }
 .o-values-section-title{
     padding: 10px 40px;
@@ -29,11 +31,18 @@
   background-color: rgba(255,255,255,0.9);
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #7eaaa9;
-  box-shadow: 0 0 8px;
+  box-shadow: 0 1px 2px grey;
   margin-bottom: 30px;
   transition: 1s;
   height: 170px;
+}
+.o-bg-light-blue {
+  background-color: #d2ecff80;
+  color: black;
+  font-size: 16px;
+  line-height: 42px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 1021px) {

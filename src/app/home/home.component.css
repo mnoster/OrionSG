@@ -26,7 +26,6 @@ div{
 
 .o-home-container h3 {
   font-size: 22px;
-  margin-top: 0;
 }
 
 /* Arrow down */
@@ -84,22 +83,27 @@ div{
 }
 .o-contract-staffing,.o-professional-search,.o-consulting{
   color:black;
-  border:1px solid white;
 }
+
+.o-contract-staffing{
+  border: 1px solid #ededed;
+  border-radius:5px;
+}
+
 .o-contract-staffing:hover{
   border-radius: 5px;
-  border:1px solid black;
-  background-color: #e7e7e7;
+  border: 1px solid #ededed;
+  background-color: #f4f4f4;
 }
 .o-professional-search:hover{
   border-radius: 5px;
-  border:1px solid black;
-  background-color: #e7e7e7;
+  border: 1px solid #ededed;
+  background-color: #f4f4f4;
 }
 .o-consulting:hover{
   border-radius: 5px;
-  border:1px solid black;
-  background-color: #e7e7e7;
+  border: 1px solid #ededed;
+  background-color: #f4f4f4;
 }
 .o-split-column-wrapper{
   padding: 15px;
@@ -304,12 +308,6 @@ div{
   }
 }
 
-@media (max-width: 1300px) {
-  #o-our-mission-section {
-/*    background-image: url(../../assets/images/our_mission.jpg);
-*/  }
-}
-
 @media (max-width: 1249px) {
   #o-our-mission-section .container {
     width: 100%;
@@ -338,7 +336,7 @@ div{
 .play-animation .o-c-compass .compass_sd {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  webkit-animation: compass_rotate 2.4s ease-in-out 1;
+  -webkit-animation: compass_rotate 2.4s ease-in-out 1;
   -webkit-animation: compass_rotate 2.4s ease-in-out 1;
   animation: compass_rotate 2.4s ease-in-out 1;
   -webkit-animation-delay: 3.9s;
@@ -456,7 +454,6 @@ div{
 [class^="pe-7s-"], [class*=" pe-7s-"] {
   display: inline-block;
   font-family: 'Pe-icon-7-stroke';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

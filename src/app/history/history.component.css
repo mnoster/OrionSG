@@ -1,18 +1,4 @@
-.o-header {
-  height: 200px;
-  color: inherit;
-  background-color: #fff;
-  background: url(/assets/images/green_blue.5eb7048a05863d9ec4c5.jpg) no-repeat center top fixed;
-  background-position-y: -440px;
-}
-.o-header .container {
-  padding-top: 50px;
-  max-width: 100%;
-}
-.o-header h1,
-.o-header h3 {
-  color: #ffffff;
-}
+
 
 /* Set a background color */
 #o-history-timeline {

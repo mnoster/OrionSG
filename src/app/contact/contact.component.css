@@ -25,11 +25,7 @@
   }
 }
 
-@media (max-width: 1300px) {
-  #o-container-contact {
 
-  }
-}
 
 @media (max-width: 1249px) {
   #o-container-contact .container {
@@ -127,8 +123,8 @@
 
 .o-third-container div {
   padding: 5px 10px;
-  background-color: #dee3e3;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  background-color: #f1f1f1;;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.2)
 }
 .o-third-container div:hover {
   background-color: #e0e6e6;
