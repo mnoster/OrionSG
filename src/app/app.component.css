@@ -129,14 +129,6 @@ footer .footer-container a i.fab {
   line-height: 2.5;
 }
 
-@media (min-width: 500px) {
-  .o-card.o-extra-padding,
-  .o-card-plain.o-extra-padding {
-    padding: 30px
-  }
-
-}
-
 hr.blue-hr {
   border: 0;
   height: 0; /* Firefox... */
@@ -145,12 +137,7 @@ hr.blue-hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  hr.blue-hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
+
 hr.blue-hr:after {  /* Not really supposed to work, but does */
   content: "\00a0";  /* Prevent margin collapse */
 }
@@ -160,9 +147,6 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .fs-30{font-size: 30px}
 .fs-20{font-size: 20px}
 .white{color:white !important}
-@media (max-width: 767px){
-  .mobile-padding-30{padding: 30px}
-}
 .p-20{ padding: 20px !important;}
 .p-40{ padding: 40px;}
 .p-100{padding:100px 0;}
@@ -265,12 +249,21 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 }
 
 @media (max-width: 767px) {
+  .o-jumbotron, .o-search-contain{
+    margin-top:65px;
+  }
   .o-jumbotron .container {
     padding-top: 125px;
   }
+  hr.blue-hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .mobile-padding-30{padding: 30px}
 }
 
 @media (max-width: 615px) {
+  
   .o-jumbotron .container {
     padding-top: 85px;
   }
@@ -280,6 +273,14 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   .o-jumbotron .container {
     padding-top: 80px;
   }
+}
+
+@media (min-width: 500px) {
+  .o-card.o-extra-padding,
+  .o-card-plain.o-extra-padding {
+    padding: 30px
+  }
+
 }
 
 @media (max-width: 400px) {

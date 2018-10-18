@@ -20,7 +20,7 @@ import {
 import { AccountingFinanceComponent } from "./accountingfinance/index";
 import { AlertComponent } from './_directives/index';
 import { ApplyComponent } from './apply/index';
-import { AuthGuard } from './_guards/index';
+// import { AuthGuard } from './_guards/index';
 import { AuditRiskComponent } from "./auditrisk/index";
 import { ContactComponent } from './contact/index'
 import { ContractStaffingComponent } from './contractstaffing/index'
