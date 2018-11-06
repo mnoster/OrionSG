@@ -69,7 +69,7 @@ a:active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+h4{line-height: 1.8;}
 footer {
   /* margin-top:20px; */
   padding: 13px 25px;
@@ -156,6 +156,7 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .pb-30{padding-bottom:30px;}
 .pt-25{padding-top:25px;}
 .pt-100{padding-top:100px;}
+.pb-100{padding-bottom:100px;}
 .ps-20{ padding-left: 20px; padding-right: 20px; }
 .ps-30{ padding-left: 30px; padding-right: 30px; }
 .ps-40{ padding-left: 40px; padding-right: 40px;}
@@ -176,12 +177,10 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
 .mr-15{ margin-right: 15px; }
 .lh-40{ line-height: 40px;}
 .display-inline-block { display: inline-block; }
-
-.o-vertical-align-top {
-  vertical-align: top;
-}
+.o-vertical-align-top {vertical-align: top;}
 .min-h-155{min-height:155px;}
 .text-cetner{text-align: center;}
+.t-shadow{text-shadow:0 1px 1px black;}
 .o-border-radius-10 {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -196,6 +195,12 @@ hr.blue-hr:after {  /* Not really supposed to work, but does */
   line-height: 42px;
   padding-top:50px;
   padding-bottom: 50px;
+}
+.o-bg-l-blue{
+  background-color: #6e95b1;
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
 }
 .o-border-radius-5 {
   border-radius: 5px;
