@@ -1,6 +1,9 @@
 .professional-recruiting ul{
   list-style-type: lower-roman;
 }
+.professional-recruiting h3{
+  font-size:46px;
+}
 .o-bg-l-blue{
   background-color: #6e95b1;
   color: white;

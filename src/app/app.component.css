@@ -105,13 +105,12 @@ footer .footer-container a i.fab {
   font-size: 30px
 }
 .o-card {
-  box-shadow:0 1px 1px grey;
+  box-shadow: 0px 1px 4px #b0b0b0;
   padding:15px;
   margin-top:30px;
   background-color: white;
   color:black;
   font-size: 16px;
-  border: 1px solid #c3c3c3;
   border-top: 5px solid #3b7096;
   border-radius: 5px;
   line-height: 2.2;
