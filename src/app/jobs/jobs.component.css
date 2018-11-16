@@ -102,3 +102,17 @@ font{
         margin-right:0;
     }
 }
+
+@media(max-width:389px){
+    .o-search-contain {
+        background-position-y: -437px;
+        margin-top: 64px;
+    }
+}
+
+
+@media(max-width:767px){
+    .o-search-contain {
+        margin-top: 65px;
+    }
+}
