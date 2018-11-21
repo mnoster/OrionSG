@@ -44,3 +44,13 @@ input{
     border-top: 3px solid red;
     transition: all .3s;
 }
+
+.success-button{
+    padding:8px 50px;
+    border-color:#01a600;
+    font-size: 17px 
+}
+.success-button:hover{
+    background-color:#01a600;
+    color:white;
+}

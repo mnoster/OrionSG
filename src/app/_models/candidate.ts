@@ -10,6 +10,7 @@ export class Candidate {
         public mobile: string,
         public occupation: string,
         public workPhone: string,
-        public jobId: string
+        public jobId: string,
+        public description:string
     ){}
 }

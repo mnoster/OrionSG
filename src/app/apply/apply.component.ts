@@ -133,7 +133,10 @@ export class ApplyComponent implements OnInit {
             data.mobile,
             data.occupation,
             data.workPhone,
-            this.job_id.toString()
+            this.job_id.toString(),
+            data.firstName + ' ' + data.lastName 
+            + " email: " + data.email 
+            + " location: " + data.city 
         );
         return candidate;
     }

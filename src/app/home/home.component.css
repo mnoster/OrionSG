@@ -32,7 +32,7 @@ div{
 #o-arrow-down {
   cursor: pointer;
 }
-
+.how-col{min-height: 230px;}
 
 #o-our-mission-section .container {
   margin-right: auto;
