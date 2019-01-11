@@ -39,7 +39,7 @@ export class OurteamComponent implements OnInit {
         {
             name: 'Kevin Suksi',
             role: 'Partner and Co-Founder',
-            email: "ksuski@orionsolutionsgroup.net",
+            email: "ksuksi@orionsolutionsgroup.net",
             image: 'kevin_profile.jpg',
             linkedIn: 'https://www.linkedin.com/in/kevinsuksi/',
             summary: "Kevin brings more than 15 years of experience in professional recruiting. Kevin leads the recruiting team to support all our service lines. Over his career Kevin has developed the ability to bring the right person to the table through relationship building, intelligent research, and relentless effort. Kevin earned his BBA in Accounting from the University of Michigan-Dearborn. Prior to his career as a recruiter, Kevin earned his CPA license while working at a major regional CPA firm and worked in corporate accounting."
