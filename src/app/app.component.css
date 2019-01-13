@@ -397,7 +397,8 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
     margin-right: auto;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'avenir';
+    font-size: 60px;
+    font-family: 'Quicksand', 'avenir';
     font-weight: 400;
 }
 
@@ -540,6 +541,9 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 }
 
 @media (max-width: 768px) {
+    .o-jumbotron .o-home-header-grey-bg {
+        font-size: 40px;
+    }
     .o-jumbotron h1, .o-jumbotron-small h1 {
         font-size: 25px;
     }
