@@ -29,4 +29,8 @@
     .o-sc-contact {
         display: none;
     }
+
+    .o-jumbotron-small.o-sc-header h1 {
+        font-size: 40px;
+    }
 }
