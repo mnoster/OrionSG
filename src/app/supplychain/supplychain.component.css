@@ -33,4 +33,9 @@
     .o-jumbotron-small.o-sc-header h1 {
         font-size: 40px;
     }
+
+    .o-jumbotron-small.o-sc-header {
+        height: 327px;
+        margin-top: 20px;
+    }
 }
