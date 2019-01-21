@@ -48,7 +48,7 @@ export class OurteamComponent implements OnInit {
             name: 'Dave Porter',
             role: 'Partner',
             email: "dporter@orionsolutionsgroup.net",
-            image: 'dave_porter_profile.png',
+            image: 'dave_porter_profile.jpg',
             linkedIn: 'https://www.linkedin.com/in/david-porter-18aa105/',
             summary: "Dave brings over 25 years of leadership experience in the logistics/supply chain industry.  Dave served as President of Hub Los Angeles and Hub Golden Gate, held numerous sales leadership roles on a regional and national basis, and served as EVP of Supply Chain Solutions (3PL and Truck Brokerage), among other roles for Hub Group.  Most recently, Dave served as CEO for approximately 5 years at Rail Delivery Services, an award-winning drayage, trucking/dedicated, and consolidation company in Los Angeles.  Dave earned his BA from Western Michigan University and MBA from the University of Redlands.  Dave serves on the California State University Fullerton School of Operations and Supply Chain Management Advisory Board and is a member of numerous industry associations."
         },
