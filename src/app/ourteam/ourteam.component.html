@@ -19,18 +19,18 @@
   <div class="row qs contact-card" *ngFor="let item of team">
     <div class="o-card">
       <div class="col-md-3 col-sm-12">
-        <img alt="Kris Flynn" [height]="item.height" [src]="'../assets/images/'+item.image" class="img-rounded"/>
+        <img alt="{{item.name}}" [height]="item.height" [src]="'../assets/images/'+item.image" class="img-rounded"/>
         <p *ngIf='item.email'>
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/kris-flynn-26418162/" target="_blank">Connect to {{item.name}} on LinkedIn</a>
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="{{item.linkedIn}}" target="_blank">Connect to {{item.name}} on LinkedIn</a>
           <br>
-          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kflynn@orionsolutionsgroup.net">{{item.email}}</a>
+          <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{item.email}}">{{item.email}}</a>
         </p>
       </div>
       <div class="col-md-9 col-sm-12" >
         <h3>
           {{item.name}}
           <br/>
-          {{item.role}}
+          <span style="font-size: 18px">{{item.role}}</span>
         </h3>
         <p>
           {{item.summary}}

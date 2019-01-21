@@ -45,6 +45,22 @@ export class OurteamComponent implements OnInit {
             summary: "Kevin brings more than 15 years of experience in professional recruiting. Kevin leads the recruiting team to support all our service lines. Over his career Kevin has developed the ability to bring the right person to the table through relationship building, intelligent research, and relentless effort. Kevin earned his BBA in Accounting from the University of Michigan-Dearborn. Prior to his career as a recruiter, Kevin earned his CPA license while working at a major regional CPA firm and worked in corporate accounting."
         },
         {
+            name: 'Dave Porter',
+            role: 'Partner',
+            email: "dporter@orionsolutionsgroup.net",
+            image: 'dave_porter_profile.png',
+            linkedIn: 'https://www.linkedin.com/in/david-porter-18aa105/',
+            summary: "Dave brings over 25 years of leadership experience in the logistics/supply chain industry.  Dave served as President of Hub Los Angeles and Hub Golden Gate, held numerous sales leadership roles on a regional and national basis, and served as EVP of Supply Chain Solutions (3PL and Truck Brokerage), among other roles for Hub Group.  Most recently, Dave served as CEO for approximately 5 years at Rail Delivery Services, an award-winning drayage, trucking/dedicated, and consolidation company in Los Angeles.  Dave earned his BA from Western Michigan University and MBA from the University of Redlands.  Dave serves on the California State University Fullerton School of Operations and Supply Chain Management Advisory Board and is a member of numerous industry associations."
+        },
+        {
+            name: 'Mario Morales',
+            role: 'Director',
+            email: "mmorales@orionsolutionsgroup.net",
+            image: 'mario_profile.jpeg',
+            linkedIn: 'https://www.linkedin.com/in/mario-a-morales-007a791/',
+            summary: "Mario Brings over 35 years of experience in the Transportation/Logistics/Supply Chain industry.  Mario spent almost 30 years as a Senior Account Executive at CSX Railroad, served as Vice President of Corporate Solutions at Hub Group, and as an Account Manager at ABF Freight.  Mario served as Chairman of the Board and President of the Los Angeles Transportation Club and is a member or serves on the boards of numerous industry associations.  Mario has been married 30 years to Lydia who recently retired after 30 years at YRC Freight. They have three children who have all completed their Masters degrees including a daughter who is presently an officer in the United States Air Force serving overseas."
+        },
+        {
             name: 'Nicole Heger',
             role: 'HR Manager and Recruiter',
             email: "nheger@orionsolutionsgroup.net",

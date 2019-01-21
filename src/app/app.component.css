@@ -241,6 +241,10 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 .ptrbl-60-30 {
     padding: 60px 30px;
 }
+.ptb-100{
+    padding-top:100px !important;
+    padding-bottom:100px !important;
+}
 
 .m-25 {
     margin: 25px 0;
@@ -294,6 +298,9 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 
 .mb-45 {
     margin-bottom: 45px;
+}
+.mb-50{
+    margin-bottom: 50px;
 }
 
 .mr-15 {
@@ -397,7 +404,7 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
     margin-right: auto;
     padding: 10px;
     border-radius: 5px;
-    font-size: 60px;
+    font-size: 67px;
     font-family: 'Quicksand', 'avenir';
     font-weight: 400;
 }
@@ -413,6 +420,10 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 
     .o-jumbotron .container {
         padding-top: 125px;
+    }
+    
+    .o-jumbotron .container h3{
+        font-size: 20px; 
     }
 
     hr.blue-hr {
@@ -472,12 +483,15 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 .o-jumbotron h3 {
     font-family: 'Nunito', sans-serif;
     font-family: 'avenir';
-
     /*text-shadow: black 0 0 2px;*/
     color: #ffffff;
     font-weight: 300;
     text-shadow: 1px 1px black;
 }
+.o-jumbotron .container h3{
+    font-size: 28px; 
+}
+
 
 .o-jumbotron-small h1,
 .o-jumbotron-small h3 {
@@ -656,7 +670,7 @@ a {
 }
 
 .o-bg-l-grey {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
     line-height: 2;
 }
 

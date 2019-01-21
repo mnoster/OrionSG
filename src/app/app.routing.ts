@@ -22,7 +22,8 @@ import { OurteamComponent } from './ourteam/index';
 import { VisionComponent } from './vision/index';
 import { ClientTestimonials } from './clienttestimonials/index';
 import { CandidateTestimonials } from './candidatetestimonials/index';
-import { ProfessionalRecTestimonials } from './professionalrectestimonials/index'
+import { ProfessionalRecTestimonials } from './professionalrectestimonials/index';
+import { SupplychainComponent } from './supplychain/index';
 
 import { AuthGuard } from './_guards/index';
 
@@ -52,6 +53,7 @@ const appRoutes: Routes = [
     { path: 'clienttestimonials', component: ClientTestimonials },
     { path: 'candidatetestimonials', component: CandidateTestimonials },
     { path: 'professionalrectestimonials', component: ProfessionalRecTestimonials },
+    { path: 'supplychain', component: SupplychainComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

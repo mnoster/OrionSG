@@ -44,7 +44,8 @@ import { SubnavigationComponent } from './subnavigation/index';
 import { VisionComponent } from './vision/index';
 import { ClientTestimonials } from './clienttestimonials/index';
 import { CandidateTestimonials } from './candidatetestimonials/index';
-import { ProfessionalRecTestimonials } from './professionalrectestimonials/index'
+import { ProfessionalRecTestimonials } from './professionalrectestimonials/index';
+import { SupplychainComponent } from './supplychain/supplychain.component';
 
 @NgModule({
     imports: [
@@ -83,7 +84,8 @@ import { ProfessionalRecTestimonials } from './professionalrectestimonials/index
         SafeHtmlPipe,
         ClientTestimonials,
         CandidateTestimonials,
-        ProfessionalRecTestimonials
+        ProfessionalRecTestimonials,
+        SupplychainComponent,
     ],
     providers: [
         // AuthGuard,
