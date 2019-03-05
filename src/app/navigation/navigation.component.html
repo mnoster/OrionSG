@@ -1,78 +1,100 @@
 <!-- Navbar -->
-<nav class="navbar navbar-fixed-top o-navbar-orion navbar-default bg-inverse" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="o-navbar-brand o-navbar-brand2 navbar-toggle" style="float: right;border:none" >
-            <img height="40" src="../../assets/images/WBE_color_rgb_CP.png" alt="Orion">
-          </a>
-          <a class="navbar-brand" routerLink="/">
-            <img height="40" src="../../assets/images/orion_logo.png" alt="Orion">
-          </a>
-        </div>
-        <div class="collapse navbar-collapse nav-collapse" id="myNavbar">
-          <!-- Main Navigation -->
-          <ul class="nav navbar-nav navbar-right" routerLinkActive="active">
-
-              <li itemprop="name" data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse" data-target=".nav-collapse.in">
-                <a itemprop="url" routerLink="jobs" class="nav-link">
-                  Open Positions
-                </a>
-              </li>
-              <li data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse" data-target=".nav-collapse.in">
-                  <a routerLink="supplychain" class="nav-link">
-                    {{supplychain}}
-                  </a>
-                </li>
-               <li itemprop="name" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">
-                  {{about}}
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                    <a routerLink="ourteam" class="nav-link">{{ourteam}}</a>
-                  </li>
-                  <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                    <a routerLink="vision" class="nav-link">{{vision}}</a>
-                  </li>
-                  <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                    <a routerLink="history" class="nav-link">{{history}}</a>
-                  </li>
-                  <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                    <a routerLink="clienttestimonials" class="nav-link">{{clienttestimonials}}</a>
-                  </li>
-                  <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                    <a routerLink="candidatetestimonials" class="nav-link">{{candidatetestimonials}}</a>
-                  </li>
-                </ul>
-              </li>
-              <li itemprop="name" data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                <a itemprop="url" routerLink="contact" class="nav-link">Contact Us</a>
-              </li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Careers <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                      <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                        <a routerLink="consulting" class="nav-link">Consulting at Orion</a>
-                      </li>
-                      <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
-                        <a routerLink="professionalrecruiting" class="nav-link">Orion as your Recruiter</a>
-                      </li>
-                  </ul>
-              </li>
-              <li>
-                <span id="o-navbar-brand" style="padding-left: 26px" class="navbar-brand o-navbar-brand">
-                  <img height="40" src="../../assets/images/WBE_color_rgb_CP.png" alt="Orion">
-                </span>
-              </li>
-          </ul>
-        </div>
+<nav class="navbar navbar-fixed-top o-navbar-orion navbar-default bg-inverse" itemscope
+  itemtype="http://schema.org/SiteNavigationElement">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="o-navbar-brand o-navbar-brand2 navbar-toggle" style="float: right;border:none">
+        <img height="40" src="../../assets/images/WBE_color_rgb_CP.png" alt="Orion">
+      </a>
+      <a class="navbar-brand" routerLink="/">
+        <img height="40" src="../../assets/images/orion_logo.png" alt="Orion">
+      </a>
     </div>
+    <div class="collapse navbar-collapse nav-collapse" id="myNavbar">
+      <!-- Main Navigation -->
+      <ul class="nav navbar-nav navbar-right" routerLinkActive="active">
+
+        <li itemprop="name" data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse"
+          data-target=".nav-collapse.in">
+          <a itemprop="url" routerLink="jobs" class="nav-link">
+            Open Positions
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">
+            Our Services <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="accounting-finance" class="nav-link">Accounting & Finance</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="audit-risk" class="nav-link">Audit, Risk, & Compliance</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="human-resources" class="nav-link">Human Resources</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="it-audit-security" class="nav-link">IT Audit, & Security</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="supplychain" class="nav-link">{{supplychain}}</a>
+            </li>
+          </ul>
+        </li>
+        <li itemprop="name" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            {{about}}
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="our-team" class="nav-link">{{ourteam}}</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="vision" class="nav-link">{{vision}}</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="history" class="nav-link">{{history}}</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="client-testimonials" class="nav-link">{{clienttestimonials}}</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="candidate-testimonials" class="nav-link">{{candidatetestimonials}}</a>
+            </li>
+          </ul>
+        </li>
+        <li itemprop="name" data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+          <a itemprop="url" routerLink="contact" class="nav-link">Contact Us</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">
+            Careers <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="consulting" class="nav-link">Consulting at Orion</a>
+            </li>
+            <li data-toggle="collapse" data-target=".nav-collapse.in" class="navR-border nav-icon">
+              <a routerLink="professional-recruiting" class="nav-link">Orion as your Recruiter</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span id="o-navbar-brand" style="padding-left: 26px" class="navbar-brand o-navbar-brand">
+            <img height="40" src="../../assets/images/WBE_color_rgb_CP.png" alt="Orion">
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

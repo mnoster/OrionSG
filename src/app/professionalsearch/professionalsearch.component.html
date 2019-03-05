@@ -3,22 +3,23 @@
 
 <!-- Professional Search Header -->
 <div class="o-jumbotron-small">
-    <div class="container text-center">
-        <h1>{{title}}<div class="o-underline"></div></h1>
-    </div>
+  <div class="container text-center">
+    <h1>{{title}}<div class="o-underline"></div>
+    </h1>
+  </div>
 </div>
 
 
 
 <!-- Professional Search Section -->
 <div class="t-center mt-25 mb-25 qs" style="font-size: 20px;">
-  <a class="mb-10 display-inline-block" routerLink="/professionalsearch">
+  <a class="mb-10 display-inline-block" routerLink="/professional-search">
     <button class="btn-light btn btn-default btn-lg">Professional Search</button>
   </a>
-  <a class="mb-10 display-inline-block" routerLink="/contingentsearch">
+  <a class="mb-10 display-inline-block" routerLink="/contingent-search">
     <button class="btn-light btn btn-default btn-lg">Contingent Search</button>
   </a>
-  <a class="mb-10 display-inline-block" routerLink="/retainedsearch">
+  <a class="mb-10 display-inline-block" routerLink="/retained-search">
     <button class="btn-light btn btn-default btn-lg">Retained Search</button>
   </a>
 </div>
@@ -53,13 +54,13 @@
       </div>
       <div class="col-sm-6 col-xs-12 mb-10">
         <div class="text-center fs-16">
-         " Our clients trust our process because we guarantee candidates will
+          " Our clients trust our process because we guarantee candidates will
           have the following attributes before we submit them for consideration.
           We do not waste our client’s time. "
         </div>
       </div>
       <div class="col-sm-6 col-xs-12 mb-10">
-        <ul>
+        <ul style="list-style-type: lower-roman">
           <li>
             The candidate has the experience and skill set to do the job.
           </li>
@@ -82,13 +83,13 @@
       </div>
       <div class="col-sm-6 col-xs-12 mb-10">
         <div class="text-center fs-16">
-         " Our candidates trust us because we act as a career partner and not
+          " Our candidates trust us because we act as a career partner and not
           just a recruiter trying to make a fee. Relationships are built on
           trust and respect, and we promise the following to our candidates. "
         </div>
       </div>
       <div class="col-sm-6 col-xs-12 mb-10">
-        <ul>
+        <ul style="list-style-type: lower-roman">
           <li>
             We get to know your personal and career aspirations and will
             only present roles that help you achieve those aspirations.
@@ -127,7 +128,8 @@
 
       <div class="tab-content">
 
-        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"  [ngClass]="{ active: first, in: first }">
+        <div *ngFor="let x of examples; let first = first" class="tab-pane fade o-card" [attr.id]="x.id"
+          [ngClass]="{ active: first, in: first }">
           <h3>{{x.title}}</h3>
           <ul>
             <li *ngFor="let li of x.list">- {{li}}</li>
@@ -142,10 +144,11 @@
 
 <div class="container qs">
 
-    <div class="row mb-25 p-20">
-        <h4 class="qs text-center">
-            If you are interested in a new position, please click <a routerLink="/jobs">here</a> to learn more about our open roles.
-        </h4>
-    </div>
+  <div class="row mb-25 p-20">
+    <h4 class="qs text-center">
+      If you are interested in a new position, please click <a routerLink="/jobs">here</a> to learn more about our open
+      roles.
+    </h4>
+  </div>
 
 </div>
