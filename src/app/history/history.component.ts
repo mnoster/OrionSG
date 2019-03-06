@@ -12,6 +12,14 @@ export class HistoryComponent {
 
     timeline = [
       {
+        title: "February 2019",
+        details: "Orion moves our Michigan office to a bigger space. We plan to hire additional recruiters and client service professionals and need room!"
+      },
+      {
+        title: "January 2019",
+        details: "Orion opens an office in Southern California and brings on leaders from the logistics industry to build out our growing Supply & Logistics practice.  The new team gets off to a fast start with opportunities coming from around the United States.  This follows on the heels of a great 2018 where the company set a new high for sales and maintained strong profitability, all while carrying no debt."
+      },
+      {
         title: "January 2018",
         details: "Orion caps off another successful year! 2017 saw a 50% growth rate, strong profitability and no debt. We also received a perfect 10 net promotor score from our candidates. They were asked on a scale of one to ten to indicate how likely they were to refer Orion to a friend or peer."
       },
