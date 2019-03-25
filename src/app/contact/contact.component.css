@@ -4,36 +4,6 @@
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Alegreya Sans', sans-serif;*/
 
-/* Style for Contact Component */
-@media (max-width: 767px) {
-    #o-container-contact {
-        padding: 30px 0;
-
-        /*background-image: url(../../assets/images/our_mission.jpg);*/
-        /*background-color: #759bda;*/
-    }
-
-    #o-container-contact .container {
-        width: 100%;
-        padding-right: 24px;
-        padding-left: 24px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    #o-container-contact h1 {
-        padding: 24px 24px;
-    }
-}
-
-@media (max-width: 1249px) {
-    #o-container-contact .container {
-        width: 100%;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-}
-
 .o-location-list {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
@@ -41,6 +11,17 @@
 
 .o-location-list div {
     padding: 8px 0 10px 0;
+    display: inline-block;
+}
+
+.o-location-list-left {
+    width: 35%;
+    display: inline-block;
+    float: left;
+}
+
+.o-location-list-right {
+    width: 64%;
     display: inline-block;
 }
 
@@ -132,6 +113,41 @@
     padding: 10px;
     font-family: "Quicksand";
     transition: 0.5s;
+}
+
+/* Style for Contact Component */
+@media (max-width: 767px) {
+    #o-container-contact {
+        padding: 30px 0;
+
+        /*background-image: url(../../assets/images/our_mission.jpg);*/
+        /*background-color: #759bda;*/
+    }
+
+    #o-container-contact .container {
+        width: 100%;
+        padding-right: 24px;
+        padding-left: 24px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #o-container-contact h1 {
+        padding: 24px 24px;
+    }
+
+    .o-location-list-left,
+    .o-location-list-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1249px) {
+    #o-container-contact .container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
 @media only screen and (max-width: 835px) {
