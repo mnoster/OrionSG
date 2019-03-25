@@ -6,132 +6,159 @@
 
 /* Style for Contact Component */
 @media (max-width: 767px) {
-  #o-container-contact {
-    padding: 30px 0;
-    /*background-image: url(../../assets/images/our_mission.jpg);*/
-    /*background-color: #759bda;*/
-  }
+    #o-container-contact {
+        padding: 30px 0;
 
-  #o-container-contact .container {
-    width: 100%;
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+        /*background-image: url(../../assets/images/our_mission.jpg);*/
+        /*background-color: #759bda;*/
+    }
 
-  #o-container-contact h1 {
-    padding: 24px 24px;
-  }
+    #o-container-contact .container {
+        width: 100%;
+        padding-right: 24px;
+        padding-left: 24px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #o-container-contact h1 {
+        padding: 24px 24px;
+    }
 }
 
-
-
 @media (max-width: 1249px) {
-  #o-container-contact .container {
-    width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+    #o-container-contact .container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.o-location-list {
+    border-bottom: 1px solid #ddd;
+}
+
+.o-location-list div {
+    padding: 8px 0 10px 0;
+    display: inline-block;
+}
+
+.o-direction-link {
+    color: #1e658f;
+    font-size: 16px;
+}
+
+.o-direction-link:hover {
+    cursor: pointer;
 }
 
 #o-container-contact .container {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #o-container-contact {
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 30px 0;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px 0;
 }
 
 #o-container-contact .container {
-  width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #o-container-contact .container .row {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 #o-container-contact h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 45px;
-  font-weight: 300;
-  color: #333;
-  padding: 24px 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    color: #333;
+    padding: 24px 24px;
+}
+
+#o-container-contact .qs {
+    font-family: 'Quicksand', sans-serif;
 }
 
 #o-container-contact .container .row .o-contact-container {
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #o-container-contact .o-contact-container p {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #o-container-contact .o-contact-container p .o-paragraph-title {
-  font-size: 19px;
-  font-weight: 400;
+    font-size: 19px;
+    font-weight: 400;
 }
 
 #o-container-contact .o-contact-container p.o-top-paragraph {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 /* o-contact-location */
 #o-container-contact .o-contact-location {
-  text-align: center;
+    text-align: center;
 }
 
 #o-container-contact .o-contact-location p {
-  font-size: 22px;
+    font-size: 22px;
 }
+
 @media (max-width: 700px) {
-  .o-contact-location p {
-    font-size: 20px;
-  }
+    .o-contact-location p {
+        font-size: 20px;
+    }
 }
+
 /* o-contact-location END */
 
 /* Customize .o-third-container */
 .o-third-container {
-  padding: 10px;
+    padding: 10px;
 }
 
 .o-third-container h2 {
-  padding: 10px;
-  font-family: "Quicksand";
-  transition: 0.5s;
+    padding: 10px;
+    font-family: "Quicksand";
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 835px) {
-  .o-third-container h2 {
-    font-size: 28px;
-  }
+    .o-third-container h2 {
+        font-size: 28px;
+    }
 }
+
 @media only screen and (max-width: 770px) {
-  .o-third-container h2 {
-    font-size: 27px;
-  }
+    .o-third-container h2 {
+        font-size: 27px;
+    }
 }
 
 .o-third-container div {
-  padding: 5px 10px;
-  background-color: #f1f1f1;;
-  box-shadow: 0px 1px 1px rgba(0,0,0,0.2)
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.o-third-container div:hover {
-  background-color: #e0e6e6;
-  color: #4c4c4c;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.35);
-}
+
+/* .o-third-container div:hover {
+    background-color: #e0e6e6;
+    color: #4c4c4c;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+} */
+
 .o-third-container div a {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 /* Customize .o-third-container END */

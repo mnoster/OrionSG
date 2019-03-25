@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent {
   home = 'Home';
   supplychain = 'Supply Chain'
+  jobs = 'Open Positions'
   about = 'About';
   ourteam = 'Our Team';
   vision = 'Vision';

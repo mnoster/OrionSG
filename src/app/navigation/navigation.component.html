@@ -18,11 +18,16 @@
     <div class="collapse navbar-collapse nav-collapse" id="myNavbar">
       <!-- Main Navigation -->
       <ul class="nav navbar-nav navbar-right" routerLinkActive="active">
-
+        <li itemprop="name" data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse"
+          data-target=".nav-collapse.in">
+          <a itemprop="url" routerLink="" class="nav-link">
+            {{home}}
+          </a>
+        </li>
         <li itemprop="name" data-toggle="collapse" class="nav-item navR-border nav-icon" data-toggle="collapse"
           data-target=".nav-collapse.in">
           <a itemprop="url" routerLink="jobs" class="nav-link">
-            Open Positions
+            {{jobs}}
           </a>
         </li>
         <li class="dropdown">
