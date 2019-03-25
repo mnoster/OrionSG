@@ -12,7 +12,7 @@ import { DomSanitizer} from '@angular/platform-browser';
 })
 
 export class ContactComponent {
-    constructor(private sanitizer: DomSanitizer) {}
+    constructor(public sanitizer: DomSanitizer) {}
 
     title: string = "Contact Us";
     subtitle: string = "Here are a few ways to get in touch with us";
