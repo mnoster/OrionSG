@@ -27,7 +27,7 @@ export class ContactComponent {
         },
         {
             address: "471 Lambert Rd, Unit 111<br> Brea, CA, USA <br> 92821",
-            phone: "(7140 814-7019",
+            phone: "(714) 814-7019",
             name: "Corporate Office: Brea",
             mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.61187770668!2d-117.90388288463546!3d33.92538743185155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd56aca7d949d%3A0x82813523f11b3eee!2s471+W+Lambert+Rd+%23111%2C+Brea%2C+CA+92821!5e0!3m2!1sen!2sus!4v1553491309453",
         },
