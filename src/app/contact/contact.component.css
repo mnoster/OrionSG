@@ -25,7 +25,7 @@
     display: inline-block;
 }
 
-.o-direction-link {
+.o-location-list .o-direction-link {
     color: #1e658f;
     font-size: 16px;
 }

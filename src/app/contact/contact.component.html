@@ -54,11 +54,11 @@
                 <div [innerHTML]="x.address">
                 </div>
                 <br>
-                <div style="padding-right:14em">
+                <div style="padding-right:14em; display: block">
                   {{x.phone}}
                 </div>
                 <div (click)="switchMap(x.mapUrl)">
-                    <span class="o-direction-link">View Directions</span>
+                    <div class="o-direction-link">View Directions</div>
                 </div>
               </li>
             </ol>
