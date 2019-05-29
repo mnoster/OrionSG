@@ -23,12 +23,12 @@
             </div>
 
             <select [ngModel]="selected_category" (ngModelChange)="setCategory($event)" class="form control">
-              <option selected disabled [ngValue]="none">Category</option>
+              <option selected disabled [ngValue]="undefined">Category</option>
               <option *ngFor="let category of categories">{{category}}</option>
             </select>
             &nbsp;&nbsp;<span style="color:white">OR</span>&nbsp;&nbsp;
             <select [ngModel]="selected_location" (ngModelChange)="setLocation($event)" class="form control">
-              <option [disabled] selected disabled [ngValue]="none">Location</option>
+              <option [disabled] selected disabled [ngValue]="undefined">Location</option>
               <option *ngFor="let location of locations">{{location}}</option>
             </select>
             <button (click)="searchJobs()">
