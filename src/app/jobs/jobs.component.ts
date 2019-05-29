@@ -50,6 +50,7 @@ export class JobsComponent {
     }
 
     searchCategory(category: string) {
+        this.loader = false;
         return new Promise((resolve, reject) => {
             this.bullhornService.searchCategory(category).then(
                 (res: any) => {
@@ -62,6 +63,7 @@ export class JobsComponent {
 
     searchString(query: string) {
         // console.log("Search String: ", query)
+        this.loader = false;
         return new Promise((resolve, reject) => {
 
             this.bullhornService.searchString(query).then(
@@ -169,7 +171,7 @@ export class JobsComponent {
     }
 
     resetJobs() {
-        this.loader = true;
+        this.loader = false;
         this.setCategory("");
         this.setLocation("");
         this.query = "";

@@ -48,7 +48,7 @@
     Loading...
   </div>
 
-  <div *ngIf="job_data.length < 1" style="height:500px;padding-top:50px;text-align: center">
+  <div *ngIf="job_data.length < 1 && loader" style="height:500px;padding-top:50px;text-align: center">
     No jobs found. Please try another search. 
   </div>
 
