@@ -11,13 +11,12 @@
             <div class="form-group jobs-keywords">
               <label class="sr-only" for="q2">Keyword, Title or Company</label>
               <div class="input-group">
-                <img (click)="searchJobs()" class="search-icon"
-                  src="../../assets/images/search_icon_black.svg" />
+                <img (click)="searchJobs()" class="search-icon" src="../../assets/images/search_icon_black.svg" />
                 <span class="input-group-addon"></span>
                 <span class="twitter-typeahead">
-                  <input [(ngModel)]="query" (keyup.enter)="searchJobs()" type="text"
-                    class="form-control o-search-bar" aria-describedby="basic-addon1" maxlength="250"
-                    placeholder="Keyword, Title or Company" autocomplete="off" spellcheck="false" dir="auto">
+                  <input [(ngModel)]="query" (keyup.enter)="searchJobs()" type="text" class="form-control o-search-bar"
+                    aria-describedby="basic-addon1" maxlength="250" placeholder="Keyword, Title or Company"
+                    autocomplete="off" spellcheck="false" dir="auto">
                 </span>
               </div>
             </div>
@@ -26,7 +25,7 @@
               <option selected disabled [ngValue]="undefined">Category</option>
               <option *ngFor="let category of categories">{{category}}</option>
             </select>
-            &nbsp;&nbsp;<span style="color:white">OR</span>&nbsp;&nbsp;
+            &nbsp;&nbsp;<span style="color:white"> | </span>&nbsp;&nbsp;
             <select [ngModel]="selected_location" (ngModelChange)="setLocation($event)" class="form control">
               <option [disabled] selected disabled [ngValue]="undefined">Location</option>
               <option *ngFor="let location of locations">{{location}}</option>
@@ -49,7 +48,7 @@
   </div>
 
   <div *ngIf="job_data.length < 1 && loader" style="height:500px;padding-top:50px;text-align: center">
-    No jobs found. Please try another search. 
+    No jobs found. Please try another search.
   </div>
 
   <div class="o-job-contain" *ngIf="loader && job_data.length > 0">

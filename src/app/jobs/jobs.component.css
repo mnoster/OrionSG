@@ -4,114 +4,141 @@
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Alegreya Sans', sans-serif;*/
 
-*{
+* {
     font-family: 'Quicksand', sans-serif;
 }
-.o-search-contain{
-/*    background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed ;
-*/    background: -moz-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(59,111,149,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(88deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
-    background: linear-gradient(2deg, rgba(59,111,149,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); /* ie6-9 *//* background-position-y: -440px; */
-  
-    padding-bottom:25px;
-    background-position-y:-444px;
+
+.o-search-contain {
+    /*    background: url("/assets/images/green_blue.jpg") no-repeat 100% fixed ;
+    */
+
+    background: -moz-linear-gradient(88deg, rgba(59, 111, 149, 1) 0%, rgba(0, 128, 128, 1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 1)), color-stop(100%, rgba(59, 111, 149, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(88deg, rgba(59, 111, 149, 1) 0%, rgba(0, 128, 128, 1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(88deg, rgba(59, 111, 149, 1) 0%, rgba(0, 128, 128, 1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(88deg, rgba(59, 111, 149, 1) 0%, rgba(0, 128, 128, 1) 100%); /* ie10+ */
+    background: linear-gradient(2deg, rgba(59, 111, 149, 1) 0%, rgba(0, 128, 128, 1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#3b6f95',GradientType=0 ); /* ie6-9 */
+
+    /* background-position-y: -440px; */
+
+    padding-bottom: 25px;
+    background-position-y: -444px;
     margin-top: 81px;
 }
+
 .o-search-contain h5,
 .o-search-contain h4,
 .o-search-contain h3,
-.o-search-contain h2{
+.o-search-contain h2 {
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-weight:100;
+    font-weight: 100;
 }
-.o-job-title a{
-    font-family: 'Nunito', sans-serif ;
+
+.o-job-title a {
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
 }
-.o-job-description{
+
+.o-job-description {
     font-size: 15px !important;
-    font-family: 'Nunito', sans-serif ;
+    font-family: "Nunito", sans-serif;
 }
-.o-job-description div,.o-job-description span, .o-job-description p, .o-job-description div p,.o-job-description div span{
+
+.o-job-description div, .o-job-description span, .o-job-description p, .o-job-description div p, .o-job-description div span {
     font-size: 15px !important;
     font-family: 'Nunito', sans-serif !important;
 }
-.o-job-location{
-    font-size:14px
+
+.o-job-location {
+    font-size: 14px;
 }
-.o-job-buttons .btn{
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    border-radius:2px;
+
+.o-job-buttons .btn {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
-.o-job-buttons{
-    margin-top:10px;
+
+.o-job-buttons {
+    margin-top: 10px;
 }
-.o-job-contain .row{
+
+.o-job-contain .row {
     max-width: 900px;
     padding: 0 25px;
 }
-.o-job-contain p{
+
+.o-job-contain p {
     display: inline !important;
-    margin-bottom:0 !important;
-    color:black !important;
-}
-font{
-    color:black !important;
+    margin-bottom: 0 !important;
+    color: black !important;
 }
 
-.o-job-contain hr{
-    margin-right:135px;
+font {
+    color: black !important;
 }
+
+.o-job-contain hr {
+    margin-right: 135px;
+}
+
 /*DROPDOWN STYLES*/
-.o-job-category{
+.o-job-category {
     border-radius: 0;
     width: 175px;
     text-align: left;
 }
+
 .input-group-addon:first-child {
     border-right: 0;
     border-radius: 0;
-    background-color: #fff
+    background-color: #fff;
 }
+
 .input-group .form-control:not(:first-child):not(:last-child),
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child) {
     border-radius: 0;
     padding: 16px;
     border: 1px solid #ccc;
-    border-right:none;
-    background-color: #fff
+    border-right: none;
+    background-color: #fff;
 }
-.o-search-bar{
-    border-left:none;
+
+.o-search-bar {
+    border-left: none;
 }
-.search-icon{
+
+.search-icon {
+    display: none;
+}
+
+.search-icon:not(*:root) { /* Supports only WebKit browsers */
+    display: block;
+}
+
+.search-icon {
     height: 22px;
     position: absolute;
     margin: 6px 0 0 7px;
 }
 
-@media(max-width:992px){
-    .o-job-contain hr{
-        margin-right:0;
+@media (max-width: 992px) {
+    .o-job-contain hr {
+        margin-right: 0;
     }
 }
 
-@media(max-width:389px){
+@media (max-width: 389px) {
     .o-search-contain {
-        background-position-y: -437px;
+        background-position-y: -531px;;
         margin-top: 64px;
     }
 }
 
-
-@media(max-width:767px){
+@media (max-width: 767px) {
     .o-search-contain {
         margin-top: 65px;
     }

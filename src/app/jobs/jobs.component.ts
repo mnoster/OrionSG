@@ -55,17 +55,14 @@ export class JobsComponent {
             this.bullhornService.searchCategory(category).then(
                 (res: any) => {
                     resolve(this.setJobs(res, false))
-                    // this.job_data = this.setJobs(res, false)
                 }
             );
         })
     }
 
     searchString(query: string) {
-        // console.log("Search String: ", query)
         this.loader = false;
         return new Promise((resolve, reject) => {
-
             this.bullhornService.searchString(query).then(
                 (res: any) => {
                     resolve(this.setJobs(res, false))
