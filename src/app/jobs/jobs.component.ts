@@ -61,13 +61,12 @@ export class JobsComponent {
     }
 
     searchString(query: string) {
-        console.log("Search String: ", query)
+        // console.log("Search String: ", query)
         return new Promise((resolve, reject) => {
 
             this.bullhornService.searchString(query).then(
                 (res: any) => {
                     resolve(this.setJobs(res, false))
-                    // this.job_data = this.setJobs(res, false)
                 }
             );
         })
@@ -179,7 +178,6 @@ export class JobsComponent {
     }
 
     public searchStringInJobsArray(search_query: string) {
-        console.log("Search");
         try {
             if (!search_query) { this.job_data = job_data; return; }
             let new_job_data: Array<string> = [];
@@ -196,7 +194,7 @@ export class JobsComponent {
                     }
             }
             if (!new_job_data.length) {
-                console.log("No match for: ", search_query);
+                // console.log("No match for: ", search_query);
                 this.job_data = [];
             } else {
                 this.job_data = new_job_data;
