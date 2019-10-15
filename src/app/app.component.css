@@ -162,6 +162,9 @@ hr.blue-hr {
 hr.blue-hr:after { /* Not really supposed to work, but does */
     content: "\00a0"; /* Prevent margin collapse */
 }
+.fc-black{
+    color: #4f4f4f;
+}
 
 .fs-16 {
     font-size: 16px;

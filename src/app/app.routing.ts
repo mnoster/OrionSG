@@ -26,6 +26,7 @@ import { ProfessionalRecTestimonials } from './professionalrectestimonials/index
 import { SupplychainComponent } from './supplychain/index';
 
 import { AuthGuard } from './_guards/index';
+import { InsightsComponent } from './insights';
 
 const appRoutes: Routes = [
     // { path: '', component: HomeComponent, canActivate: [AuthGuard] },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     { path: 'audit-risk', component: AuditRiskComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'contract-staffing', component: ContractStaffingComponent },
+    { path: 'insights', component: InsightsComponent },
     { path: 'our-team', component: OurteamComponent },
     { path: 'vision', component: VisionComponent },
     { path: 'history', component: HistoryComponent },

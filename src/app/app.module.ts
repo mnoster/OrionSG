@@ -8,12 +8,12 @@ import { SafeHtmlPipe } from "./_pipes/index";
 
 //COMPONENTS AND SERVICES
 import { AppComponent } from './app.component';
-import { 
-    AlertService, 
+import {
+    AlertService,
     // AuthenticationService, 
-    EmailService, 
+    EmailService,
     // UserService, 
-    BullhornService, 
+    BullhornService,
     // ContentService 
 } from './_services/index';
 
@@ -45,7 +45,8 @@ import { VisionComponent } from './vision/index';
 import { ClientTestimonials } from './clienttestimonials/index';
 import { CandidateTestimonials } from './candidatetestimonials/index';
 import { ProfessionalRecTestimonials } from './professionalrectestimonials/index';
-import { SupplychainComponent } from './supplychain/supplychain.component';
+import { SupplychainComponent } from './supplychain/index';
+import { InsightsComponent } from './insights/index';
 
 @NgModule({
     imports: [
@@ -86,6 +87,7 @@ import { SupplychainComponent } from './supplychain/supplychain.component';
         CandidateTestimonials,
         ProfessionalRecTestimonials,
         SupplychainComponent,
+        InsightsComponent,
     ],
     providers: [
         // AuthGuard,

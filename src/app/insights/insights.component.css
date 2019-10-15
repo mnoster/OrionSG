@@ -1,0 +1,25 @@
+.o-list-box {
+    box-shadow: 0 1px 8px #ddd;
+    border-radius: 5px;
+}
+
+.o-list-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.o-list-box > ul > li {
+    border-bottom: 1px solid #ddd;
+    padding: 13px 8px;
+    border-radius: 5px;
+}
+
+.o-list-box > ul > li:hover {
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.o-list-box > ul:focus, .o-list-box > li:focus {
+    background-color: white;
+    cursor: pointer;
+}

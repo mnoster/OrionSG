@@ -14,7 +14,9 @@ export class NavigationComponent {
   jobs = 'Open Positions'
   about = 'About';
   ourteam = 'Our Team';
+  contact = 'Contact Us'
   vision = 'Vision';
+  insights = 'Insights';
   history = 'History';
   login = 'Login';
   register = 'Register';
