@@ -6,7 +6,7 @@
   <div class="container text-center">
     <h1>{{title}}<div class="o-underline"></div>
     </h1>
-    <div class="text-center mt-25 fc-black">{{subtitle}}</div>
+    <div class="text-center pt-35 fc-black qs fs-20">{{subtitle}}</div>
   </div>
 </div>
 
@@ -17,7 +17,7 @@
 <div class='container'>
   <div class="row">
     <div class="col-xs-12">
-      <h3>Articles</h3>
+      <h3 style="font-family:avenir, Arial, Helvetica, sans-serif">Articles</h3>
       <hr />
       <div class="o-list-box o-card">
         <ul *ngFor="let x of categories;">
@@ -25,7 +25,7 @@
             <a rel="noopener noreferrer">{{x.title}} ({{x.articles.length}})</a>
             <div *ngIf="x.open">
               <ul *ngFor="let y of x.articles">
-                <li> &nbsp; &nbsp; &nbsp; <a href="y.link">{{y.date}} - {{y.title}}</a></li>
+                <li> &nbsp; &nbsp; &nbsp; <a href={{y.link}}>{{y.date}} - {{y.title}}</a></li>
               </ul>
             </div>
           </li>

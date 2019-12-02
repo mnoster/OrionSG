@@ -10,18 +10,38 @@ import { Component, OnInit } from '@angular/core';
 export class InsightsComponent implements OnInit {
 
   title = "Orion Insights"
-  subtitle = "Keep up to date with industry trends and recruiting"
+  subtitle = "Our goal is always to bring significant insight and communication from our industry experts"
   categories = [
     {
-      name: 'accounting', title: "Accounting", open: false,
+      name: 'supplychain', title: "Supply Chain", open: true,
       articles: [
-        { title: "Accounting Executive Summary", link: "https:/bit.ly", date: "2019-09-22" },
-        { title: "Current Landscape", link: "https:/bit.ly", date: "2019-08-22" }
+        { title: "Top Ways to Outside Source", link: "https://conta.cc/2MFPiOP", date: "2019-10" },
+        { title: "Uber Professionals", link: "https://conta.cc/2lvRZaZ", date: "2019-09" },
+        { title: "TMS/WMS/Technical People", link: "https://conta.cc/31T5u46", date: "2019-08" },
+        { title: "Recruiting Great People In An Era Of Record-Low Unemployment", link: "https://conta.cc/2yDzi7Z", date: "2019-07" },
+        { title: "Bring the latest skill sets to your company", link: "https://conta.cc/2RhIs2R", date: "2019-06" },
+        { title: "Employers vs. the Supply Chain Talent Shortage of 2019", link: "https://conta.cc/2H4ZJav", date: "2019-05" },
       ]
     },
-    { name: 'finance', title: "Finance", open: false, articles: [{ title: "Finance Today", link: "https:/bit.ly", date: "2019-09-22" }] },
-    { name: 'itaudit', title: "IT Audit and Security", open: false, articles: [{ title: "Auditing in Big Companies", link: "https:/bit.ly", date: "2019-09-22" }] },
-    { name: 'supplychain', title: "Accounting", open: false, articles: [{ title: "What You Need To Know", link: "https:/bit.ly", date: "2019-09-22" }] },
+    {
+      name: 'finance', title: "Finance", open: false,
+      articles: [
+        { title: "Top Ways to Outside Source", link: "https://conta.cc/2MFPiOP", date: "2019-10" },
+        { title: "Uber Professionals", link: "https://conta.cc/2lvRZaZ", date: "2019-09" },
+        { title: "TMS/WMS/Technical People", link: "https://conta.cc/31T5u46", date: "2019-08" },
+        { title: "Recruiting Great People In An Era Of Record-Low Unemployment", link: "https://conta.cc/2yDzi7Z", date: "2019-07" },
+        { title: "Bring the latest skill sets to your company", link: "https://conta.cc/2RhIs2R", date: "2019-06" },
+      ]
+    },
+    {
+      name: 'itaudit', title: "IT Audit and Security", open: false,
+      articles: [
+        { title: "Top Ways to Outside Source", link: "https://conta.cc/2MFPiOP", date: "2019-10" },
+        { title: "Uber Professionals", link: "https://conta.cc/2lvRZaZ", date: "2019-09" },
+        { title: "Recruiting Great People In An Era Of Record-Low Unemployment", link: "https://conta.cc/2yDzi7Z", date: "2019-07" },
+        { title: "Bring the latest skill sets to your company", link: "https://conta.cc/2RhIs2R", date: "2019-06" },
+      ]
+    },
   ]
 
 

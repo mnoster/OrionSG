@@ -162,7 +162,8 @@ hr.blue-hr {
 hr.blue-hr:after { /* Not really supposed to work, but does */
     content: "\00a0"; /* Prevent margin collapse */
 }
-.fc-black{
+
+.fc-black {
     color: #4f4f4f;
 }
 
@@ -229,6 +230,10 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 .ps-20 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.pt-35 {
+    padding-top: 35px;
 }
 
 .ps-30 {
@@ -333,7 +338,7 @@ hr.blue-hr:after { /* Not really supposed to work, but does */
 }
 
 .t-shadow {
-    text-shadow: 0 1px 1px black;
+    text-shadow: 0 1px 1px #464646;
 }
 
 .o-border-radius-10 {
