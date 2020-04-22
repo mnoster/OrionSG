@@ -31,6 +31,8 @@
   }
   .contact-card .col-md-3 p {
     font-size: 12px;
+    width: 114%;
+    padding-top:8px;
   }
 }
 

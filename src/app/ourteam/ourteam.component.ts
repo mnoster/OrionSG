@@ -99,12 +99,12 @@ export class OurteamComponent implements OnInit {
 
         },
         {
-            name: 'Bob',
-            role: '',
-            email: '',
-            image: 'bob_profile.jpeg',
+            name: 'Michaella',
+            role: 'Supply Chain Recruiter',
+            email: 'msaucedo@orionsolutionsgroup.net ',
+            image: 'michaella_profile.jpg',
             height: '340px',
-            linkedIn: '',
+            linkedIn: 'https://www.linkedin.com/in/michaella-s-416503108/',
             summary:"Bob The Dog joined the Orion team in 2017, coming to us from a local rescue shelter.  Bob The Dog has excellent people skills and spends most of his day visiting with the rest of team (particularly if they are eating something)."
         }
 
