@@ -105,7 +105,14 @@ export class OurteamComponent implements OnInit {
             image: 'michaella_profile.jpg',
             height: '340px',
             linkedIn: 'https://www.linkedin.com/in/michaella-s-416503108/',
-            summary:"Bob The Dog joined the Orion team in 2017, coming to us from a local rescue shelter.  Bob The Dog has excellent people skills and spends most of his day visiting with the rest of team (particularly if they are eating something)."
+            summary:`Michaella joined Orion in 2019 as a Supply Chain Recruiter. Michaella earned her BS in Business
+            Administration from the University of La Verne with emphasis in Business Management. Michaella
+            comes from a transportation family and started her career in Supply Chain managing multiple carriers
+            and customers for a high-volume LA shipper. Michaella is passionate about making the best possible
+            matches between candidates and great opportunities. Her communication and follow up are second to
+            none.
+            Outside of the office Michaella volunteers with Easterseals, an organization that focuses on the
+            empowerment and growth of children and adults with disabilities.`
         }
 
     ]
