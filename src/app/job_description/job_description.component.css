@@ -12,9 +12,7 @@
 .job-innerhtml * {
   font-size: 14px !important;
 }
-#o-job-description{
-    margin-top: 100px;
-}
+
 #o-job-description > .row {
   margin-top:10px
 }
