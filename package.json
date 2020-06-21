@@ -23,14 +23,13 @@
     "angular2-template-loader": "^0.6.2",
     "aos": "^2.2.0",
     "awesome-typescript-loader": "^3.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "concurrently": "^3.1.0",
-    "core-js": "^2.4.1",
-    "express": "^4.15.4",
-    "helmet": "^3.21.2",
+    "core-js": "^2.6.11",
+    "express": "^4.17.1",
+    "helmet": "^3.23.1",
     "jsonwebtoken": "^8.0.0",
-    "lite-server": "^2.3.0",
-    "request": "^2.83.0",
+    "request": "^2.88.2",
     "rxjs": "^5.2.0",
     "systemjs": "^0.19.47",
     "webpack": "^3.8.1",
@@ -39,10 +38,10 @@
   "devDependencies": {
     "@angular/cli": "^1.6.0",
     "@angular/compiler-cli": "^4.4.7",
-    "@types/node": "^6.0.60",
+    "@types/node": "^6.14.10",
     "concurrently": "^3.0.0",
     "css-loader": "^0.28.7",
-    "lite-server": "^2.2.2",
+    "lite-server": "^2.5.4",
     "typescript": "^2.3.4"
   }
 }
