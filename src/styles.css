@@ -5,6 +5,24 @@
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Alegreya Sans', sans-serif;*/
 
+@font-face{
+    font-family: 'HindVadodara-B';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/HindVadodara-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'HindVadodara-R';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/HindVadodara-Regular.ttf') format('truetype');
+}
+
+:root:root *{
+    font-family: 'HindVadodara-R' !important;
+}
+
 .navbar-default .navbar-nav>li>a{
     font-family: 'Nunito', sans-serif;
     padding: 30px 15px;

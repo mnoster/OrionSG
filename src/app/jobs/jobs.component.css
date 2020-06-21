@@ -130,16 +130,15 @@ font {
         margin-right: 0;
     }
 }
-
-@media (max-width: 389px) {
+@media (max-width: 535px) {
     .o-search-contain {
-        background-position-y: -531px;;
-        margin-top: 64px;
+        background-position-y: -502px;
     }
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 389px) {
     .o-search-contain {
-        margin-top: 65px;
+        background-position-y: -542px;;
     }
 }
