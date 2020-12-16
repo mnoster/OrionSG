@@ -47,7 +47,7 @@ export class JobDescriptionComponent implements OnInit {
     }
 
     setHostUrl(){
-        this.hostUrl = window.location.host.match('.com') ? 'https://orionsolutionsgroup.com' : 'https://orionsolutionsgroup.net'
+        this.hostUrl = window.location.host.match('.com') ? 'https://orionsolutionsgroup.com' : 'https://jobs.orionsolutionsgroup.net'
     }
 
     formatBullhornData(){
