@@ -19,6 +19,7 @@ import { Job } from "../_models/index";
 
 export class JobDescriptionComponent implements OnInit {
     public description: string;
+    hostUrl = window.parent.location.host;
     loading = false;
     loader = false;
     job_data: any;
@@ -43,6 +44,8 @@ export class JobDescriptionComponent implements OnInit {
             this.getJobDescription(this.job_id);
         }
     }
+
+
 
     formatBullhornData(){
         this.bullhornService.getJobs(null).then(
