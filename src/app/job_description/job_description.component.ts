@@ -19,7 +19,7 @@ import { Job } from "../_models/index";
 
 export class JobDescriptionComponent implements OnInit {
     public description: string;
-    hostUrl = window.parent.location.host;
+    hostUrl: string;
     loading = false;
     loader = false;
     job_data: any;
@@ -36,6 +36,7 @@ export class JobDescriptionComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.setHostUrl();
         if(!data_retrieved){
             this.formatBullhornData();
         }else{
@@ -45,7 +46,9 @@ export class JobDescriptionComponent implements OnInit {
         }
     }
 
-
+    setHostUrl(){
+        this.hostUrl = window.location.host.match('.com') ? 'https://orionsolutionsgroup.com' : 'https://orionsolutionsgroup.net'
+    }
 
     formatBullhornData(){
         this.bullhornService.getJobs(null).then(
