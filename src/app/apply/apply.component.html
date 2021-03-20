@@ -32,13 +32,6 @@
                 <div>
                     <h3 class="al">{{title}}</h3> &nbsp;
                     <span class="al" [innerHtml]="location"></span>
-                    <form id="submit-resume"  enctype='multipart/form-data'>
-                        <span class="al" style="float:right; color:red">
-                            Upload Resume & Apply Below
-                            <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/> .pdf, .doc & .docx
-                        </span>
-
-                  </form>
                 </div>
                 <h4 class="mt-25">Apply</h4>
             </div>
@@ -49,7 +42,8 @@
                             <h5>{{app.form}}</h5>
                             <hr>
                             <div *ngFor="let a of app.fields">
-                                <input formControlName={{a.name}} minlength="1" maxlength="50" class="from-control" name={{a.name}} pattern=".{2,}" type="text" placeholder={{a.placeholder}} title="Please enter name" required={{a.required}}/>
+                                <div>{{a.placeholder}} <span *ngIf="a.required" class='red'>*</span></div>
+                                <input formControlName={{a.name}} minlength="1" maxlength="50" class="from-control" name={{a.name}} pattern=".{2,}" type="text" title="Please enter name" required={{a.required}}/>
                                 <!--<p>{{app_form.get(a.name).value}}</p>-->
                                 <div class="o-error" *ngIf="app_form.get(a.name).hasError('required') && app_form.get(a.name).touched">
                                     {{a.placeholder}} is required
@@ -57,8 +51,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class='col-xs-12'>
                         <hr>
+                    </div>
+                    <div class='col-sm-6 col-xs-12'>
+                        <form id="submit-resume"  enctype='multipart/form-data'>
+                            <span class="o-resume-box" style="float:right; color:red">
+                                Please Upload Resume
+                                <input (change)="attachResume($event.target.files[0])" style="border: none;color:black" type="file" title="Upload Resume"  accept=".pdf,.doc,.docx"/> .pdf, .doc & .docx
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
                         <button *ngIf="!loader && resumeUploaded" [disabled]="app_form.invalid" (click)="onSubmit()" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Submit</button>
                         <button *ngIf="!loader && !resumeUploaded" [disabled]="true" (click)="onSubmit()" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Submit</button>
                         <button *ngIf="loader && !complete" [disabled]="app_form.invalid" style="margin:20px 0;margin-bottom: 109px;" type="button" class="btn btn-primary o-submit-btn">Please Wait..</button>

@@ -15,7 +15,7 @@ input{
 .o-apply-component input{
     height: 32px;
     padding-left: 9px;
-    margin: 8px 0;
+    margin: 0px 0 8px 0;
     width:100%;
     display: block;
     border: 1px solid lightgray;
@@ -40,6 +40,23 @@ input{
     border-radius: 0;
     border-top: 3px solid red;
     transition: all .3s;
+}
+
+.o-resume-box{
+    float: right;
+    color: #c30000;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-top: 4px solid #337ab7;
+    font-size: 16px;
+    line-height: 36px;
+    width: 100%;
+}
+
+.red{
+    color: red;
 }
 
 .success-button{
